@@ -1,0 +1,4 @@
+--- Arquivo pdf da cbf para xlsx
+Faça a transcrição do arquivo anexado em pdf para uma planilha (xlsx ou csv).
+
+---
