@@ -1,10 +1,10 @@
-import pandas as pd
 from config import *
-import numpy as np
-import unicodedata
+#import unicodedata
 
 
-arq = pd.read_excel(BASE_PATH + BRASILEIRAO, sheet_name='2025')
+#arq = pd.read_excel(BASE_PATH + BRASILEIRAO, sheet_name='2025')
+
+bd = pd.read_excel(BASE_PATH + CB + 'basedosdados_campeonatos.xlsx')
 
 
 def pontuar(arquivo, nome_coluna="Placar"):
@@ -92,7 +92,25 @@ def classific(df, campeonato, ano):
     
     return classificacao
 
-
+def padronizar_n(coluna):
+    '''Recebe uma coluna de data frame (pandas) e retorna a mesma coluna com os
+    tratamentos aplicados.
+    '''
+    if not isinstance(coluna, object):
+        return coluna
+    
+    # onde é o H
+    coluna = coluna.replace("Atlético-PR", "Athletico-PR")
+    
+    # ' ' FC
+    coluna = coluna.replace("Santos", "Santos FC")
+    
+    # GEC
+    coluna = coluna.replace("Goiás", "Goiás EC")
+    
+    return coluna
+    
+    
 def formatar_nomes(nome):
     '''
 
@@ -104,7 +122,7 @@ def formatar_nomes(nome):
     # Se quiser manter os acentos, pule esta parte de 'unicodedata'
     nome = unicodedata.normalize('NFKD', nome).encode('ASCII', 'ignore').decode('ASCII')
     
-    # 2. Converte para Minúsculo para padronizar a limpeza
+    # 2. Converte para maiúsculo para padronizar a limpeza
     nome = nome.upper()
     
     # 3. Remove espaços extras (no início, fim e duplos no meio)
