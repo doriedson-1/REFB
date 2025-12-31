@@ -1,4 +1,10 @@
 --- Arquivo pdf da cbf para xlsx
-Faça a transcrição do arquivo anexado em pdf para uma planilha (xlsx ou csv).
+
+Certo. Transforme o arquivo anexado em um csv. As colunas são: Ano, Vencedor, Perdedor, Fase, Campeonato.
+No arquivo você encontrará diversos confrontos de time, listados assim,
+"1992 - Internacional vence o Fluminense na final da Copa do Brasil".
+Note que, {Ano}='1992', {Vencedor}= 'Internacional', {Perdedor}='Fluminense',
+{Fase}='Final', {Campeonato}='Copa do Brasil'. São quase 500 confrontos, então 
+serão quase 500 linhas!
 
 ---
