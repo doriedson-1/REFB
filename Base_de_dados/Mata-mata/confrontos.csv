@@ -322,18 +322,14 @@ Ano,Vencedor,Perdedor,Fase,Campeonato
 2015,Palmeiras,Fluminense,Semifinal,Copa do Brasil
 2015,Internacional,Atlético,Oitavas de final,Libertadores
 2016,Grêmio,Palmeiras,Quartas de final,Copa do Brasil
-2016,Grêmio,Palmeiras,Quartas de final,Copa do Brasil
 2016,Santos,Vasco,Oitavas de final,Copa do Brasil
 2016,Internacional,Santos,Quartas de final,Copa do Brasil
 2016,Grêmio,Cruzeiro,Semifinal,Copa do Brasil
 2016,Cruzeiro,Corinthians,Quartas de final,Copa do Brasil
 2016,Cruzeiro,Botafogo,Oitavas de final,Copa do Brasil
-2016,Cruzeiro,Botafogo,Oitavas de final,Copa do Brasil
-2016,Grêmio,Atlético,Final,Copa do Brasil
 2016,Grêmio,Atlético,Final,Copa do Brasil
 2016,São Paulo,Atlético,Quartas de final,Libertadores
 2016,Atlético,Internacional,Semifinal,Copa do Brasil
-2016,Corinthians,Fluminense,Oitavas de final,Copa do Brasil
 2016,Corinthians,Fluminense,Oitavas de final,Copa do Brasil
 2017,Cruzeiro,Palmeiras,Quartas de final,Copa do Brasil
 2017,Palmeiras,Internacional,Oitavas de final,Copa do Brasil
@@ -342,28 +338,20 @@ Ano,Vencedor,Perdedor,Fase,Campeonato
 2017,Cruzeiro,Grêmio,Semifinal,Copa do Brasil
 2017,Cruzeiro,Flamengo,Final,Copa do Brasil
 2017,Cruzeiro,São Paulo,16-avos de final,Copa do Brasil
-2017,Cruzeiro,São Paulo,16-avos de final,Copa do Brasil
 2017,Botafogo,Atlético,Quartas de final,Copa do Brasil
 2017,Grêmio,Fluminense,Oitavas de final,Copa do Brasil
 2017,Grêmio,Botafogo,Quartas de final,Libertadores
-2017,Grêmio,Botafogo,Quartas de final,Libertadores
-2017,Flamengo,Fluminense,Quartas de final,Sul-Americana
 2017,Flamengo,Fluminense,Quartas de final,Sul-Americana
 2017,Flamengo,Botafogo,Semifinal,Copa do Brasil
 2018,Cruzeiro,Palmeiras,Semifinais,Copa do Brasil
 2018,Cruzeiro,Santos,Quartas de final,Copa do Brasil
 2018,Flamengo,Grêmio,Quartas de final,Copa do Brasil
-2018,Flamengo,Grêmio,Quartas de final,Copa do Brasil
 2018,Cruzeiro,Corinthians,Final,Copa do Brasil
 2018,Corinthians,Flamengo,Semifinais,Copa do Brasil
 2018,Cruzeiro,Flamengo,Oitavas de final,Libertadores
 2019,Grêmio,Palmeiras,Quartas de final,Libertadores
-2019,Grêmio,Palmeiras,Quartas de final,Libertadores
-2019,Grêmio,Palmeiras,Quartas de final,Libertadores
 2019,Internacional,Palmeiras,Quartas de final,Copa do Brasil
 2019,Santos,Vasco,16-avos de final,Copa do Brasil
-2019,Santos,Vasco,16-avos de final,Copa do Brasil
-2019,Internacional,Cruzeiro,Semifinal,Copa do Brasil
 2019,Internacional,Cruzeiro,Semifinal,Copa do Brasil
 2019,Flamengo,Internacional,Quartas de final,Libertadores
 2019,Flamengo,Grêmio,Semifinal,Libertadores
@@ -371,44 +359,33 @@ Ano,Vencedor,Perdedor,Fase,Campeonato
 2019,Cruzeiro,Fluminense,Oitavas de final,Copa do Brasil
 2019,Cruzeiro,Atlético,Quartas de final,Copa do Brasil
 2019,Atlético,Botafogo,Oitavas de final,Sul-Americana
-2019,Atlético,Botafogo,Oitavas de final,Sul-Americana
-2019,Atlético,Santos,Oitavas de final,Copa do Brasil
 2019,Atlético,Santos,Oitavas de final,Copa do Brasil
 2019,Corinthians,Fluminense,Quartas de final,Sul-Americana
 2020,Palmeiras,Grêmio,Final,Copa do Brasil
 2020,Palmeiras,Santos,Final,Libertadores
-2020,Palmeiras,Santos,Final,Libertadores
 2020,Santos,Grêmio,Quartas de final,Libertadores
 2020,Grêmio,São Paulo,Semifinal,Copa do Brasil
 2020,São Paulo,Flamengo,Quartas de final,Copa do Brasil
-2020,São Paulo,Flamengo,Quartas de final,Copa do Brasil
 2020,Botafogo,Vasco,Terceira fase,Copa do Brasil
 2021,Palmeiras,São Paulo,Quartas de final,Libertadores
-2021,Palmeiras,São Paulo,Quartas de final,Libertadores
-2021,Flamengo,Palmeiras,Final,Supercopa do Brasil
 2021,Flamengo,Palmeiras,Final,Supercopa do Brasil
 2021,Palmeiras,Flamengo,Final,Copa Libertadores
 2021,Flamengo,Grêmio,Quartas de final,Copa do Brasil
 2021,São Paulo,Vasco,Oitavas de final,Copa do Brasil
-2021,São Paulo,Vasco,Oitavas de final,Copa do Brasil
 2021,Atlético,Fluminense,Quartas de final,Copa do Brasil
 2021,Palmeiras,Atlético,Semifinal,Libertadores
 2022,São Paulo,Palmeiras,Oitavas de final,Copa do Brasil
-2022,Corinthians,Santos,Oitavas de final,Copa do Brasil
 2022,Corinthians,Santos,Oitavas de final,Copa do Brasil
 2022,Flamengo,Corinthians,Quartas de final,Libertadores
 2022,Flamengo,Corinthians,Final,Copa do Brasil
 2022,Flamengo,São Paulo,Semifinal,Copa do Brasil
 2022,Fluminense,Cruzeiro,Oitavas de final,Copa do Brasil
 2022,Palmeiras,Atlético,Quartas de final,Libertadores
-2022,Palmeiras,Atlético,Quartas de final,Libertadores
 2022,Atlético,Flamengo,Final,Supercopa do Brasil
 2022,Flamengo,Atlético,Oitavas de final,Copa do Brasil
 2022,Corinthians,Fluminense,Semifinal,Copa do Brasil
 2023,São Paulo,Palmeiras,Oitavas de final,Copa do Brasil
-2023,São Paulo,Palmeiras,Oitavas de final,Copa do Brasil
 2023,São Paulo,Palmeiras,Quartas de final,Copa do Brasil
-2023,Palmeiras,Flamengo,Final,Supercopa do Brasil
 2023,Palmeiras,Flamengo,Final,Supercopa do Brasil
 2023,Grêmio,Cruzeiro,Oitavas de final,Copa do Brasil
 2023,Flamengo,Grêmio,Semifinal,Copa do Brasil
@@ -416,10 +393,7 @@ Ano,Vencedor,Perdedor,Fase,Campeonato
 2023,São Paulo,Flamengo,Final,Copa do Brasil
 2023,Palmeiras,Atlético,Oitavas de final,Libertadores
 2023,Flamengo,Fluminense,Oitavas de final,Copa do Brasil
-2023,Flamengo,Fluminense,Oitavas de final,Copa do Brasil
 2023,Corinthians,Atlético,Oitavas de final,Copa do Brasil
-2024,São Paulo,Palmeiras,Final,Supercopa do Brasil
-2024,São Paulo,Palmeiras,Final,Supercopa do Brasil
 2024,São Paulo,Palmeiras,Final,Supercopa do Brasil
 2024,Flamengo,Palmeiras,Oitavas de final,Copa do Brasil
 2024,Flamengo,Corinthians,Semifinal,Copa do Brasil
@@ -431,7 +405,6 @@ Ano,Vencedor,Perdedor,Fase,Campeonato
 2024,Fluminense,Grêmio,Oitavas de final,Libertadores
 2024,Botafogo,Palmeiras,Oitavas de final,Libertadores
 2024,Flamengo,Atlético,Final,Copa do Brasil
-2024,Atlético,Vasco,Semifinal,Copa do Brasil
 2024,Atlético,Vasco,Semifinal,Copa do Brasil
 2025,Corinthians,Palmeiras,Oitavas de final,Copa do Brasil
 2025,Flamengo,Palmeiras,Final,Libertadores

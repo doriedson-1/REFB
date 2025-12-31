@@ -1,10 +1,8 @@
 from config import *
-#import unicodedata
-
 
 #arq = pd.read_excel(BASE_PATH + BRASILEIRAO, sheet_name='2025')
 
-bd = pd.read_excel(BASE_PATH + CB + 'basedosdados_campeonatos.xlsx')
+#bd = pd.read_excel(BASE_PATH + CB + 'basedosdados_campeonatos.xlsx')
 
 
 def pontuar(arquivo, nome_coluna="Placar"):
@@ -111,27 +109,29 @@ def padronizar_n(coluna):
     return coluna
     
     
-def formatar_nomes(nome):
-    '''
-
-    '''
-    if not isinstance(nome, str):
-        return nome
-    
-    # 1. Remove acentos e caracteres especiais (Opcional - útil para sistemas)
-    # Se quiser manter os acentos, pule esta parte de 'unicodedata'
-    nome = unicodedata.normalize('NFKD', nome).encode('ASCII', 'ignore').decode('ASCII')
-    
-    # 2. Converte para maiúsculo para padronizar a limpeza
-    nome = nome.upper()
-    
-    # 3. Remove espaços extras (no início, fim e duplos no meio)
-    # O split() sem argumentos remove qualquer sequência de espaços em branco
-    nome = " ".join(nome.split())
-    
-    # 4. Padronizar sad
-    nome = nome.replace("S.A.F", "SAF")
-    
-    
-    return nome
+# =============================================================================
+# def formatar_nomes(nome):
+#     '''
+# 
+#     '''
+#     if not isinstance(nome, str):
+#         return nome
+#     
+#     # 1. Remove acentos e caracteres especiais (Opcional - útil para sistemas)
+#     # Se quiser manter os acentos, pule esta parte de 'unicodedata'
+#     nome = unicodedata.normalize('NFKD', nome).encode('ASCII', 'ignore').decode('ASCII')
+#     
+#     # 2. Converte para maiúsculo para padronizar a limpeza
+#     nome = nome.upper()
+#     
+#     # 3. Remove espaços extras (no início, fim e duplos no meio)
+#     # O split() sem argumentos remove qualquer sequência de espaços em branco
+#     nome = " ".join(nome.split())
+#     
+#     # 4. Padronizar sad
+#     nome = nome.replace("S.A.F", "SAF")
+#     
+#     
+#     return nome
+# =============================================================================
     
