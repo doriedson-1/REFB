@@ -1,22 +1,15 @@
-from config import *
+import pandas as pd
+import streamlit as st
+from recursos import Bases
 
-# 1. Carregar os dados
-# Idealmente, coloque o arquivo csv gerado anteriormente na mesma pasta
+# Instância
+bd = Bases()
 
-def load_data():
-    try:
-        # Tenta ler o arquivo CSV
-        df = pd.read_csv(BASE_PATH + 'Mata-mata/confrontos.csv')
-        return df
-    except FileNotFoundError:
-        st.error("Arquivo não encontrado. Por favor, certifique-se que o arquivo está na pasta.")
-        return pd.DataFrame()
-
-df = load_data()
+# Carregar os dados
+df = bd.ler('confrontos.csv', 'mata-mata')
 
 if not df.empty:
-    # 2. Preparar a Matriz Quadrada
-    # Lista única de todos os times (vencedores e perdedores)
+    # Matriz Quadrada
     todos_times = sorted(list(set(df['Vencedor']).union(set(df['Perdedor']))))
 
     # Cria a tabela cruzada
@@ -44,11 +37,22 @@ if not df.empty:
 
 NEUTRAL_COLOR = "#AAAAAA"
 
+st.subheader('Confrontos')
+
+st.write('Histórico de enfrentamento do G12 do futebol brasileiro em decisões por\
+         competições oficiais. Estão inclusas partidas dos seguintes torneios:\
+         Campeonato Brasileiro, Copa do Brasil, Copa dos Campeões, Supercopa do Brasil,\
+         Copa Libertadores da América, Supercopa da Libertadores, Copa Mercosul,\
+         Copa Sulamericana, Copa Conmebol, Copa Ouro, Copa Master da Supercopa, \
+         Copa Master da Conmebol, Torneio Rio-São Paulo, Torneio Sul-Minas\
+         (incluindo a Copa Sul-Minas-Rio) e torneios oficiais da FIFA, exceto \
+         os mata-matas válidos pelos estaduais')
+
 if not df.empty:
     # Lista de times única e ordenada
     todos_times = sorted(list(set(df['Vencedor']).union(set(df['Perdedor']))))
 
-    # --- 3. Preparar Matriz de Placar ---
+    # Preparar Matriz de Placar
     raw_counts = pd.crosstab(df['Vencedor'], df['Perdedor'])
     raw_counts = raw_counts.reindex(index=todos_times, columns=todos_times, fill_value=0)
 
@@ -77,7 +81,7 @@ if not df.empty:
                     else:
                          style_df.at[time_A, time_B] = f"background-color: {NEUTRAL_COLOR}; color: white; font-weight: bold"
 
-    # --- 4. Exibir Matriz com Seleção ---
+    # Exibir Matriz com Seleção
     
     st.markdown("💡 Selecione um time na linha para carregar os detalhes abaixo.")
     
@@ -93,9 +97,9 @@ if not df.empty:
         selection_mode="single-row" 
     )
 
-    # --- 5. Área de Detalhes (O "Link") ---
+    # Área de Detalhes
     st.divider()
-    st.subheader("🔎 Detalhes do Confronto")
+    st.subheader("🔎 Detalhes")
 
     col1, col2 = st.columns(2)
 

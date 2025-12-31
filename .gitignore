@@ -1,3 +1,5 @@
 basedosdados.py
 
 _*.py
+
+*/__pycache__

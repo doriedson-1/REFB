@@ -1,6 +1,6 @@
 # Arquivo principal do app
-from config import *
 import streamlit as st
+
 
 st.set_page_config(page_title = "R.E.F.B", layout='wide', page_icon=  "🇧🇷")
 st.header("Repositório Estatístico do Futebol Brasileiro")
@@ -10,6 +10,10 @@ confrontos_pag = st.Page(
     page = 'paginas/confrontos.py',
     title = 'Confrontos eliminatórios')
 
+ranking_pag = st.Page(
+    page  = 'paginas/ranking.py',
+    title = 'Ranking dos pontos corridos')
+
 home_pag = st.Page(
     page = 'paginas/home.py',
     title = 'Apresentação',
@@ -17,7 +21,7 @@ home_pag = st.Page(
 
 
 # Barra de navegação
-pg = st.navigation([home_pag, confrontos_pag])
+pg = st.navigation([home_pag, ranking_pag, confrontos_pag])
 
 st.sidebar.text('Versão beta')
 

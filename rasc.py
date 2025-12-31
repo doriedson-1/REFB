@@ -1,3 +1,5 @@
+import numpy as np
+import pandas as pd
 from config import *
 
 #arq = pd.read_excel(BASE_PATH + BRASILEIRAO, sheet_name='2025')
@@ -108,30 +110,36 @@ def padronizar_n(coluna):
     
     return coluna
     
-    
+
+
 # =============================================================================
-# def formatar_nomes(nome):
-#     '''
-# 
-#     '''
-#     if not isinstance(nome, str):
-#         return nome
+# def addc(ano):
+#     nome = f"Base_de_dados/Campeonato_brasileiro/TabelaFinal{ano}.xlsx"
+#     df = pd.read_excel(nome)
+#     df['CAMPEONATO'] = ano
 #     
-#     # 1. Remove acentos e caracteres especiais (Opcional - útil para sistemas)
-#     # Se quiser manter os acentos, pule esta parte de 'unicodedata'
-#     nome = unicodedata.normalize('NFKD', nome).encode('ASCII', 'ignore').decode('ASCII')
-#     
-#     # 2. Converte para maiúsculo para padronizar a limpeza
-#     nome = nome.upper()
-#     
-#     # 3. Remove espaços extras (no início, fim e duplos no meio)
-#     # O split() sem argumentos remove qualquer sequência de espaços em branco
-#     nome = " ".join(nome.split())
-#     
-#     # 4. Padronizar sad
-#     nome = nome.replace("S.A.F", "SAF")
+#     df.to_excel(nome, index = False)
+#     print(df)
 #     
 #     
-#     return nome
 # =============================================================================
+
+
     
+excel_names = [f"Base_de_dados/Campeonato_brasileiro/TabelaFinal{ano}.xlsx" for ano in range(2005, 2024)]
+
+# read them in
+excels = [pd.ExcelFile(name) for name in excel_names]
+
+# turn them into dataframes
+frames = [x.parse(x.sheet_names[0], header=None, index_col=None) for x in excels]
+
+# delete the first row for all frames except the first
+# i.e. remove the header row -- assumes it's the first
+frames[1:] = [df[1:] for df in frames[1:]]
+
+# concatenate them..
+combined = pd.concat(frames)
+
+# write it out
+combined.to_excel("TabelaFinal.xlsx", header=False, index=False)
