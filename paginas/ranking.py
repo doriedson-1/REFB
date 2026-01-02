@@ -6,7 +6,7 @@ from recursos import Bases
 bases = Bases()
 
 # Lê o arquivo
-df_jogos = bases.ler('basedosdados_campeonatos.xlsx', 'br')
+df_jogos = bases.ler('pontos_corridos.xlsx', 'br')
 
 # Correções ortográficas
 df_jogos['time_mandante']= bases.grafia(df_jogos['time_mandante'])

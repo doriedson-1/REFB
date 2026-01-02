@@ -1,6 +1,6 @@
 --- Arquivo pdf da cbf para xlsx
 
-Certo. Transforme o arquivo anexado em um csv. As colunas são: Ano, Vencedor, Perdedor, Fase, Campeonato.
+Transforme o arquivo anexado em um csv. As colunas são: Ano, Vencedor, Perdedor, Fase, Campeonato.
 No arquivo você encontrará diversos confrontos de time, listados assim,
 "1992 - Internacional vence o Fluminense na final da Copa do Brasil".
 Note que, {Ano}='1992', {Vencedor}= 'Internacional', {Perdedor}='Fluminense',
