@@ -5,6 +5,10 @@ st.set_page_config(page_title = "R.E.F.B", layout='wide', page_icon=  "🇧🇷"
 st.header("Repositório Estatístico do Futebol Brasileiro")
 
 # Listagem das páginas do site
+jogos_pag = st.Page(
+    page = 'paginas/duelos.py',
+    title = 'Duelos')
+
 confrontos_pag = st.Page(
     page = 'paginas/confrontos.py',
     title = 'Confrontos eliminatórios')
@@ -20,7 +24,8 @@ home_pag = st.Page(
 
 
 # Barra de navegação
-pg = st.navigation([home_pag, ranking_pag, confrontos_pag])
+pg = st.navigation([home_pag, ranking_pag,
+                    jogos_pag, confrontos_pag])
 
 st.sidebar.text('Versão beta')
 

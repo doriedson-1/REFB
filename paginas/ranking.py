@@ -99,30 +99,30 @@ pontos_time = arquivo.groupby(['CAMPEONATO', 'TIME'])['PONTOS'].sum().reset_inde
 todos_times = bases.descritivas()
 
 def shuffle_colors():
-    # 1. Generate 50 distinct colors from a continuous scale (e.g., 'turbo', 'rainbow', or 'viridis')
-    # This prevents the "out of index" error by creating a spectrum specifically for 50 points
+    # 1. Geração de cores escala contínua
+    # (https://plotly.com/python/colorscales/#continuous-color-with-plotly-express)
     ncores = px.colors.sample_colorscale(
-        "turbo", [i/(len(todos_times)-1) for i in range(len(todos_times))]
+        'jet', [i/(len(todos_times)-1) for i in range(len(todos_times))]
         )
 
-    # 2. Shuffle the generated colors so they aren't in gradient order
+    # 2. Mistura ordem das cores
     random.shuffle(ncores)
     
-    # 3. Map to session state
+    # 3. Mapeamento p/ estado inicial
     st.session_state.color_map = {
         str(name).strip(): color for name, color in zip(todos_times, ncores)
-        #team: new_palette[i] for i, team in enumerate(times)
         }
 
-# Initialize state
+# Estado inicial
 if 'color_map' not in st.session_state:
     shuffle_colors()
 
-# 4. User interface: Shuffle Button
+# UI: Botão
 st.button("🔀 Mudar cores", on_click = shuffle_colors)
 
 fig = px.line(pontos_time, x = "CAMPEONATO", y = "PONTOS", color = "TIME",
-              title = "Desempenho por time", markers = True,              
+              title = "Desempenho por time",
+              markers = True,              
               labels = {"Pontos": "Total Points",
                         "Temporada": "Temp"},
               category_orders = {'TIME':todos_times},
