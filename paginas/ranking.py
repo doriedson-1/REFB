@@ -1,10 +1,13 @@
 import pandas as pd
 import streamlit as st
+import plotly.express as px
+import random
 from recursos import Bases
 
 # Instância
 bases = Bases()
 
+###############################################################################
 # Lê o arquivo
 df_jogos = bases.ler('pontos_corridos.xlsx', 'br')
 
@@ -12,20 +15,19 @@ df_jogos = bases.ler('pontos_corridos.xlsx', 'br')
 df_jogos['time_mandante']= bases.grafia(df_jogos['time_mandante'])
 df_jogos['time_visitante'] = bases.grafia(df_jogos['time_visitante'])
 
-data_minima = df_jogos['data'].min()
-data_maxima = df_jogos['data'].max()
- 
 # # 2. Criar o widget de seleção de datas (slider ou input de data)
 # # O st.date_input é mais intuitivo para selecionar um range de datas específico.
+data_minima = df_jogos['data'].min()
+data_maxima = df_jogos['data'].max()
 data_inicial_filtro, data_final_filtro = st.date_input(
      label = "Selecione o período para a pontuação:",
      value = [data_minima, data_maxima], # Valor padrão é o campeonato todo
      min_value = data_minima,
      max_value = data_maxima,
-     format = 'DD/MM/YYYY'     
+     format = 'DD/MM/YYYY'
 )
  
-# # 3. Filtrar os dados com base na seleção do usuário
+# 3. Filtrar os dados com base na seleção do usuário
 df_filtrado = df_jogos[
      (df_jogos['data'] >= pd.to_datetime(data_inicial_filtro)) & 
      (df_jogos['data'] <= pd.to_datetime(data_final_filtro))
@@ -53,7 +55,7 @@ def calcular_classificacao_completa(df_filtrado):
     ).rename_axis('Time')
 
     # 3. Consolidar as duas tabelas (Soma mandante + Visitante)
-    # pre_fill=0 evita erro se um time não jogou no período como mandante ou visitante
+    # fill_value evita erro se um time não jogou no período como mandante ou visitante
     tabela = mandantes.add(visitantes, fill_value=0).astype(int)
 
     # 4. Calcular colunas derivadas (Pontos, Saldo e Aproveitamento)
@@ -87,60 +89,54 @@ if not df_filtrado.empty:
 else:
     st.warning("Nenhum jogo encontrado no período selecionado.")
 
-# =============================================================================
-# # 1. Encontrar o intervalo completo de datas dos jogos
-# data_minima = df_jogos['data'].min()
-# data_maxima = df_jogos['data'].max()
-# 
-# # 2. Criar o widget de seleção de datas (slider ou input de data)
-# # O st.date_input é mais intuitivo para selecionar um range de datas específico.
-# data_inicial_filtro, data_final_filtro = st.date_input(
-#     label="Selecione o período para a pontuação:",
-#     value=[data_minima, data_maxima], # Valor padrão é o campeonato todo
-#     min_value=data_minima,
-#     max_value=data_maxima
-# )
-# 
-# # 3. Filtrar os dados com base na seleção do usuário
-# df_filtrado = df_jogos[
-#     (df_jogos['data'] >= pd.to_datetime(data_inicial_filtro)) & 
-#     (df_jogos['data'] <= pd.to_datetime(data_final_filtro))
-# ]
-# 
-# # --- Lógica para calcular a pontuação (usando apenas df_filtrado) ---
-# 
-# def calcular_tabela(df):
-#     # Implementação simplificada de cálculo de pontos
-#     times = set(df['time_mandante']).union(set(df['time_visitante']))
-#     pontuacao = {time: 0 for time in times}
-# 
-#     for index, row in df.iterrows():
-#         if row['gols_mandante'] > row['gols_visitante']:
-#             pontuacao[row['time_mandante']] += 3
-#         elif row['gols_mandante'] < row['gols_visitante']:
-#             pontuacao[row['time_visitante']] += 3
-#         else:
-#             pontuacao[row['time_mandante']] += 1
-#             pontuacao[row['time_visitante']] += 1
-#             
-#     tabela_final = pd.DataFrame(list(pontuacao.items()), columns=['Time', 'Pontos'])
-#     tabela_final = tabela_final.sort_values(by='Pontos', ascending=False)
-#     return tabela_final
-# 
-# tabela_final = calcular_tabela(df_filtrado)
-# 
-# # 4. Exibir o resultado no Streamlit
-# st.subheader("Classificação do Período Selecionado")
-# st.dataframe(tabela_final, hide_index=True)
-# st.caption(f"Exibindo jogos de {data_inicial_filtro} até {data_final_filtro}")
-# =============================================================================
+###############################################################################
+st.subheader("Série temporal")
 
-# Adiciona as colunas de pontos
-#bases.pontuar(df, gol_m = 'gols_mandante', gol_v = 'gols_visitante')
+arquivo = bases.ler('TabelaFinal.xlsx', 'br')
+arquivo['TIME'] = bases.grafia(arquivo['TIME'])
 
-#df2 = df[(df['ano_campeonato'] > 2005) ]
+pontos_time = arquivo.groupby(['CAMPEONATO', 'TIME'])['PONTOS'].sum().reset_index()
+todos_times = bases.descritivas()
 
-#tabela = bases.classifica(df2)
+def shuffle_colors():
+    # 1. Generate 50 distinct colors from a continuous scale (e.g., 'turbo', 'rainbow', or 'viridis')
+    # This prevents the "out of index" error by creating a spectrum specifically for 50 points
+    ncores = px.colors.sample_colorscale(
+        "turbo", [i/(len(todos_times)-1) for i in range(len(todos_times))]
+        )
 
-#st.subheader('Ranking acumalado dos pontos corridos (2003 - atual)')
-#st.slider('Ano do campeonato', 2005, 2023, (2005, 2023))
+    # 2. Shuffle the generated colors so they aren't in gradient order
+    random.shuffle(ncores)
+    
+    # 3. Map to session state
+    st.session_state.color_map = {
+        str(name).strip(): color for name, color in zip(todos_times, ncores)
+        #team: new_palette[i] for i, team in enumerate(times)
+        }
+
+# Initialize state
+if 'color_map' not in st.session_state:
+    shuffle_colors()
+
+# 4. User interface: Shuffle Button
+st.button("🔀 Mudar cores", on_click = shuffle_colors)
+
+fig = px.line(pontos_time, x = "CAMPEONATO", y = "PONTOS", color = "TIME",
+              title = "Desempenho por time", markers = True,              
+              labels = {"Pontos": "Total Points",
+                        "Temporada": "Temp"},
+              category_orders = {'TIME':todos_times},
+              color_discrete_map = st.session_state.color_map)
+
+fig.update_traces(line = {'width':.7})
+
+st.plotly_chart(fig, theme = None, use_container_width=True)
+
+    # Display in Streamlit
+    #return pontos_time, fig
+
+#st.sidebar.header('Filtros')
+#selecionar = st.sidebar.multiselect('Selecione', options = todos_times, default= todos_times)
+
+#fig.add_hline(y=75, line_dash="dash", line_color="red", annotation_text="Title Contender")
+#fig.add_hline(y = pontos_time['PONTOS'].mean(), line_dash="dot", line_color="gray", annotation_text="Média")

@@ -1,7 +1,6 @@
 # Arquivo principal do app
 import streamlit as st
 
-
 st.set_page_config(page_title = "R.E.F.B", layout='wide', page_icon=  "🇧🇷")
 st.header("Repositório Estatístico do Futebol Brasileiro")
 

@@ -2,7 +2,7 @@
 import streamlit as st
 
 st.write('Projeto inicial do R.E.F.B.')
-st.markdown('Contribua em: github.com/doriedson-1/REFB')
+st.markdown('Contribua no [github](github.com/doriedson-1/REFB)!')
 
 
 st.divider()

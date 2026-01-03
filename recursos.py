@@ -11,6 +11,30 @@ class Bases:
             'copa': self.base_path + 'Copa_do_Brasil/',
             'mata-mata': self.base_path + 'Mata-mata/'}
     
+    def descritivas(self, torneio = 'br'):
+        """
+        Parameters
+        ----------
+        torneio : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        None.
+
+        """
+        if torneio == 'br':
+            arq = self.caminhos.get(torneio) + "TabelaFinal.xlsx"
+            arquivo = pd.read_excel(arq)
+            
+            # Faz correções ortográficas
+            arquivo['TIME'] = Bases.grafia(self, arquivo['TIME'])
+            
+            t_times = sorted(arquivo['TIME'].unique())
+            
+            return t_times
+        
+    
     def grafia(self, coluna):
         """
         Parameters
@@ -29,12 +53,31 @@ class Bases:
         # onde é o H
         coluna = coluna.replace("Atlético-PR", "Athletico-PR")
         
+        coluna = coluna.replace("Athletico Paranaense", "Athletico-PR")
+        coluna = coluna.replace("Atlético Goianiense", "Atlético-GO")
+        coluna = coluna.replace("Atlético Mineiro", "Atlético-MG")
+
         # ' ' FC
+        coluna = coluna.replace("Coritiba", "Coritiba FC")
+        coluna = coluna.replace("Figueirense", "Figueirense FC")
         coluna = coluna.replace("Santos", "Santos FC")
         
         # GEC
+        coluna = coluna.replace("Bahia", "EC Bahia")
+        coluna = coluna.replace("Criciúma", "Criciúma EC")
         coluna = coluna.replace("Goiás", "Goiás EC")
+        coluna = coluna.replace("Fortaleza", "Fortaleza EC")
+        coluna = coluna.replace("Vitória", "EC Vitória")
+
         
+        # SC
+        coluna = coluna.replace("Ceará", "Ceará SC")
+        coluna = coluna.replace("Paysandu", "Paysandu SC")
+        
+        # Outros
+        coluna = coluna.replace("Cuiabá-MT", "Cuiabá")
+        coluna = coluna.replace("Red Bull Bragantino", "RB Bragantino")
+
         return coluna
 
     
@@ -88,11 +131,10 @@ class Bases:
         Parâmetros
         ----------
         arq : DataFrame (pandas)
-            DESCRIPTION.
         gol_m : str
-            DESCRIPTION.
+            Coluna de gols do mandante.
         gol_v : str
-            DESCRIPTION.
+            Coluna de gols do visitante.
 
         Retorna
         -------
@@ -113,7 +155,7 @@ class Bases:
     
     def classifica(self, df, ano = 2020, exportar = False):
         """
-        Parameters
+        Parametros
         ----------
         df : DataFrame
             Objeto do Pandas.
@@ -188,4 +230,3 @@ class Bases:
                                    sheet_name = str(ano))
         
         return classificacao
-        

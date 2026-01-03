@@ -3,10 +3,10 @@ import streamlit as st
 from recursos import Bases
 
 # Instância
-bd = Bases()
+bases = Bases()
 
 # Carregar os dados
-df = bd.ler('confrontos.csv', 'mata-mata')
+df = bases.ler('confrontos.csv', 'mata-mata')
 
 if not df.empty:
     # Matriz Quadrada
