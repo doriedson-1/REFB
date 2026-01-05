@@ -130,7 +130,9 @@ fig = px.line(pontos_time, x = "CAMPEONATO", y = "PONTOS", color = "TIME",
 
 fig.update_traces(line = {'width':.7})
 
-st.plotly_chart(fig, theme = None, use_container_width=True)
+#st.plotly_chart(fig, theme = None, use_container_width=True)
+st.plotly_chart(fig, theme = None, width = 'stretch')
+
 
     # Display in Streamlit
     #return pontos_time, fig

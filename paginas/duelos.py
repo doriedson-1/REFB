@@ -10,7 +10,6 @@ def render_confrontos_detalhados(df: pd.DataFrame):
     st.subheader("⚔️ Confrontos diretos")
 
     # Listas para os selects
-    #all_teams = sorted(pd.concat([df['time_mandante'], df['time_visitante']]).unique())
     all_teams = bases.descritivas()
     all_champs = sorted(df['campeonato'].unique())
 
@@ -36,7 +35,8 @@ def render_confrontos_detalhados(df: pd.DataFrame):
         submit_button = st.form_submit_button(
             label="Analisar Confrontos", 
             type="primary", 
-            use_container_width=True
+            #use_container_width=True
+            width='stretch'
         )
 
     # --- LÓGICA PÓS-SUBMISSÃO ---
@@ -71,11 +71,28 @@ def render_confrontos_detalhados(df: pd.DataFrame):
             st.markdown(f"### Histórico: {time_a} x {time_b}")
             _renderizar_tabela_colorida(df_filtered, time_a)
             
+            st.write('GolsM = Gols mandante')
+            st.write('GolsV = Gols visitante')
+            
             # Renderiza estatísticas
             _mostrar_resumo_estatistico(df_filtered, time_a, time_b)
 
+
 def _renderizar_tabela_colorida(df, time_ref):
     """Função auxiliar para isolar a lógica visual da tabela"""
+    
+    df = df.copy()
+    
+    # Converter para Datetime real (para ordenar corretamente e permitir formatação)
+    df['data'] = pd.to_datetime(df['data'], errors='coerce')
+    
+    # Converter Gols para Inteiro (remove o .0)
+    # O fillna(0) garante que se houver vazio, vira 0 antes de virar int
+    if 'gols_mandante' in df.columns:
+        df['gols_mandante'] = pd.to_numeric(df['gols_mandante'], errors='coerce').fillna(0).astype(int)
+    if 'gols_visitante' in df.columns:
+        df['gols_visitante'] = pd.to_numeric(df['gols_visitante'], errors='coerce').fillna(0).astype(int)
+    
     def style_row(row):
         gols_a = row['gols_mandante'] if row['time_mandante'] == time_ref else row['gols_visitante']
         gols_b = row['gols_visitante'] if row['time_mandante'] == time_ref else row['gols_mandante']
@@ -91,22 +108,30 @@ def _renderizar_tabela_colorida(df, time_ref):
                     'gols_visitante', 'time_visitante']
     cols_final = [c for c in cols_display if c in df.columns]
     
-    # Formatação final
-    #df_novo = df.rename(columns={'data':'Data', 'campeonato':'Campeonato',
-    #                   'time_mandante':'Mandante',
-    #                   'gols_mandante':'GolsMandante',
-    #                   'gols_visitante':'GolsVisitante',
-    #                   'time_visitante':'Visitante'})
-    
-    df = df.astype({'gols_visitante':'Int64'})
-    df = df.astype({'gols_mandante':'Int64'})
-    df = pd.to_datetime(df['data'])
-    
     st.dataframe(
         df[cols_final].style.apply(style_row, axis=1),
-        use_container_width=True,
-        hide_index=True
+        #use_container_width=True,
+        width = 'stretch',
+        hide_index=True,
+        column_config={
+            "data": st.column_config.DateColumn(
+                "Data",             # Título que aparece na tela
+                #format="DD/MM/YYYY" # Formato brasileiro
+            ),
+            "campeonato": st.column_config.TextColumn("Campeonato"),
+            "time_mandante": st.column_config.TextColumn("Mandante"),
+            "time_visitante": st.column_config.TextColumn("Visitante"),
+            "gols_mandante": st.column_config.NumberColumn(
+                "GolsM", 
+                format="%d"         # %d força mostrar como inteiro sem vírgula
+            ),
+            "gols_visitante": st.column_config.NumberColumn(
+                "GolsV", 
+                format="%d"
+            )
+        }
     )
+
 
 def _mostrar_resumo_estatistico(df: pd.DataFrame, time_a: str, time_b: str):
     """

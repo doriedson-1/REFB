@@ -37,14 +37,14 @@ class Bases:
     
     def grafia(self, coluna):
         """
-        Parameters
+        Limpeza de colunas.
         ----------
         coluna : object
-            DESCRIPTION.
+            Col DataFrame.
 
         Returns
         -------
-        None.
+        Coluna.
 
         """
         if not isinstance(coluna, object):
@@ -113,7 +113,8 @@ class Bases:
                          o arquivo está na pasta.")
                 return pd.DataFrame()
         
-        elif arquivo.split('.')[-1] == 'xlsx':
+        elif (arquivo.split('.')[-1] == 'xlsx') or (arquivo.split('.')[-1] == 'xls'):
+            #print(caminho_cheio)
             try:
                 # Tenta ler o arquivo excel
                 df = pd.read_excel(caminho_cheio)

@@ -92,7 +92,8 @@ if not df.empty:
     event = st.dataframe(
         display_df.style.apply(lambda x: style_df, axis=None),
         height=height_dynamic, # Altura ajustada
-        use_container_width=True,
+        #use_container_width=True,
+        width = 'stretch',
         on_select="rerun",     # Recarrega a página ao clicar
         selection_mode="single-row" 
     )
@@ -148,6 +149,7 @@ if not df.empty:
 
             st.dataframe(
                 jogos[['Ano', 'Campeonato', 'Fase', 'Vencedor']].style.apply(highlight_winner, axis=1),
-                use_container_width=True,
+                #use_container_width=True,
+                width = 'stretch',
                 hide_index=True
             )
