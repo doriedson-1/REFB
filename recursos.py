@@ -50,23 +50,25 @@ class Bases:
         if not isinstance(coluna, object):
             return coluna
         
-        # onde é o H
-        coluna = coluna.replace("Atlético-PR", "Athletico-PR")
+        # Espaços adicionais
+        #coluna = coluna.strip()
         
-        coluna = coluna.replace("Athletico Paranaense", "Athletico-PR")
+        # onde é o H
+        coluna = coluna.replace(["Atlético-PR", "Athletico Paranaense"], "Athletico-PR")
+        
         coluna = coluna.replace("Atlético Goianiense", "Atlético-GO")
         coluna = coluna.replace("Atlético Mineiro", "Atlético-MG")
 
         # ' ' FC
         coluna = coluna.replace("Coritiba", "Coritiba FC")
         coluna = coluna.replace("Figueirense", "Figueirense FC")
-        coluna = coluna.replace("Santos", "Santos FC")
+        coluna = coluna.replace(["Santos", "Santos Fc"], "Santos FC")
         
         # GEC
         coluna = coluna.replace("Bahia", "EC Bahia")
         coluna = coluna.replace("Criciúma", "Criciúma EC")
         coluna = coluna.replace("Goiás", "Goiás EC")
-        coluna = coluna.replace("Fortaleza", "Fortaleza EC")
+        coluna = coluna.replace(["Fortaleza", "Fortaleza Ec"], "Fortaleza EC")
         coluna = coluna.replace("Vitória", "EC Vitória")
 
         

@@ -1,9 +1,11 @@
 # Página inicial
 import streamlit as st
 
-st.write('Projeto inicial do R.E.F.B.')
-st.markdown('Contribua no [github](github.com/doriedson-1/REFB)!')
+st.header('Bem vindos(as)!')
 
+st.text('No REFB você encontra visualizações do futebol brasileiro de maneira intuitiva.')
+
+st.markdown('Contribua no [github](github.com/doriedson-1/REFB)!')
 
 st.divider()
 st.subheader('Referências')

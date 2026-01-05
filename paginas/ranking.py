@@ -20,7 +20,7 @@ df_jogos['time_visitante'] = bases.grafia(df_jogos['time_visitante'])
 data_minima = df_jogos['data'].min()
 data_maxima = df_jogos['data'].max()
 data_inicial_filtro, data_final_filtro = st.date_input(
-     label = "Selecione o período para a pontuação:",
+     label = "Selecione um recorte de tempo para a tabela:",
      value = [data_minima, data_maxima], # Valor padrão é o campeonato todo
      min_value = data_minima,
      max_value = data_maxima,
@@ -77,6 +77,9 @@ def calcular_classificacao_completa(df_filtrado):
 # --- No corpo do Streamlit ---
 if not df_filtrado.empty:
     classificacao = calcular_classificacao_completa(df_filtrado)
+    
+    # Mudança de ordem
+    classificacao = classificacao.iloc[:, [0,1,7,2,3,4,5,6,8,9]]
     
     st.subheader("Tabela acumulada Brasileirão pontos corridos")
     st.dataframe(
