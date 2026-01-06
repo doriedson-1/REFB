@@ -15,7 +15,7 @@ confrontos_pag = st.Page(
 
 ranking_pag = st.Page(
     page  = 'paginas/ranking.py',
-    title = 'Ranking dos pontos corridos')
+    title = 'Ranking (pontos corridos)')
 
 home_pag = st.Page(
     page = 'paginas/home.py',
@@ -24,8 +24,10 @@ home_pag = st.Page(
 
 
 # Barra de navegação
-pg = st.navigation([home_pag, ranking_pag,
-                    jogos_pag, confrontos_pag])
+pg = st.navigation({'Início':[home_pag],
+                    'Campeonato Brasileiro':[ranking_pag],
+                    'Times':[jogos_pag, confrontos_pag]
+                    })
 
 st.sidebar.text('Versão beta')
 

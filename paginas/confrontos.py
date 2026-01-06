@@ -39,13 +39,13 @@ NEUTRAL_COLOR = "#AAAAAA"
 
 st.subheader('Confrontos')
 
-st.write('Histórico de enfrentamento do G12 do futebol brasileiro em decisões por\
+st.markdown('Histórico de enfrentamento do G12 do futebol brasileiro em decisões por\
          competições oficiais. Estão inclusas partidas dos seguintes torneios:\
          Campeonato Brasileiro, Copa do Brasil, Copa dos Campeões, Supercopa do Brasil,\
          Copa Libertadores da América, Supercopa da Libertadores, Copa Mercosul,\
          Copa Sulamericana, Copa Conmebol, Copa Ouro, Copa Master da Supercopa, \
          Copa Master da Conmebol, Torneio Rio-São Paulo, Torneio Sul-Minas\
-         (incluindo a Copa Sul-Minas-Rio) e torneios oficiais da FIFA, exceto \
+         (incluindo a Copa Sul-Minas-Rio) e torneios oficiais da FIFA, :red[exceto]\
          os mata-matas válidos pelos estaduais')
 
 if not df.empty:
@@ -92,7 +92,6 @@ if not df.empty:
     event = st.dataframe(
         display_df.style.apply(lambda x: style_df, axis=None),
         height=height_dynamic, # Altura ajustada
-        #use_container_width=True,
         width = 'stretch',
         on_select="rerun",     # Recarrega a página ao clicar
         selection_mode="single-row" 

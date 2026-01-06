@@ -136,6 +136,9 @@ fig.update_traces(line = {'width':.7})
 #st.plotly_chart(fig, theme = None, use_container_width=True)
 st.plotly_chart(fig, theme = None, width = 'stretch')
 
+st.markdown("- Nas temporadas de 2003 e 2004 o campeonato era disputado com 24 clubes;")
+st.markdown("- Na temporada de 2005 o campeonato foi disputado com 22 clubes;")
+st.markdown("- Desde  2006 o campeonato é disputado com 20 clubes.")
 
     # Display in Streamlit
     #return pontos_time, fig

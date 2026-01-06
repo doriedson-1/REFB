@@ -35,7 +35,6 @@ def render_confrontos_detalhados(df: pd.DataFrame):
         submit_button = st.form_submit_button(
             label="Analisar Confrontos", 
             type="primary", 
-            #use_container_width=True
             width='stretch'
         )
 
@@ -71,8 +70,8 @@ def render_confrontos_detalhados(df: pd.DataFrame):
             st.markdown(f"### Histórico: {time_a} x {time_b}")
             _renderizar_tabela_colorida(df_filtered, time_a)
             
-            st.write('GolsM = Gols mandante')
-            st.write('GolsV = Gols visitante')
+            st.write('- GolsM = Gols mandante')            
+            st.write('- GolsV = Gols visitante')
             
             # Renderiza estatísticas
             _mostrar_resumo_estatistico(df_filtered, time_a, time_b)
@@ -110,7 +109,6 @@ def _renderizar_tabela_colorida(df, time_ref):
     
     st.dataframe(
         df[cols_final].style.apply(style_row, axis=1),
-        #use_container_width=True,
         width = 'stretch',
         hide_index=True,
         column_config={
@@ -167,13 +165,19 @@ def _mostrar_resumo_estatistico(df: pd.DataFrame, time_a: str, time_b: str):
         st.metric(f"Vitórias {time_b}", int(derrotas), delta_color="inverse")
 
 
-df = bases.ler('pontos_corridos.xlsx', 'br')
-df['campeonato'] = 'Brasileiro'
+df1 = bases.ler('pontos_corridos.xlsx', 'br')
+df1['campeonato'] = 'Brasileiro'
+
+df2 = bases.ler('lib.xls', 'lib')
+df2['campeonato'] = 'Libertadores'
+
+df = pd.concat([df1, df2])
 
 # Correções ortográficas
 df['time_mandante']= bases.grafia(df['time_mandante'])
 df['time_visitante'] = bases.grafia(df['time_visitante'])
 
-st.write('No momento só há duelos do campeonato brasileiro (desde 2003)!')
+st.write('No momento, as bases de dados  só possuem os duelos do campeonato \
+         brasileiro a partir de 2003.')
 
 render_confrontos_detalhados(df)

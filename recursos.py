@@ -9,7 +9,8 @@ class Bases:
         self.caminhos = {
             'br': self.base_path + 'Campeonato_brasileiro/',
             'copa': self.base_path + 'Copa_do_Brasil/',
-            'mata-mata': self.base_path + 'Mata-mata/'}
+            'mata-mata': self.base_path + 'Mata-mata/',
+            'lib': self.base_path + 'Libertadores/'}
     
     def descritivas(self, torneio = 'br'):
         """
@@ -71,7 +72,6 @@ class Bases:
         coluna = coluna.replace(["Fortaleza", "Fortaleza Ec"], "Fortaleza EC")
         coluna = coluna.replace("Vitória", "EC Vitória")
 
-        
         # SC
         coluna = coluna.replace("Ceará", "Ceará SC")
         coluna = coluna.replace("Paysandu", "Paysandu SC")

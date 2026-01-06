@@ -3,3 +3,5 @@ basedosdados.py
 _*.py
 
 */__pycache__
+
+_lixo
