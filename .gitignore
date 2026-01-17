@@ -5,3 +5,7 @@ _*.py
 */__pycache__
 
 _lixo
+
+_RSSSF_Scrap.lnk
+
+Base_de_dados/Campeonato_brasileiro/tabela.py

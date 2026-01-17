@@ -7,32 +7,28 @@ from recursos import Bases
 # Instância
 bases = Bases()
 
-###############################################################################
-# Lê o arquivo
-df_jogos = bases.ler('pontos_corridos.xlsx', 'br')
+def extra_campo(df):
+    """
 
-# Correções ortográficas
-df_jogos['time_mandante']= bases.grafia(df_jogos['time_mandante'])
-df_jogos['time_visitante'] = bases.grafia(df_jogos['time_visitante'])
+    Parameters
+    ----------
+    df : DataFrame (pandas)
 
-# # 2. Criar o widget de seleção de datas (slider ou input de data)
-# # O st.date_input é mais intuitivo para selecionar um range de datas específico.
-data_minima = df_jogos['data'].min()
-data_maxima = df_jogos['data'].max()
-data_inicial_filtro, data_final_filtro = st.date_input(
-     label = "Selecione um recorte de tempo para a tabela:",
-     value = [data_minima, data_maxima], # Valor padrão é o campeonato todo
-     min_value = data_minima,
-     max_value = data_maxima,
-     format = 'DD/MM/YYYY'
-)
- 
-# 3. Filtrar os dados com base na seleção do usuário
-df_filtrado = df_jogos[
-     (df_jogos['data'] >= pd.to_datetime(data_inicial_filtro)) & 
-     (df_jogos['data'] <= pd.to_datetime(data_final_filtro))
-]
+    Retorna
+    -------
+    O mesmo dataframe, exceção feita às alterações a seguir.
 
+    """
+    pontos = df.loc[df['Time']=='Flamengo', 'PONTOS'].squeeze()
+    df['PONTOS'].replace(pontos, pontos - 4, inplace = True)
+    
+    pontos = df.loc[df['Time']=='São Caetano', 'PONTOS'].squeeze()
+    df['PONTOS'].replace(pontos, pontos - 24, inplace = True)
+
+    return df
+
+
+@st.cache_data
 def calcular_classificacao_completa(df_filtrado):
     # 1. Processar dados como Mandante
     mandantes = df_filtrado.groupby('time_mandante').agg(
@@ -63,16 +59,62 @@ def calcular_classificacao_completa(df_filtrado):
     tabela['SALDO_GOLS'] = tabela['GOLS_PRO'] - tabela['GOLS_CONTRA']
     
     # Cálculo de aproveitamento com proteção contra divisão por zero
-    tabela['APROVEITAMENTO'] = (tabela['PONTOS'] / (tabela['JOGOS'] * 3) * 100).round(1).fillna(0)
+    #tabela['APROVEITAMENTO'] = (tabela['PONTOS'] / (tabela['JOGOS'] * 3) * 100).round(1).fillna(0)
 
     # 5. Ordenação oficial (Pontos > Vitórias > Saldo > Gols Pro)
     tabela = tabela.sort_values(
         by=['PONTOS', 'VITORIAS', 'SALDO_GOLS', 'GOLS_PRO'], 
         ascending=False
     ).reset_index()
+    
+    # Recalcular pontos alterados fora de campo (tapetão)
+    aux = extra_campo(tabela)
+    tabela = aux    
+    tabela['APROVEITAMENTO'] = (tabela['PONTOS'] / (tabela['JOGOS'] * 3) * 100).round(1).fillna(0)
 
     return tabela
 
+
+def shuffle_colors():
+    # 1. Geração de cores escala contínua
+    # (https://plotly.com/python/colorscales/#continuous-color-with-plotly-express)
+    ncores = px.colors.sample_colorscale(
+        'jet', [i/(len(todos_times)-1) for i in range(len(todos_times))]
+        )
+
+    # 2. Mistura ordem das cores
+    random.shuffle(ncores)
+    
+    # 3. Mapeamento p/ estado inicial
+    st.session_state.color_map = {
+        str(name).strip(): color for name, color in zip(todos_times, ncores)
+        }
+
+###############################################################################
+# Lê o arquivo
+df_jogos = bases.ler('pontos_corridos.xlsx', 'br')
+
+# Correções ortográficas
+df_jogos['time_mandante']= bases.grafia(df_jogos['time_mandante'])
+df_jogos['time_visitante'] = bases.grafia(df_jogos['time_visitante'])
+
+# # 2. Criar o widget de seleção de datas (slider ou input de data)
+# # O st.date_input é mais intuitivo para selecionar um range de datas específico.
+data_minima = df_jogos['data'].min()
+data_maxima = df_jogos['data'].max()
+data_inicial_filtro, data_final_filtro = st.date_input(
+     label = "Selecione um recorte de tempo para a tabela:",
+     value = [data_minima, data_maxima], # Valor padrão é o campeonato todo
+     min_value = data_minima,
+     max_value = data_maxima,
+     format = 'DD/MM/YYYY'
+)
+ 
+# 3. Filtrar os dados com base na seleção do usuário
+df_filtrado = df_jogos[
+     (df_jogos['data'] >= pd.to_datetime(data_inicial_filtro)) & 
+     (df_jogos['data'] <= pd.to_datetime(data_final_filtro))
+]
 
 # --- No corpo do Streamlit ---
 if not df_filtrado.empty:
@@ -81,7 +123,7 @@ if not df_filtrado.empty:
     # Mudança de ordem
     classificacao = classificacao.iloc[:, [0,1,7,2,3,4,5,6,8,9]]
     
-    st.subheader("Tabela acumulada Brasileirão pontos corridos")
+    st.subheader("Tabela acumulada Brasileirão (2003-2025)")
     st.dataframe(
         classificacao, 
         column_config={
@@ -101,20 +143,6 @@ arquivo['TIME'] = bases.grafia(arquivo['TIME'])
 pontos_time = arquivo.groupby(['CAMPEONATO', 'TIME'])['PONTOS'].sum().reset_index()
 todos_times = bases.descritivas()
 
-def shuffle_colors():
-    # 1. Geração de cores escala contínua
-    # (https://plotly.com/python/colorscales/#continuous-color-with-plotly-express)
-    ncores = px.colors.sample_colorscale(
-        'jet', [i/(len(todos_times)-1) for i in range(len(todos_times))]
-        )
-
-    # 2. Mistura ordem das cores
-    random.shuffle(ncores)
-    
-    # 3. Mapeamento p/ estado inicial
-    st.session_state.color_map = {
-        str(name).strip(): color for name, color in zip(todos_times, ncores)
-        }
 
 # Estado inicial
 if 'color_map' not in st.session_state:
@@ -148,3 +176,48 @@ st.markdown("- Desde  2006 o campeonato é disputado com 20 clubes.")
 
 #fig.add_hline(y=75, line_dash="dash", line_color="red", annotation_text="Title Contender")
 #fig.add_hline(y = pontos_time['PONTOS'].mean(), line_dash="dot", line_color="gray", annotation_text="Média")
+
+st.markdown('---')
+
+st.subheader('Decisões do STJD')
+
+st.markdown('**2003**')
+st.markdown('- A Ponte Preta perdeu 4 pontos por escalar irregularmente o jogador\
+            Roberto nas partidas contra Internacional e Juventude;')
+st.markdown('- O Paysandu perdeu 8 pontos pela escalação irregular dos jogadores\
+            Júnior Amorim e Aldrovani, nos jogos contra São Caetano, Fluminense,\
+                Corinthians e Ponte Preta;')
+st.markdown('- O São Caetano e a Ponte Preta ganharam 3 pontos, o Corinthians \
+            e o Fluminense ganharam 2 pontos, ambos dos jogos contra o Paysandu;')
+st.markdown('- O Juventude ganhou 3 pontos, o Internacional ganhou 2 pontos,\
+            ambos dos jogos contra a Ponte Preta.')
+
+st.markdown('**2004**')
+st.markdown('- O São Caetano perdeu 24 pontos foi punido com a perda de 24 pontos\
+            pelo STJD, pela morte do jogador Serginho. Analistas indicaram que\
+            o clube teve conhecimento que o atleta tinha problemas cardíacos e\
+            não poderia continuar sua carreira.')
+
+st.markdown('**2005**')
+st.markdown('- A CBF havia punido o Brasiliense com o jogo de estreia sem torcida,\
+            a justiça comum reverteu a punição e o público viu a partida entre \
+            Brasiliense e Vasco da Gama terminar empatada em 2 a 2; posteriormente,\
+            a vitória foi atribuída ao Vasco da Gama (0-1);')
+st.markdown('- O esquema de manipulação de resultados conhecido como "Máfia do apito"\
+            causou a anulação de onze jogos.')
+
+st.markdown('**2010**')
+st.markdown('O Grêmio Prudente perdeu 3 pontos pela escalação irregular do zagueiro\
+            Paulão na derrota para o Flamengo.')
+
+st.markdown('**2013**')
+st.markdown('- A Portuguesa de Desportos perdeu 4 pontos, foi punida por ter \
+            escalado irregularmente o jogador Héverton contra o Grêmio, na última\
+            rodada;')
+st.markdown('- O Flamengo perdeu 4 pontos, foi punido pela escalação irregular do\
+            lateral-esquerdo André Santos na partida contra o Cruzeiro.')
+
+st.markdown('**2016**')
+st.markdown('- Atlético-MG e Chapecoense obtiveram WO duplo em virtude do desastre\
+             aéreo que vitimou a delegação da Chapecoense no dia 29 de novembro,\
+             na Colômbia. Lhes foram adicionados 3 gols negativos.')

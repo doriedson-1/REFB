@@ -42,12 +42,15 @@ def concatenar(inicio, fim):
 # =============================================================================
 
 
+
 df1 = bases.ler('pontos_corridos.xlsx', 'br')
 
-df2 = bases.ler('Brasileirao.xlsx', 'br')
+df2 = bases.ler('Brasileirao2005.xls', 'br')
+#dfa = bases.pontuar(df2, gol_m='gols_mandante', gol_v='gols_visitante')
+#bases.classifica(dfa, ano=2005, exportar=True)
 
 df2 = df2.loc[:, ['id_jogo', 'rodada', 'gols_mandante', 'gols_visitante',
                   'time_mandante', 'time_visitante', 'data']]
 
 jun = pd.concat([df1, df2])
-jun.to_excel('saida.xlsx')
+jun.to_excel('saida.xlsx', index = False)

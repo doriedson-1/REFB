@@ -129,7 +129,7 @@ class Bases:
                 return pd.DataFrame()
    
             
-    def pontuar(self, arq, gol_m, gol_v):
+    def pontuar(self, arq, gol_m='gols_mandante', gol_v='gols_visitante'):
         """
         Parâmetros
         ----------
@@ -158,7 +158,7 @@ class Bases:
     
     def classifica(self, df, ano = 2020, exportar = False):
         """
-        Parametros
+        Retorna a classificação final a partir da tabela de jogos.
         ----------
         df : DataFrame
             Objeto do Pandas.
@@ -232,4 +232,4 @@ class Bases:
             classificacao.to_excel(self.caminhos.get('br') + f"TabelaFinal{ano}.xlsx",
                                    sheet_name = str(ano))
         
-        return classificacao
+        return classificacao    
