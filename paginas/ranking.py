@@ -33,7 +33,7 @@ def calcular_classificacao_completa(df_filtrado):
     # fill_value evita erro se um time não jogou no período como mandante ou visitante
     tabela = mandantes.add(visitantes, fill_value=0).astype(int)
 
-    # 4. Calcular colunas derivadas (Pontos, Saldo e Aproveitamento)
+    # 4. Calcular colunas derivadas
     tabela['PONTOS'] = (tabela['VITORIAS'] * 3) + tabela['EMPATES']
     tabela['SALDO_GOLS'] = tabela['GOLS_PRO'] - tabela['GOLS_CONTRA']
     
@@ -68,6 +68,11 @@ def calcular_classificacao_completa(df_filtrado):
     ).reset_index()
      
     tabela['APROVEITAMENTO'] = (tabela['PONTOS'] / (tabela['JOGOS'] * 3) * 100).round(1).fillna(0)
+    
+    # 6. Participações
+    df1 = df_filtrado.groupby(['ano_campeonato', 'time_mandante',]).size().to_frame('size').reset_index()
+    part = df1['time_mandante'].value_counts().to_frame('TEMPORADAS').reset_index().rename(columns={'time_mandante':'Time'})
+    tabela = tabela.merge(part, how = 'left', on = 'Time')
 
     return tabela
 
@@ -118,7 +123,7 @@ if not df_filtrado.empty:
     classificacao = calcular_classificacao_completa(df_filtrado)
     
     # Mudança de ordem
-    classificacao = classificacao.iloc[:, [0,1,7,2,3,4,5,6,8,9]]
+    classificacao = classificacao.iloc[:, [0,1,7,2,3,4,5,6,8,9,10]]
     
     st.subheader("Tabela acumulada Brasileirão (2003-2025)")
     st.dataframe(
