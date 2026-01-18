@@ -7,27 +7,6 @@ from recursos import Bases
 # Instância
 bases = Bases()
 
-def extra_campo(df):
-    """
-
-    Parameters
-    ----------
-    df : DataFrame (pandas)
-
-    Retorna
-    -------
-    O mesmo dataframe, exceção feita às alterações a seguir.
-
-    """
-    pontos = df.loc[df['Time']=='Flamengo', 'PONTOS'].squeeze()
-    df['PONTOS'].replace(pontos, pontos - 4, inplace = True)
-    
-    pontos = df.loc[df['Time']=='São Caetano', 'PONTOS'].squeeze()
-    df['PONTOS'].replace(pontos, pontos - 24, inplace = True)
-
-    return df
-
-
 @st.cache_data
 def calcular_classificacao_completa(df_filtrado):
     # 1. Processar dados como Mandante
@@ -58,18 +37,36 @@ def calcular_classificacao_completa(df_filtrado):
     tabela['PONTOS'] = (tabela['VITORIAS'] * 3) + tabela['EMPATES']
     tabela['SALDO_GOLS'] = tabela['GOLS_PRO'] - tabela['GOLS_CONTRA']
     
-    # Cálculo de aproveitamento com proteção contra divisão por zero
-    #tabela['APROVEITAMENTO'] = (tabela['PONTOS'] / (tabela['JOGOS'] * 3) * 100).round(1).fillna(0)
+    # --- ALTERAÇÃO MANUAL tapetao ---
+    ajustes_pontos = {
+        'Barueri': -3,
+        'Corinthians': 2,
+        'Flamengo': -4,
+        'Fluminense': 2,
+        'Internacional': 2,
+        'Juventude': 3,
+        'Paysandu SC': 8,
+        'Ponte Preta': - 4 + 3,
+        'Portuguesa': - 4,
+        'São Caetano':3 - 24        
+    }
+    ajustes_sg = {
+        'Atlético-MG': -3,
+        'Chapecoense': -3}
+
+    for time, ajuste in ajustes_pontos.items():
+        if time in tabela.index:
+            tabela.at[time, 'PONTOS'] += ajuste
+    for time, ajuste in ajustes_sg.items():
+        if time in tabela.index:
+            tabela.at[time, 'SALDO_GOLS'] += ajuste
 
     # 5. Ordenação oficial (Pontos > Vitórias > Saldo > Gols Pro)
     tabela = tabela.sort_values(
         by=['PONTOS', 'VITORIAS', 'SALDO_GOLS', 'GOLS_PRO'], 
         ascending=False
     ).reset_index()
-    
-    # Recalcular pontos alterados fora de campo (tapetão)
-    aux = extra_campo(tabela)
-    tabela = aux    
+     
     tabela['APROVEITAMENTO'] = (tabela['PONTOS'] / (tabela['JOGOS'] * 3) * 100).round(1).fillna(0)
 
     return tabela
@@ -127,7 +124,7 @@ if not df_filtrado.empty:
     st.dataframe(
         classificacao, 
         column_config={
-            "APROVEITAMENTO": st.column_config.NumberColumn(format="%.1f%%")
+            "APROVEITAMENTO": st.column_config.NumberColumn(format="%.2f%%")
         },
         hide_index=True
     )
@@ -164,7 +161,7 @@ fig.update_traces(line = {'width':.7})
 #st.plotly_chart(fig, theme = None, use_container_width=True)
 st.plotly_chart(fig, theme = None, width = 'stretch')
 
-st.markdown("- Nas temporadas de 2003 e 2004 o campeonato era disputado com 24 clubes;")
+st.markdown("- Nas temporadas de 2003 e 2004 o campeonato foi disputado com 24 clubes;")
 st.markdown("- Na temporada de 2005 o campeonato foi disputado com 22 clubes;")
 st.markdown("- Desde  2006 o campeonato é disputado com 20 clubes.")
 
@@ -184,16 +181,17 @@ st.subheader('Decisões do STJD')
 st.markdown('**2003**')
 st.markdown('- A Ponte Preta perdeu 4 pontos por escalar irregularmente o jogador\
             Roberto nas partidas contra Internacional e Juventude;')
+st.markdown('- O Juventude ganhou 3 pontos, o Internacional ganhou 2 pontos,\
+            ambos dos jogos contra a Ponte Preta.')
 st.markdown('- O Paysandu perdeu 8 pontos pela escalação irregular dos jogadores\
             Júnior Amorim e Aldrovani, nos jogos contra São Caetano, Fluminense,\
                 Corinthians e Ponte Preta;')
 st.markdown('- O São Caetano e a Ponte Preta ganharam 3 pontos, o Corinthians \
             e o Fluminense ganharam 2 pontos, ambos dos jogos contra o Paysandu;')
-st.markdown('- O Juventude ganhou 3 pontos, o Internacional ganhou 2 pontos,\
-            ambos dos jogos contra a Ponte Preta.')
+
 
 st.markdown('**2004**')
-st.markdown('- O São Caetano perdeu 24 pontos foi punido com a perda de 24 pontos\
+st.markdown('- O São Caetano foi punido com a perda de 24 pontos\
             pelo STJD, pela morte do jogador Serginho. Analistas indicaram que\
             o clube teve conhecimento que o atleta tinha problemas cardíacos e\
             não poderia continuar sua carreira.')
@@ -218,6 +216,6 @@ st.markdown('- O Flamengo perdeu 4 pontos, foi punido pela escalação irregular
             lateral-esquerdo André Santos na partida contra o Cruzeiro.')
 
 st.markdown('**2016**')
-st.markdown('- Atlético-MG e Chapecoense obtiveram WO duplo em virtude do desastre\
+st.markdown('- Atlético-MG e Chapecoense obtiveram WO (_walkover_) duplo em virtude do desastre\
              aéreo que vitimou a delegação da Chapecoense no dia 29 de novembro,\
-             na Colômbia. Lhes foram adicionados 3 gols negativos.')
+             na Colômbia; foram adicionados 3 gols negativos.')
