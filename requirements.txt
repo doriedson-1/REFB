@@ -1,5 +1,5 @@
 pandas
 numpy
 streamlit
-plotly
+plotly == 6.3.0
 random
