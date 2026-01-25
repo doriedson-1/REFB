@@ -258,7 +258,7 @@ class Bases:
         return st.video(video_b)
     
     
-    def get_codigo_clube(self, nome_clube):
+    def codigo_clube(self, nome_clube):
         """
         """
         # Dicionário de exemplo (substitua pelos seus códigos reais)

@@ -27,7 +27,7 @@ def render_tabela_classificacao(df: pd.DataFrame):
     
     # Imagens
     # Passo A: Obter o código
-    df_show['codigo_temp'] = df_show['TIME'].apply(bases.get_codigo_clube)
+    df_show['codigo_temp'] = df_show['TIME'].apply(bases.codigo_clube)
     
     # Passo B: Montar a URL completa
     base_url = "https://tmssl.akamaized.net//images/wappen/head/"
