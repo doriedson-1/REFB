@@ -11,7 +11,7 @@ com_pag = st.Page(
 
 jogos_pag = st.Page(
     page = 'paginas/duelos.py',
-    title = 'Duelos')
+    title = 'Confrontos diretos')
 
 confrontos_pag = st.Page(
     page = 'paginas/confrontos.py',
