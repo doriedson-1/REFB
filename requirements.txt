@@ -2,4 +2,3 @@ pandas
 numpy
 streamlit
 plotly == 6.3.0
-random
