@@ -174,9 +174,9 @@ st.plotly_chart(fig, theme = None, width = 'stretch')
 
 st.markdown("- Nas temporadas de 2003 e 2004 o campeonato foi disputado com 24 clubes;")
 st.markdown("- Na temporada de 2005 o campeonato foi disputado com 22 clubes;")
-st.markdown("- Desde  2006 o campeonato é disputado com 20 clubes.")
+st.markdown("- Desde  2006 o campeonato é disputado com 20 clubes;")
 st.markdown("- O campeonato brasileiro de 2020 teve início em 08/08/2020 e fim em\
-            25/02/2021, devido à pandemia de COVID-19.")
+            25/02/2021, devido à pandemia de COVID-19;")
 st.markdown("- O campeonato brasileiro de 2021 teve início em 29/05/2021 e fim em\
             09/12/2021.")
 
