@@ -71,7 +71,8 @@ def calcular_classificacao_completa(df_filtrado):
     
     # 6. Participações
     df1 = df_filtrado.groupby(['ano_campeonato', 'time_mandante',]).size().to_frame('size').reset_index()
-    part = df1['time_mandante'].value_counts().to_frame('TEMPORADAS').reset_index().rename(columns={'time_mandante':'Time'})
+    part = df1['time_mandante'].value_counts().to_frame(
+        'TEMPORADAS').reset_index().rename(columns={'time_mandante':'Time'})
     tabela = tabela.merge(part, how = 'left', on = 'Time')
 
     return tabela
@@ -135,6 +136,11 @@ if not df_filtrado.empty:
     )
 else:
     st.warning("Nenhum jogo encontrado no período selecionado.")
+###############################################################################
+st.divider()
+st.markdown('#### Evolução')
+
+bases.video('CB_pc.mp4')
 
 ###############################################################################
 st.subheader("Série temporal")
@@ -169,6 +175,10 @@ st.plotly_chart(fig, theme = None, width = 'stretch')
 st.markdown("- Nas temporadas de 2003 e 2004 o campeonato foi disputado com 24 clubes;")
 st.markdown("- Na temporada de 2005 o campeonato foi disputado com 22 clubes;")
 st.markdown("- Desde  2006 o campeonato é disputado com 20 clubes.")
+st.markdown("- O campeonato brasileiro de 2020 teve início em 08/08/2020 e fim em\
+            25/02/2021, devido à pandemia de COVID-19.")
+st.markdown("- O campeonato brasileiro de 2021 teve início em 29/05/2021 e fim em\
+            09/12/2021.")
 
     # Display in Streamlit
     #return pontos_time, fig
@@ -184,16 +194,16 @@ st.markdown('---')
 st.subheader('Decisões do STJD')
 
 st.markdown('**2003**')
-st.markdown('- A Ponte Preta perdeu 4 pontos por escalar irregularmente o jogador\
+st.markdown('- Ponte Preta perdeu 4 pontos por escalar irregularmente o jogador\
             Roberto nas partidas contra Internacional e Juventude;')
-st.markdown('- O Juventude ganhou 3 pontos, o Internacional ganhou 2 pontos,\
-            ambos dos jogos contra a Ponte Preta.')
+st.markdown('- Juventude ganhou 3 pontos do jogo contra a Ponte Preta;')
+st.markdown('- Internacional ganhou 2 pontos do jogo contra a Ponte Preta;')
 st.markdown('- O Paysandu perdeu 8 pontos pela escalação irregular dos jogadores\
             Júnior Amorim e Aldrovani, nos jogos contra São Caetano, Fluminense,\
                 Corinthians e Ponte Preta;')
-st.markdown('- O São Caetano e a Ponte Preta ganharam 3 pontos, o Corinthians \
-            e o Fluminense ganharam 2 pontos, ambos dos jogos contra o Paysandu;')
-
+st.markdown('- São Caetano ganhou 3 pontos dos jogos contra o Paysandu;')
+st.markdown('- Corinthians ganhou 2 pontos dos jogos contra o Paysandu;')
+st.markdown('- Fluminense ganhou 2 pontos dos jogos contra o Paysandu.')
 
 st.markdown('**2004**')
 st.markdown('- O São Caetano foi punido com a perda de 24 pontos\
@@ -210,8 +220,8 @@ st.markdown('- O esquema de manipulação de resultados conhecido como "Máfia d
             causou a anulação de onze jogos.')
 
 st.markdown('**2010**')
-st.markdown('O Grêmio Prudente perdeu 3 pontos pela escalação irregular do zagueiro\
-            Paulão na derrota para o Flamengo.')
+st.markdown('- O Grêmio Prudente (posteriormente, Barueri) perdeu 3 pontos pela\
+            escalação irregular do zagueiro Paulão na derrota para o Flamengo.')
 
 st.markdown('**2013**')
 st.markdown('- A Portuguesa de Desportos perdeu 4 pontos, foi punida por ter \

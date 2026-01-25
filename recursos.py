@@ -1,6 +1,7 @@
 # Funções principais
 import pandas as pd
 import numpy as np
+import streamlit as st
 
 class Bases:
     
@@ -16,8 +17,8 @@ class Bases:
         """
         Parameters
         ----------
-        torneio : TYPE
-            DESCRIPTION.
+        torneio : str
+            Diretório do arquivo.
 
         Returns
         -------
@@ -232,4 +233,25 @@ class Bases:
             classificacao.to_excel(self.caminhos.get('br') + f"TabelaFinal{ano}.xlsx",
                                    sheet_name = str(ano))
         
-        return classificacao    
+        return classificacao
+    
+    def video(self, arquivo, torneio = 'br'):
+        """
+        Reprooduz um vídeo
+        ----------
+        arquivo : str
+            Nome do arquivo (com extensão).
+        torneio: str
+            Diretório do arquivo.
+
+        Retorna
+        -------
+        Reprodutor de vídeo.
+
+        """
+        if torneio == 'br':
+            nome = self.caminhos.get(torneio) + arquivo
+            video = open(nome, 'rb')
+            video_b = video.read() # bytes?
+
+        return st.video(video_b)      
