@@ -7,7 +7,7 @@ st.header("Repositório Estatístico do Futebol Brasileiro")
 # Listagem das páginas do site
 tab_pag = st.Page(
     page = 'paginas/tabelas.py',
-    title = 'Tabelas')
+    title = 'Tabelas finais')
 
 com_pag = st.Page(
     page = 'paginas/comunidade.py',
