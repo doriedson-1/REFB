@@ -9,7 +9,7 @@ def render_tabela_classificacao(df: pd.DataFrame):
 
     # --- 1. Tratamento Inicial ---
     df['TIME'] = bases.grafia(df['TIME'])
-
+    
     # --- 2. Filtro de Temporada ---
     if 'CAMPEONATO' in df.columns:
         # Ordena as temporadas (ex: 2024, 2023...)
@@ -24,6 +24,14 @@ def render_tabela_classificacao(df: pd.DataFrame):
     else:
         st.error("Coluna 'CAMPEONATO' não encontrada.")
         return
+    
+    # Imagens
+    # Passo A: Obter o código
+    df_show['codigo_temp'] = df_show['TIME'].apply(bases.get_codigo_clube)
+    
+    # Passo B: Montar a URL completa
+    base_url = "https://tmssl.akamaized.net//images/wappen/head/"
+    df_show['ESCUDO'] = df_show['codigo_temp'].apply(lambda x: f"{base_url}{x}")
 
     # --- 3. Ordenação padrão ---
     cols_sort = ['PONTOS', 'VITORIAS', 'SALDO_GOLS', 'GOLS_PRO']
@@ -38,7 +46,7 @@ def render_tabela_classificacao(df: pd.DataFrame):
 
     # --- 5. Seleção de colunas ---
     cols_display = [
-        'TIME', 'PONTOS', 'JOGOS', 'VITORIAS', 'EMPATES', 'DERROTAS', 
+        'ESCUDO', 'TIME', 'PONTOS', 'JOGOS', 'VITORIAS', 'EMPATES', 'DERROTAS', 
         'GOLS_PRO', 'GOLS_CONTRA', 'SALDO_GOLS', 'APROVEITAMENTO'
     ]
     # Filtro
@@ -49,6 +57,8 @@ def render_tabela_classificacao(df: pd.DataFrame):
         df_show[cols_finais],
         use_container_width=True,
         column_config={
+            # Configuração da Imagem
+            "ESCUDO": st.column_config.ImageColumn("", width="small"), # Opções: "small", "medium", "large
             "TIME": st.column_config.TextColumn("Clube", width="medium"),
             "PONTOS": st.column_config.NumberColumn("Pontos", format = "%d",),
             "JOGOS": st.column_config.NumberColumn("Jogos"),

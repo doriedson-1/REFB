@@ -235,6 +235,7 @@ class Bases:
         
         return classificacao
     
+    
     def video(self, arquivo, torneio = 'br'):
         """
         Reprooduz um vídeo
@@ -254,4 +255,61 @@ class Bases:
             video = open(nome, 'rb')
             video_b = video.read() # bytes?
 
-        return st.video(video_b)      
+        return st.video(video_b)
+    
+    
+    def get_codigo_clube(self, nome_clube):
+        """
+        """
+        # Dicionário de exemplo (substitua pelos seus códigos reais)
+        codigos = {
+            
+            'América-MG':'',
+            'América-RN':'',
+            'Athletico-PR':'',
+            'Atlético-GO':'',
+            'Atlético-MG':'',
+            'Avaí FC':'',
+            'Barueri':'',
+            'Botafogo':'',
+            'Brasiliense':'',
+            'CSA':'',
+            'Ceará SC':'',
+            'Chapecoense':'',
+            'Corinthians':'',
+            'Coritiba FC':'',
+            'Criciúma EC':'',
+            'Cruzeiro':'609.png?lm=1757639240',
+            'Cuiabá':'',
+            'EC Bahia':'',
+            'EC Vitória':'',
+            'Figueirense FC':'',
+            'Flamengo':'614.png?lm=1551023331',
+            'Fluminense':'',
+            'Fortaleza EC':'',
+            'Goiás EC':'',
+            'Grêmio':'',
+            'Guarani':'',
+            'Internacional':'',
+            'Ipatinga FC':'',
+            'Joinville-SC':'',
+            'Juventude':'',
+            'Mirassol':'3876.png?lm=1585083395',
+            'Náutico':'',
+            'Palmeiras':'1023.png?lm=1411204983',
+            'Paraná':'',
+            'Paysandu SC':'',
+            'Ponte Preta':'',
+            'Portuguesa':'',
+            'RB Bragantino':'',
+            'Santa Cruz':'',
+            'Santo André':'',
+            'Santos FC':'',
+            'Sport Recife':'',
+            'São Caetano':'',
+            'São Paulo':'',
+            'Vasco da Gama':''
+        }
+        
+        # Retorna o código se existir, ou um código padrão 'default' se não achar
+        return codigos.get(nome_clube)
