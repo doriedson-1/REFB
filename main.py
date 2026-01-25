@@ -5,6 +5,10 @@ st.set_page_config(page_title = "R.E.F.B", layout='wide', page_icon=  "🇧🇷"
 st.header("Repositório Estatístico do Futebol Brasileiro")
 
 # Listagem das páginas do site
+tab_pag = st.Page(
+    page = 'paginas/tabelas.py',
+    title = 'Tabelas')
+
 com_pag = st.Page(
     page = 'paginas/comunidade.py',
     title = 'Comunidade')
@@ -29,7 +33,7 @@ home_pag = st.Page(
 
 # Barra de navegação
 pg = st.navigation({'Início':[home_pag],
-                    'Campeonato Brasileiro':[ranking_pag],
+                    'Campeonato Brasileiro':[tab_pag, ranking_pag],
                     'Times':[jogos_pag, confrontos_pag],
                     'Para você':[com_pag]
                     })

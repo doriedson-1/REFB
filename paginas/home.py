@@ -22,4 +22,4 @@ st.markdown('[RSSSF Brasil](https://rsssfbrasil.com/)') # o maior de todos
 
 st.divider()
 st.write('Outras informações')
-st.markdown('[Licença](x.com/REFutBr)')
+st.markdown('[Licença](https://opensource.org/license/mit)')
