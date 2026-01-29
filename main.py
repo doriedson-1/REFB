@@ -1,7 +1,8 @@
 # Arquivo principal do app
 import streamlit as st
 
-st.set_page_config(page_title = "R.E.F.B", layout='wide', page_icon=  "🇧🇷")
+st.set_page_config(page_title = "Repositório Estatístico do Futebol Brasileiro (REFB)",
+                   layout='wide', page_icon=  "🇧🇷")
 st.header("Repositório Estatístico do Futebol Brasileiro")
 
 # Listagem das páginas do site
@@ -41,4 +42,3 @@ pg = st.navigation({'Início':[home_pag],
 st.sidebar.text('Versão beta')
 
 pg.run()
-
