@@ -3,7 +3,7 @@ import streamlit as st
 
 st.markdown('### Bem vindos(as)!')
 
-st.text('No R.E.F.B. você encontra visualizações do futebol brasileiro de maneira intuitiva.')
+st.text('No REFB você encontra visualizações do futebol brasileiro de maneira intuitiva.')
 
 st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
 

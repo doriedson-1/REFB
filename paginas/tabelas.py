@@ -55,7 +55,7 @@ def render_tabela_classificacao(df: pd.DataFrame):
     # --- 6. Exibição ---
     st.dataframe(
         df_show[cols_finais],
-        use_container_width=True,
+        width='stretch',
         column_config={
             # Configuração da Imagem
             "ESCUDO": st.column_config.ImageColumn("", width="small"), # Opções: "small", "medium", "large
