@@ -8,9 +8,9 @@ st.text('No REFB você encontra visualizações do futebol brasileiro de maneira
 st.markdown('#### Links')
 
 with st.expander('Campeonato brasileiro'):
-    st.markdown('- [Tabelas finais dos pontos corridos](https://refutbr.streamlit.app/tabelas)')
-    st.markdown('- [Tabela acumulada pontos corridos](https://refutbr.streamlit.app/ranking)')
-    st.markdown('- Era do mata-mata (1971-2002) [Em breve]')
+    st.page_link('paginas/tabelas.py', label = 'Tabelas finais dos pontos corridos')
+    st.page_link('paginas/ranking.py', label = 'Tabela acumulada pontos corridos')
+    st.markdown('Era do mata-mata (1971-2002) [Em breve]')
 
 with st.expander('Histórico de confrontos'):
     st.markdown('- [Time contra time (considera apenas os confrontos da base de dados)](https://refutbr.streamlit.app/duelos)')
