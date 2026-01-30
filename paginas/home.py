@@ -5,21 +5,16 @@ st.markdown('### Bem vindos(as)!')
 
 st.text('No REFB você encontra visualizações do futebol brasileiro de maneira intuitiva.')
 
-<details>
+st.markdown('#### Links')
 
-<summary>Tips for collapsed sections</summary>
+with st.expander('Campeonato brasileiro'):
+    st.markdown('- [Tabelas finais dos pontos corridos](https://refutbr.streamlit.app/tabelas)')
+    st.markdown('- [Tabela acumulada pontos corridos](https://refutbr.streamlit.app/ranking)')
+    st.markdown('- Era do mata-mata (1971-2002) [Em breve]')
 
-### You can add a header
-
-You can add text within a collapsed section.
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
+with st.expander('Histórico de confrontos'):
+    st.markdown('- [Time contra time (considera apenas os confrontos da base de dados)](https://refutbr.streamlit.app/duelos)')
+    st.markdown('- [Confrontos eliminatórios do G12](https://refutbr.streamlit.app/confrontos)')
 
 #st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
 
