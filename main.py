@@ -31,7 +31,6 @@ home_pag = st.Page(
     title = 'Apresentação',
     default = True)
 
-
 # Barra de navegação
 pg = st.navigation({'Início':[home_pag],
                     'Campeonato Brasileiro':[tab_pag, ranking_pag],
@@ -39,7 +38,19 @@ pg = st.navigation({'Início':[home_pag],
                     'Para você':[com_pag]
                     })
 
-st.sidebar.text('Versão beta')
-#st.sidebar.text()
+with st.sidebar():
+    #linkedin = "https://raw.githubusercontent.com/doriedson-1/exifa/main/img/linkedin.gif"
+    twitter = "https://github.com/doriedson-1/REFB/blob/main/Base_de_dados/Imagens/x.gif?raw=true"
+
+    st.sidebar.caption(
+        f"""
+        <div style='display: flex; align-items: center;'>
+            <a href = 'https://www.x.com/refutbr'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+        </div>
+        <br>
+        """,
+        unsafe_allow_html=True,
+)
+    st.sidebar.text('Versão beta')
 
 pg.run()
