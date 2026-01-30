@@ -38,7 +38,7 @@ pg = st.navigation({'Início':[home_pag],
                     'Para você':[com_pag]
                     })
 
-with st.sidebar():
+with st.sidebar:
     #linkedin = "https://raw.githubusercontent.com/doriedson-1/exifa/main/img/linkedin.gif"
     twitter = "https://github.com/doriedson-1/REFB/blob/main/Base_de_dados/Imagens/x.gif?raw=true"
 
