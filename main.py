@@ -40,5 +40,6 @@ pg = st.navigation({'Início':[home_pag],
                     })
 
 st.sidebar.text('Versão beta')
+#st.sidebar.text()
 
 pg.run()

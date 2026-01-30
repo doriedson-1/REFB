@@ -5,7 +5,23 @@ st.markdown('### Bem vindos(as)!')
 
 st.text('No REFB você encontra visualizações do futebol brasileiro de maneira intuitiva.')
 
-st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section.
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+#st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
 
 st.divider()
 st.subheader('Fontes')

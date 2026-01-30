@@ -1,17 +1,15 @@
+# Importação
 basedosdados.py
 
+# Diretórios
 __pycache__/*
-
 _*.py
-
 paginas/__pycache__/
-
-_lixo
-
 _RSSSF_Scrap.lnk
 
+
+# Testes
 Base_de_dados/Campeonato_brasileiro/tabela.py
-
+_lixo
 rascunho.ipynb
-
 .ipynb_checkpoints
