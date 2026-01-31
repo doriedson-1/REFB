@@ -1,9 +1,20 @@
+# Básico
 pandas
 numpy
 streamlit == 1.53.0
+
+# Gráficos e visualizações
 plotly == 6.3.0
 altair < 5
+
+# Imagem
 standard-imghdr
+
+# Read files
 openpyxl
+
+# Read csv
 xlrd >= 2.0.1
+
+# Autenticador
 Authlib >= 1.3.2
