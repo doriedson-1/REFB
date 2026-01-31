@@ -27,7 +27,7 @@ with st.expander('Histórico de confrontos'):
 #st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
 
 st.divider()
-st.subheader('Fontes')
+st.subheader(_('Fontes'))
 
 st.markdown('[Base dos dados](https://basedosdados.org/dataset/c861330e-bca2-474d-9073-bc70744a1b23?table=18835b0d-233e-4857-b454-1fa34a81b4fa)')
 st.markdown('[Campeões do futebol](https://www.campeoesdofutebol.com.br/brasileiro_ranking_pontos_corridos.html)')
@@ -36,9 +36,9 @@ st.markdown('[Futdados](https://futdados.com/)')
 st.markdown('[Sinopse do futebol](https://sinopsedofutebol.blogspot.com/2011/01/mata-matas-decisoes-e-confrontos.html)')
 
 st.divider()
-st.subheader('Referências')
+st.subheader(_('Referências'))
 st.markdown('[RSSSF Brasil](https://rsssfbrasil.com/)') # o maior de todos
 
 st.divider()
-st.write('Outras informações')
-st.markdown('[Licença](https://opensource.org/license/mit)')
+st.write(_('Outras informações'))
+st.markdown(_('[Licença](https://opensource.org/license/mit)'))

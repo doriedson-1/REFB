@@ -63,7 +63,7 @@ home_pag = st.Page(
     default = True)
 
 # Barra de navegação
-pg = st.navigation({'Início':[home_pag],
+pg = st.navigation({_('Início'):[home_pag],
                     'Campeonato Brasileiro':[tab_pag, ranking_pag],
                     'Times':[jogos_pag, confrontos_pag, estati_pag, estat2_pag],
                     'Para você':[com_pag]
@@ -82,6 +82,6 @@ with st.sidebar:
         """,
         unsafe_allow_html=True,
 )
-    st.sidebar.text('Versão beta')
+    st.sidebar.text(_('Versão beta'))
 
 pg.run()

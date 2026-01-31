@@ -20,5 +20,5 @@ xlrd >= 2.0.1
 Authlib >= 1.3.2
 
 # Traduzir
-polib
-deep-translator
+polib = 1.2.0
+deep-translator = 1.11.4
