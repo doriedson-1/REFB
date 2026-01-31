@@ -1,14 +1,17 @@
 # Página inicial
 import streamlit as st
+import gettext
 
-st.markdown('### Bem vindos(as)!')
+_ = gettext.gettext
 
-st.markdown('No REFB, é possível explorar informações de vários campeonatos, facilitando \
+st.markdown(_('### Bem vindos(as)!'))
+
+st.markdown(_('No REFB, é possível explorar informações de vários campeonatos, facilitando \
         análises históricas, comparações entre temporadas e acompanhamento do \
         desempenho de clubes ao longo dos anos. A plataforma está em constante \
         evolução e será gradualmente ampliada, incorporando novos dados, \
         funcionalidades e competições, com o objetivo de se tornar uma referência \
-        para torcedores, analistas e entusiastas do futebol nacional.')
+        para torcedores, analistas e entusiastas do futebol nacional.'))
 
 st.markdown('##### Links')
 

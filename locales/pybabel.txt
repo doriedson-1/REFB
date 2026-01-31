@@ -1,0 +1,10 @@
+# Extrair todo texto _()
+pybabel extract -F babel.cfg -o messages.pot .
+
+# Inicializar novo idioma
+pybabel init -i messages.pot -d locales -l pt_BR
+
+# Atualizar novas strings sem apagar o que já foi traduzido
+pybabel update -i messages.pot -d locales
+
+pybabel compile -d locales

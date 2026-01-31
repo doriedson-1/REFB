@@ -9,11 +9,10 @@ bases = Bases()
 
 def render_dashboard_time(df: pd.DataFrame):
     st.header("📊 Dashboard do Time")
-
-    # --- 1. SELETOR DE TIME (O Gatilho da Performance) ---
+    
     df['time_mandante'] = bases.grafia(df['time_mandante'])
     df['time_visitante'] = bases.grafia(df['time_visitante'])
-
+    # --- 1. SELETOR DE TIME (O Gatilho da Performance) ---
     todos_times = sorted(pd.concat([df['time_mandante'], df['time_visitante']]).unique())
     
     c1, c2 = st.columns([1, 3])
