@@ -1,0 +1,153 @@
+time_mandante,gols_mandante,time_visitante,gols_visitante,fase,data
+Palmeiras,0,Flamengo,1,Final (Única),29/11/25
+Botafogo,3,Atlético-MG,1,Final (Única),30/11/24
+Atlético-MG,2,Fluminense,0,Quartas (Volta),25/09/24
+Fluminense,1,Atlético-MG,0,Quartas (Ida),18/09/24
+São Paulo,1,Botafogo,1,Quartas (Volta)*,25/09/24
+Botafogo,0,São Paulo,0,Quartas (Ida),18/09/24
+Fluminense,2,Grêmio,1,Oitavas (Volta)*,20/08/24
+Grêmio,2,Fluminense,1,Oitavas (Ida),13/08/24
+Palmeiras,2,Botafogo,2,Oitavas (Volta),21/08/24
+Botafogo,2,Palmeiras,1,Oitavas (Ida),14/08/24
+RB Bragantino,1,Botafogo,1,3ª Fase (Volta),13/03/24
+Botafogo,2,RB Bragantino,1,3ª Fase (Ida),06/03/24
+Internacional,1,Fluminense,2,Semifinal (Volta),04/10/23
+Fluminense,2,Internacional,2,Semifinal (Ida),27/09/23
+Palmeiras,0,Atlético-MG,0,Oitavas (Volta),09/08/23
+Atlético-MG,0,Palmeiras,1,Oitavas (Ida),02/08/23
+Flamengo,1,Athletico-PR,0,Final (Única),29/10/22
+Palmeiras,2,Athletico-PR,2,Semifinal (Volta),06/09/22
+Athletico-PR,1,Palmeiras,0,Semifinal (Ida),30/08/22
+Flamengo,1,Corinthians,0,Quartas (Volta),09/08/22
+Corinthians,0,Flamengo,2,Quartas (Ida),02/08/22
+Palmeiras,0,Atlético-MG,0,Quartas (Volta)*,10/08/22
+Atlético-MG,2,Palmeiras,2,Quartas (Ida),03/08/22
+Palmeiras,2,Flamengo,1,Final (Única),27/11/21
+Atlético-MG,1,Palmeiras,1,Semifinal (Volta)**,28/09/21
+Palmeiras,0,Atlético-MG,0,Semifinal (Ida),21/09/21
+Palmeiras,3,São Paulo,0,Quartas (Volta),17/08/21
+São Paulo,1,Palmeiras,1,Quartas (Ida),10/08/21
+Palmeiras,1,Santos,0,Final (Única),30/01/21
+Santos,4,Grêmio,1,Quartas (Volta),16/12/20
+Grêmio,1,Santos,1,Quartas (Ida),09/12/20
+Internacional,0,Grêmio,1,Fase de Grupos,23/09/20
+Grêmio,0,Internacional,0,Fase de Grupos,12/03/20
+Flamengo,5,Grêmio,0,Semifinal (Volta),23/10/19
+Grêmio,1,Flamengo,1,Semifinal (Ida),02/10/19
+Cruzeiro,0,Flamengo,1,Oitavas (Volta),29/08/18
+Flamengo,0,Cruzeiro,2,Oitavas (Ida),08/08/18
+Santos,1,Athletico-PR,0,Oitavas (Volta),10/08/17
+Athletico-PR,2,Santos,3,Oitavas (Ida),05/07/17
+Cruzeiro,1,São Paulo,0,Oitavas (Volta)*,13/05/15
+São Paulo,1,Cruzeiro,0,Oitavas (Ida),06/05/15
+Internacional,3,Atlético-MG,1,Oitavas (Volta),13/05/15
+Atlético-MG,2,Internacional,2,Oitavas (Ida),06/05/15
+Atlético-MG,4,São Paulo,1,Oitavas (Volta),08/05/13
+São Paulo,1,Atlético-MG,2,Oitavas (Ida),02/05/13
+São Paulo,2,Atlético-MG,0,Fase de Grupos,17/04/13
+Atlético-MG,2,São Paulo,1,Fase de Grupos,13/02/13
+Corinthians,1,Vasco,0,Quartas (Volta),23/05/12
+Vasco,0,Corinthians,0,Quartas (Ida),16/05/12
+Fluminense,2,Internacional,1,Oitavas (Volta),10/05/12
+Internacional,0,Fluminense,0,Oitavas (Ida),25/04/12
+São Paulo,2,Internacional,1,Semifinal (Volta)**,05/08/10
+Internacional,1,São Paulo,0,Semifinal (Ida),28/07/10
+São Paulo,0,Cruzeiro,2,Quartas (Volta),19/05/10
+Cruzeiro,0,São Paulo,2,Quartas (Ida),12/05/10
+Corinthians,2,Flamengo,1,Oitavas (Volta)**,05/05/10
+Flamengo,1,Corinthians,0,Oitavas (Ida),28/04/10
+São Paulo,0,Cruzeiro,2,Quartas (Volta),18/06/09
+Cruzeiro,2,São Paulo,1,Quartas (Ida),27/05/09
+Sport,1,Palmeiras,0,Oitavas (Volta)*,12/05/09
+Palmeiras,1,Sport,0,Oitavas (Ida),05/05/09
+Fluminense,3,São Paulo,1,Quartas (Volta),21/05/08
+São Paulo,1,Fluminense,0,Quartas (Ida),14/05/08
+Internacional,2,São Paulo,2,Final (Volta),16/08/06
+São Paulo,1,Internacional,2,Final (Ida),09/08/06
+São Paulo,2,Palmeiras,1,Oitavas (Volta),03/05/06
+Palmeiras,1,São Paulo,1,Oitavas (Ida),26/04/06
+São Paulo,4,Athletico-PR,0,Final (Volta),14/07/05
+Athletico-PR,1,São Paulo,1,Final (Ida),06/07/05
+São Paulo,2,Palmeiras,0,Oitavas (Volta),25/05/05
+Palmeiras,0,São Paulo,1,Oitavas (Ida),18/05/05
+Cruzeiro,1,São Caetano,0,Fase de Grupos,10/04/01
+São Caetano,0,Cruzeiro,1,Fase de Grupos,03/04/01
+Atlético-MG,2,Athletico-PR,1,Oitavas (Volta)*,11/05/00
+Athletico-PR,1,Atlético-MG,0,Oitavas (Ida),04/05/00
+Palmeiras,3,Corinthians,2,Semifinal (Volta)*,06/06/00
+Corinthians,4,Palmeiras,3,Semifinal (Ida),30/05/00
+Atlético-MG,2,Athletico-PR,1,Fase de Grupos,05/04/00
+Athletico-PR,1,Atlético-MG,0,Fase de Grupos,09/03/00
+Palmeiras,3,Juventude,0,Fase de Grupos,19/04/00
+Juventude,2,Palmeiras,2,Fase de Grupos,08/03/00
+Corinthians,2,Palmeiras,0,Quartas (Volta)*,12/05/99
+Palmeiras,2,Corinthians,0,Quartas (Ida),05/05/99
+Vasco,2,Palmeiras,4,Oitavas (Volta),21/04/99
+Palmeiras,1,Vasco,1,Oitavas (Ida),14/04/99
+Palmeiras,1,Corinthians,0,Fase de Grupos,24/02/99
+Corinthians,2,Palmeiras,1,Fase de Grupos,17/03/99
+Vasco,2,Cruzeiro,1,Oitavas (Volta),07/05/98
+Cruzeiro,0,Vasco,0,Oitavas (Ida),15/04/98
+Vasco,3,Grêmio,0,Fase de Grupos,26/03/98
+Grêmio,1,Vasco,0,Fase de Grupos,04/03/98
+Grêmio,0,Cruzeiro,1,Fase de Grupos,12/03/97
+Cruzeiro,1,Grêmio,2,Fase de Grupos,19/02/97
+Grêmio,2,Botafogo,0,Oitavas (Volta),08/05/96
+Botafogo,1,Grêmio,1,Oitavas (Ida),01/05/96
+Botafogo,1,Corinthians,1,Fase de Grupos,03/04/96
+Corinthians,3,Botafogo,0,Fase de Grupos,13/03/96
+Palmeiras,5,Grêmio,1,Quartas (Volta),02/08/95
+Grêmio,5,Palmeiras,0,Quartas (Ida),26/07/95
+Grêmio,0,Palmeiras,0,Fase de Grupos,14/03/95
+Palmeiras,3,Grêmio,2,Fase de Grupos,21/02/95
+São Paulo,2,Palmeiras,1,Oitavas (Volta),24/07/94
+Palmeiras,0,São Paulo,0,Oitavas (Ida),27/04/94
+Palmeiras,2,Cruzeiro,0,Fase de Grupos,25/03/94
+Cruzeiro,1,Palmeiras,1,Fase de Grupos,02/03/94
+São Paulo,2,Flamengo,0,Quartas (Volta),21/04/93
+Flamengo,1,São Paulo,1,Quartas (Ida),14/04/93
+Internacional,1,Flamengo,1,Fase de Grupos,10/03/93
+Flamengo,0,Internacional,0,Fase de Grupos,10/02/93
+Criciúma,1,São Paulo,1,Quartas (Volta),20/05/92
+São Paulo,1,Criciúma,0,Quartas (Ida),13/05/92
+São Paulo,4,Criciúma,0,Fase de Grupos,01/04/92
+Criciúma,3,São Paulo,0,Fase de Grupos,06/03/92
+Corinthians,0,Flamengo,2,Fase de Grupos,20/03/91
+Flamengo,1,Corinthians,1,Fase de Grupos,20/02/91
+Bahia,0,Internacional,0,Quartas (Volta),26/04/89
+Internacional,1,Bahia,0,Quartas (Ida),19/04/89
+Internacional,0,Bahia,0,Fase de Grupos,21/03/89
+Bahia,2,Internacional,1,Fase de Grupos,24/02/89
+Santos,0,Flamengo,5,Fase de Grupos,08/05/84
+Flamengo,4,Santos,1,Fase de Grupos,11/02/84
+Flamengo,1,Grêmio,3,Fase de Grupos,06/07/83
+Grêmio,1,Flamengo,1,Fase de Grupos,05/06/83
+São Paulo,0,Flamengo,0,Fase de Grupos,22/04/82
+Flamengo,3,São Paulo,2,Fase de Grupos,16/02/82
+Flamengo,0,Atlético-MG,0,Fase de Grupos (Desempate),21/08/81
+Atlético-MG,2,Flamengo,2,Fase de Grupos,28/07/81
+Flamengo,2,Atlético-MG,2,Fase de Grupos,03/07/81
+Palmeiras,1,Guarani,4,Fase de Grupos,25/03/79
+Guarani,1,Palmeiras,0,Fase de Grupos,25/02/79
+São Paulo,1,Atlético-MG,2,Fase de Grupos,26/03/78
+Atlético-MG,1,São Paulo,1,Fase de Grupos,15/03/78
+Cruzeiro,0,Corinthians,1,Fase de Grupos,10/04/77
+Corinthians,1,Cruzeiro,1,Fase de Grupos,03/04/77
+Internacional,0,Cruzeiro,2,Fase de Grupos,28/03/76
+Cruzeiro,5,Internacional,4,Fase de Grupos,07/03/76
+Cruzeiro,3,Vasco,2,Fase de Grupos,23/03/75
+Vasco,3,Cruzeiro,3,Fase de Grupos,23/02/75
+Palmeiras,1,São Paulo,2,Fase de Grupos,24/04/74
+São Paulo,2,Palmeiras,0,Fase de Grupos,30/03/74
+Botafogo,2,Palmeiras,0,Fase de Grupos,12/03/73
+Palmeiras,3,Botafogo,2,Fase de Grupos,24/02/73
+São Paulo,0,Atlético-MG,0,Fase de Grupos,09/03/72
+Atlético-MG,2,São Paulo,2,Fase de Grupos,30/01/72
+Palmeiras,0,Fluminense,2,Fase de Grupos,10/03/71
+Fluminense,0,Palmeiras,0,Fase de Grupos,29/01/71
+Náutico,1,Palmeiras,3,Fase de Grupos,03/03/68
+Palmeiras,2,Náutico,0,Fase de Grupos,21/01/68
+Santos,4,Cruzeiro,0,Fase de Grupos,14/05/67
+Cruzeiro,3,Santos,0,Fase de Grupos,07/05/67
+Botafogo,0,Santos,4,Semifinal (Volta),28/08/63
+Santos,1,Botafogo,1,Semifinal (Ida),22/08/63
