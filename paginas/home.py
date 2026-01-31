@@ -3,7 +3,12 @@ import streamlit as st
 
 st.markdown('### Bem vindos(as)!')
 
-st.text('No REFB você encontra visualizações do futebol brasileiro de maneira intuitiva.')
+st.text('No REFB, é possível explorar informações de vários campeonatos, facilitando \
+        análises históricas, comparações entre temporadas e acompanhamento do \
+        desempenho de clubes ao longo dos anos. A plataforma está em constante \
+        evolução e será gradualmente ampliada, incorporando novos dados, \
+        funcionalidades e competições, com o objetivo de se tornar uma referência \
+        para torcedores, analistas e entusiastas do futebol nacional.')
 
 st.markdown('#### Links')
 
@@ -13,8 +18,8 @@ with st.expander('Campeonato brasileiro'):
     st.markdown('Era do mata-mata (1971-2002) [Em breve]')
 
 with st.expander('Histórico de confrontos'):
-    st.markdown('- [Time contra time (considera apenas os confrontos da base de dados)](https://refutbr.streamlit.app/duelos)')
-    st.markdown('- [Confrontos eliminatórios do G12](https://refutbr.streamlit.app/confrontos)')
+    st.page_link('paginas/duelos.py', label = 'Time contra time (considera apenas os confrontos da base de dados)')
+    st.page_link('paginas/confrontos.py', label = 'Confrontos eliminatórios do G12')
 
 #st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
 
