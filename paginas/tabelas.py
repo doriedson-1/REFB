@@ -12,7 +12,7 @@ def render_tabela_classificacao(df: pd.DataFrame):
     
     # --- 2. Filtro de Temporada ---
     if 'CAMPEONATO' in df.columns:
-        # Ordena as temporadas (ex: 2024, 2023...)
+        # Ordena as temporadas
         temporadas = sorted(df['CAMPEONATO'].unique(), reverse=True)
         
         col_filtro, _ = st.columns([1, 3])

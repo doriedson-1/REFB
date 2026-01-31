@@ -3,22 +3,22 @@ import streamlit as st
 
 st.markdown('### Bem vindos(as)!')
 
-st.text('No REFB, é possível explorar informações de vários campeonatos, facilitando \
+st.markdown('No REFB, é possível explorar informações de vários campeonatos, facilitando \
         análises históricas, comparações entre temporadas e acompanhamento do \
         desempenho de clubes ao longo dos anos. A plataforma está em constante \
         evolução e será gradualmente ampliada, incorporando novos dados, \
         funcionalidades e competições, com o objetivo de se tornar uma referência \
         para torcedores, analistas e entusiastas do futebol nacional.')
 
-st.markdown('#### Links')
+st.markdown('##### Links')
 
 with st.expander('Campeonato brasileiro'):
-    st.page_link('paginas/tabelas.py', label = 'Tabelas finais dos pontos corridos')
-    st.page_link('paginas/ranking.py', label = 'Tabela acumulada pontos corridos')
+    st.page_link('paginas/tabelas.py', label = '\- Tabelas (2003-2025)')
+    st.page_link('paginas/ranking.py', label = '\- Tabela acumulada pontos corridos')
     st.markdown('Era do mata-mata (1971-2002) [Em breve]')
 
 with st.expander('Histórico de confrontos'):
-    st.page_link('paginas/duelos.py', label = 'Time contra time (considera apenas os confrontos da base de dados)')
+    st.page_link('paginas/duelos.py', label = 'Time contra time')
     st.page_link('paginas/confrontos.py', label = 'Confrontos eliminatórios do G12')
 
 #st.markdown('Contribua no [github](https://github.com/doriedson-1/REFB)!')
