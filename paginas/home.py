@@ -1,8 +1,8 @@
 # Página inicial
 import streamlit as st
-import gettext
+from main import setup_translation
 
-_ = gettext.gettext
+_ = setup_translation(st.session_state.lang)
 
 st.markdown(_('### Bem vindos(as)!'))
 

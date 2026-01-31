@@ -1,5 +1,28 @@
 # Arquivo principal do app
 import streamlit as st
+import gettext
+import os
+
+# Configuração i18n
+def setup_translation(lang):
+    try:
+        localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locales')
+        trans = gettext.translation('messages', localedir=localedir, languages=[lang])
+        trans.install()
+        return trans.gettext
+    except FileNotFoundError:
+        return gettext.gettext # Fallback para o texto original
+
+# Seletor de Idioma no Sidebar
+if 'lang' not in st.session_state:
+    st.session_state.lang = 'pt_BR'
+
+selected_lang = st.sidebar.selectbox("Idioma (Language)",
+                                     ["Português", "English"], index=0)
+st.session_state.lang = selected_lang
+
+# Define a função global _()
+_ = setup_translation(st.session_state.lang)
 
 st.set_page_config(page_title = "Repositório Estatístico do Futebol Brasileiro (REFB)",
                    layout='wide', page_icon=  "🇧🇷")
