@@ -1,5 +1,6 @@
 # Importação
 basedosdados.py
+scraping_transfermarkt_brasileirao_serie_a.py
 
 # Diretórios
 __pycache__/*
@@ -18,3 +19,4 @@ rascunho.ipynb
 
 # Tradução
 messages.pot
+locales/
