@@ -8,6 +8,11 @@ bases = Bases()
 def render_confrontos_detalhados(df: pd.DataFrame):
     st.divider()
     st.subheader("⚔️ Análise de Confrontos Diretos")
+    
+    if 'time_mandante' in df.columns:
+        df['time_mandante'] = bases.grafia(df['time_mandante'])
+    if 'time_visitante' in df.columns:
+        df['time_visitante'] = bases.grafia(df['time_visitante'])
 
     # --- 1. Inicialização do Estado para o RESULTADO ---
     # Aqui guardamos o DataFrame JÁ filtrado. Se a página recarregar, o dado está salvo.
@@ -137,10 +142,5 @@ df['campeonato'] = 'Brasileiro'
 
 # Padronização de nomes de coluna (Minúsculo e sem espaços)
 df.columns = [c.lower().strip().replace(' ', '_') for c in df.columns]
-
-if 'time_mandante' in df.columns:
-    df['time_mandante'] = bases.grafia(df['time_mandante'])
-if 'time_visitante' in df.columns:
-    df['time_visitante'] = bases.grafia(df['time_visitante'])
 
 render_confrontos_detalhados(df)

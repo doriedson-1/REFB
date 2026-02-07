@@ -35,12 +35,12 @@ def preparar_base_times(df):
         (df_final['saldo'] == 0)
     ]
     choices = ['Vitoria', 'Derrota', 'Empate']
-    df_final['resultado'] = np.select(conditions, choices)
+    df_final['resultado'] = np.select(conditions, choices, default='Outro')
     
     return df_final
 
 def render_estatisticas_avancadas(df_original: pd.DataFrame):
-    st.header("📊 Estatísticas e Goleadas")
+    st.subheader("📊 Estatísticas e Goleadas")
 
     # Prepara os dados (Cachear isso seria ideal em produção)
     df_times = preparar_base_times(df_original)
@@ -58,14 +58,15 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
             # Slider define o que é goleada (ex: >= 3 gols de diferença)
             criterio_gols = st.slider("Diferença mínima de gols:", 2, 7, 3)
         with c2:
-            tipo_filtro = st.radio("Perspectiva:", ["Aplicou a Goleada (Vitória)", "Sofreu a Goleada (Derrota)"])
+            tipo_filtro = st.radio("Perspectiva:", ["Goleadas aplicadas",
+                                                    "Goleadas sofridas"])
         with c3:
             anos = sorted(df_times['ano'].unique(), reverse=True)
             ano_sel = st.selectbox("Temporada:", ["Todas"] + list(anos))
 
         # Aplicação dos Filtros
         # 1. Filtra pelo saldo (positivo se aplicou, negativo se sofreu)
-        if "Aplicou" in tipo_filtro:
+        if "aplicadas" in tipo_filtro:
             mask = df_times['saldo'] >= criterio_gols
             cor_metric = "normal" # Verde/Padrão
             label_col = "Vitórias por Goleada"
@@ -81,9 +82,9 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
 
         # Visualização 1: Ranking (Gráfico)
         if not df_goleadas.empty:
-            ranking = df_goleadas['time'].value_counts().head(10)
+            ranking = df_goleadas['time'].value_counts().head(20)
             
-            st.subheader(f"Top 10 Times - {tipo_filtro}")
+            st.subheader(f"Ranking - {tipo_filtro}")
             st.bar_chart(ranking, color="#ff4b4b" if "Sofreu" in tipo_filtro else "#00cc96")
 
             # Visualização 2: Tabela Detalhada
@@ -128,8 +129,10 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
             # Filtra jogos SOMENTE entre esses dois
             # A lógica aqui busca na base original onde (Mandante=A e Visitante=B) OU (Mandante=B e Visitante=A)
             mask_confronto = (
-                ((df_original['time_mandante'] == time_1) & (df_original['time_visitante'] == time_2)) |
-                ((df_original['time_mandante'] == time_2) & (df_original['time_visitante'] == time_1))
+                ((df_original['time_mandante'] == time_1) & 
+                 (df_original['time_visitante'] == time_2)) |
+                ((df_original['time_mandante'] == time_2) & 
+                 (df_original['time_visitante'] == time_1))
             )
             df_vs = df_original[mask_confronto].copy()
             
@@ -138,13 +141,17 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
             else:
                 # Cálculos de Métricas
                 vitorias_t1 = len(df_vs[
-                    ((df_vs['time_mandante'] == time_1) & (df_vs['gols_mandante'] > df_vs['gols_visitante'])) |
-                    ((df_vs['time_visitante'] == time_1) & (df_vs['gols_visitante'] > df_vs['gols_mandante']))
+                    ((df_vs['time_mandante'] == time_1) & 
+                     (df_vs['gols_mandante'] > df_vs['gols_visitante'])) |
+                    ((df_vs['time_visitante'] == time_1) & 
+                     (df_vs['gols_visitante'] > df_vs['gols_mandante']))
                 ])
                 
                 vitorias_t2 = len(df_vs[
-                    ((df_vs['time_mandante'] == time_2) & (df_vs['gols_mandante'] > df_vs['gols_visitante'])) |
-                    ((df_vs['time_visitante'] == time_2) & (df_vs['gols_visitante'] > df_vs['gols_mandante']))
+                    ((df_vs['time_mandante'] == time_2) & 
+                     (df_vs['gols_mandante'] > df_vs['gols_visitante'])) |
+                    ((df_vs['time_visitante'] == time_2) & 
+                     (df_vs['gols_visitante'] > df_vs['gols_mandante']))
                 ])
                 
                 empates = len(df_vs) - vitorias_t1 - vitorias_t2
@@ -152,9 +159,11 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
                 # Exibição dos Cards
                 st.divider()
                 m1, m2, m3 = st.columns(3)
-                m1.metric(f"Vitórias {time_1}", vitorias_t1, delta=vitorias_t1-vitorias_t2)
+                m1.metric(f"Vitórias {time_1}", vitorias_t1,
+                          delta=vitorias_t1-vitorias_t2)
                 m2.metric("Empates", empates)
-                m3.metric(f"Vitórias {time_2}", vitorias_t2, delta=vitorias_t2-vitorias_t1, delta_color="inverse")
+                m3.metric(f"Vitórias {time_2}", vitorias_t2,
+                          delta=vitorias_t2-vitorias_t1, delta_color="inverse")
                 
                 # Goleadas no Confronto
                 st.subheader("Maiores Goleadas do Confronto")
@@ -168,7 +177,8 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
                      df_vs['data'] = pd.to_datetime(df_vs['data'])
 
                 st.dataframe(
-                    df_vs[['data', 'time_mandante', 'gols_mandante', 'gols_visitante', 'time_visitante']],
+                    df_vs[['data', 'time_mandante', 'gols_mandante',
+                           'gols_visitante', 'time_visitante']],
                     hide_index=True,
                     use_container_width=True,
                     column_config={
@@ -182,4 +192,5 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
 
 
 df = bases.ler('pontos_corridos.xlsx', 'br')
+df['campeonato'] = 'Brasileiro'
 render_estatisticas_avancadas(df)

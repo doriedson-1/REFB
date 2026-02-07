@@ -8,9 +8,6 @@ _*.py
 paginas/__pycache__/
 _RSSSF_Scrap.lnk
 
-#
-.*/
-
 # Testes
 Base_de_dados/Campeonato_brasileiro/tabela.py
 _lixo
@@ -20,3 +17,5 @@ rascunho.ipynb
 # Tradução
 messages.pot
 locales/
+
+.streamlit/secrets.toml

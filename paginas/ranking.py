@@ -74,6 +74,14 @@ def calcular_classificacao_completa(df_filtrado):
     part = df1['time_mandante'].value_counts().to_frame(
         'TEMPORADAS').reset_index().rename(columns={'time_mandante':'Time'})
     tabela = tabela.merge(part, how = 'left', on = 'Time')
+    
+    
+    # Imagens
+    # Passo A: Obter o código
+    tabela['codigo_temp'] = tabela['Time'].apply(bases.codigo_clube)
+    # Passo B: Montar a URL completa
+    base_url = "https://tmssl.akamaized.net//images/wappen/head/"
+    tabela['ESCUDO'] = tabela['codigo_temp'].apply(lambda x: f"{base_url}{x}")
 
     return tabela
 
@@ -124,12 +132,14 @@ if not df_filtrado.empty:
     classificacao = calcular_classificacao_completa(df_filtrado)
     
     # Mudança de ordem
-    classificacao = classificacao.iloc[:, [0,1,7,2,3,4,5,6,8,9,10]]
+    classificacao = classificacao.iloc[:, [12,0,1,7,2,3,4,5,6,8,9,10]]
     
     st.subheader("Tabela acumulada Brasileirão (2003-2025)")
     st.dataframe(
         classificacao, 
-        column_config={
+        column_config = {
+            # Configuração da Imagem
+            "ESCUDO": st.column_config.ImageColumn("", width="small"),
             "APROVEITAMENTO": st.column_config.NumberColumn(format="%.2f%%")
         },
         hide_index=True
@@ -169,7 +179,6 @@ fig = px.line(pontos_time, x = "CAMPEONATO", y = "PONTOS", color = "TIME",
 
 fig.update_traces(line = {'width':.7})
 
-#st.plotly_chart(fig, theme = None, use_container_width=True)
 st.plotly_chart(fig, theme = None, width = 'stretch')
 
 st.markdown("- Nas temporadas de 2003 e 2004 o campeonato foi disputado com 24 clubes;")
@@ -182,8 +191,6 @@ st.markdown("- O campeonato brasileiro de 2020 teve início em \
 st.markdown("- O campeonato brasileiro de 2021 teve início em 29/05/2021 e fim em\
             09/12/2021.")
 
-    # Display in Streamlit
-    #return pontos_time, fig
 
 #st.sidebar.header('Filtros')
 #selecionar = st.sidebar.multiselect('Selecione', options = todos_times, default= todos_times)
