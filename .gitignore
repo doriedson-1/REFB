@@ -19,3 +19,5 @@ messages.pot
 locales/
 
 .streamlit/secrets.toml
+
+environment.yml
