@@ -30,7 +30,7 @@ st.header("Repositório Estatístico do Futebol Brasileiro")
 
 # Listagem das páginas do site
 cbmm_pag = st.Page(
-    page = 'paginas/tabelas_mata.py',
+    page = 'paginas/tabelas2.py',
     title = 'Tabelas (1971-2002)')
 
 estat2_pag = st.Page(
