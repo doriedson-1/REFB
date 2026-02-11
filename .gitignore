@@ -17,6 +17,7 @@ rascunho.ipynb
 # Tradução
 messages.pot
 locales/
+traduzir_po.py
 
 .streamlit/secrets.toml
 
