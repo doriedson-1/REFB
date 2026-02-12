@@ -5,9 +5,28 @@ import streamlit.components.v1 as components
 #from recursos import Bases
 #bases = Bases()
 
-css_chaves = st.secrets.atalhos.css
-
 def render_html_css(html_path, css_path, height=600, scrolling=True):
+    """
+    ----------
+    html_path : TYPE
+        DESCRIPTION.
+    css_path : TYPE
+        DESCRIPTION.
+    height : TYPE, optional
+        DESCRIPTION. The default is 600.
+    scrolling : TYPE, optional
+        DESCRIPTION. The default is True.
+
+    Raises
+    ------
+    FileNotFoundError
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
     html_path = Path(html_path)
     css_path = Path(css_path)
 
@@ -36,19 +55,7 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
         scrolling=scrolling
     )
 
-
-def mostrar_html(arquivo):
-    caminho = st.secrets.atalhos.bd_cb_ff
-    with open(caminho + arquivo, "r", encoding="utf-8") as f:
-        html = f.read()
-
-    #st.html(html)
-    components.html(
-        f"<style>{caminho+'definicoes.css'}</style>{html}")
-
-
 render_html_css(
     html_path = st.secrets.atalhos.bd_cb_ff + "2002CB.html",
     css_path= st.secrets.atalhos.bd_cb_ff + st.secrets.atalhos.css,
-    height=700
-)
+    height=700)
