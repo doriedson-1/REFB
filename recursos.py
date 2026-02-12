@@ -27,7 +27,7 @@ class Bases:
 
         Returns
         -------
-        classificacao : DataFrame
+        classificacao (TabelaFinal) : DataFrame
         """
         
         # 0. Selecionar o ano e as variáveis necessárias na tabela final

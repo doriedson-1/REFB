@@ -1,326 +1,326 @@
-time_mandante,gols_mandante,gols_visitante,time_visitante,rodada,data,pontos_mandante,pontos_visitante,match_id,detalhes
-Vasco da Gama,2,0,Figueirense,1,Aug 10,3,0,1," [Ramón Menezes 24', 26']"
-São Paulo,4,2,Paysandu,1,Aug 10,3,0,2," [Jean Narde 15', Jorginho Paulista 30', Luís Fabiano 60', 88'; Jóbson 27'p, 67']"
-Paraná,2,1,São Caetano,1,Aug 10,3,0,3," [Maurílio 45+1', 56'; Serginho 65']"
-Santos,2,1,Botafogo,1,Aug 10,3,0,4," [Elano 4', Diego Ribas 43'; Ademílson 85']"
-Goiás,3,1,Portuguesa,1,Aug 10,3,0,5," [Danilo 17', Araújo 66', Finazzi 79'; Ricardo Oliveira 16']"
-Fluminense,5,1,Cruzeiro,1,Aug 11,3,0,6," [Magno Alves 29', Fernando Diniz 32', Romário 43'p, 90+2', Beto 47'; Fábio Júnior 88']"
-Palmeiras,1,1,Grêmio,1,Aug 11,1,1,7, [Nenê 79'; Anderson Lima 84']
-Atlético-MG,1,2,Corinthians,1,Aug 11,0,3,8," [Renaldo 32'; Scheidt 23', Renato 54']"
-Internacional,1,3,Flamengo,1,Aug 11,0,3,9," [Fabiano Costa 16'; Liédson 11', 29', Felipe Mello 8']"
-Guarani,2,1,Atlético-PR,1,Aug 11,3,0,10," [Luís Fernando Martinez 63', 65'; Kléber 8']"
-Coritiba,1,0,Vitória,1,Aug 11,3,0,11, [Tcheco 48']
-Bahia,1,0,Gama,1,Aug 11,3,0,12, [Robgol 64']
-Juventude,1,0,Ponte Preta,1,Aug 11,3,0,13, [Marcelo Pereira 36'p]
-São Caetano,2,0,Fluminense,2,Aug 14,3,0,14," [Adhemar 16', Claudecir 22']"
-Botafogo,1,1,Atlético-MG,2,Aug 14,1,1,15, [Galeano 82'; Alexandre 63'] 
-Cruzeiro,1,1,Palmeiras,2,Aug 14,1,1,16, [Fábio Júnior 26'p; Itamar 87']
-Grêmio,3,2,Vasco da Gama,2,Aug 14,3,0,17," [Anderson Lima 1', 18'p, Rodrigo Fabri 81'; Ramón Menezes 68'p, 71']"
-Atlético-PR,4,0,Bahia,2,Aug 14,3,0,18," [Fabiano 45+1', 80', Dagoberto 55', Rodriguinho 90+3']"
-Figueirense,0,0,Guarani,2,Aug 14,1,1,19,NA
-Ponte Preta,2,0,Coritiba,2,Aug 14,3,0,20," [Elivélton 43', Alex Oliveira 72']"
-Vitória,4,1,Goiás,2,Aug 14,3,0,21," [André 20', 75', 78', Marcelo Heleno 22'; Neném 48']"
-Corinthians,3,2,Internacional,2,Aug 14,3,0,22," [Deivid 27', Guilherme 43', 87'; Fabiano Costa 21', 69']"
-Flamengo,0,0,Juventude,2,Aug 14,1,1,23,NA
-Portuguesa,1,0,Paraná,2,Aug 14,3,0,24, [Ricardo Oliveira 3']
-Gama,0,1,São Paulo,2,Aug 14,0,3,25, [Júlio Santos 81']
-Fluminense,3,1,Grêmio,3,Aug 17,3,0,26," [Magno Alves 10', Romário 62', 82'; Luiz Mário 77']"
-Internacional,1,0,Ponte Preta,3,Aug 17,3,0,27, [Leandrão 56']
-Atlético-PR,2,1,Vasco da Gama,3,Aug 17,3,0,28," [Kléber 45', 51'; Siston 48']"
-Juventude,2,1,Santos,3,Aug 18,3,0,29," [Cláudio Pitbull 61', Leonardo Manzi 71'; William 83']"
-Guarani,1,4,Atlético-MG,3,Aug 18,0,3,30," [Marquinhos 5'; Paulinho 26', Marques 35'p, 53'p, Hélcio 65']"
-Flamengo,1,1,Goiás,3,Aug 18,1,1,31, [Athirson 60'p; Neném 61']
-Paraná,2,3,São Paulo,3,Aug 18,0,3,32," [Maurílio 72'p, Emerson 88'; Kaká 17', Júlio Baptista 32', Reinaldo Oliveira 53']"
-Cruzeiro,0,0,Botafogo,3,Aug 18,1,1,33,NA
-Portuguesa,0,0,Figueirense,3,Aug 18,1,1,34,NA
-Bahia,1,2,Coritiba,3,Aug 18,0,3,35," [Robgol 74'; Lima 44', Alexandre Fávaro 86']"
-Gama,2,1,Vitória,3,Aug 18,3,0,36," [Dimba 57', 58'; Aristizábal 31']"
-São Caetano,3,0,Corinthians,3,Aug 18,3,0,37," [Claudecir 12', 18', Edu Sales 77']"
-Botafogo,2,2,Internacional,4,Aug 21,1,1,38," [Carlos Miguel 27', Cleiton 38'; Adenílson 82', 90+2']"
-São Paulo,0,1,Juventude,4,Aug 21,0,3,39, [Hélder 2']
-Atlético-MG,1,1,Fluminense,4,Aug 21,1,1,40, [Alexandre Lindo 24'; Magno Alves 51']
-Paysandu,1,2,Portuguesa,4,Aug 21,0,3,41," [Jóbson 9'; Alex Alves 21, Édson Araújo 76']"
-Coritiba,2,1,Flamengo,4,Aug 21,3,0,42," [Lima 56', Lúcio Flávio 81'; Andrezinho 55']"
-Vitória,1,1,Atlético-PR,4,Aug 21,1,1,43, [Fernando 44'; Kléber 45+1']
-Goiás,1,1,Bahia,4,Aug 21,1,1,44, [Kley 70'; Nonato 25']
-Santos,3,0,Figueirense,4,Aug 21,3,0,45," [Léo 42', Renato 48', Douglas 87']"
-Vasco da Gama,0,1,Gama,4,Aug 22,0,3,46, [Dimba 40']
-Palmeiras,3,2,São Caetano,4,Aug 22,3,0,47," [Javier Arce 11', 80', Dodô 68'; Adhemar 66', Marco Aurélio 90+1']"
-Grêmio,0,2,Guarani,4,Aug 22,0,3,48," [Brener 30', Sérgio Alves 60']"
-Ponte Preta,2,0,Cruzeiro,4,Aug 22,3,0,49," [Alex Oliveira 35', Rodrigo Costa 43']"
-Flamengo,1,2,Paysandu,5,Aug 24,0,3,50," [Zé Carlos 59'; Jóbson 61'p, Balão 76']"
-Internacional,2,2,São Paulo,5,Aug 24,1,1,51," [Fabiano Costa 46', Cleiton Xavier 45+4'; Reinaldo Oliveira 32', 63']"
-Figueirense,0,3,Botafogo,5,Aug 24,0,3,52," [Carlos Alberto 22', Ademílson 47', Galeano 67']"
-Palmeiras,0,4,Atlético-MG,5,Aug 25,0,3,53," [Mancini 20', 44', Leonardo Oliveira 70', Souza 84']"
-Fluminense,1,1,Santos,5,Aug 25,1,1,54, [Roni 90+2'; Diego Ribas 56']
-Coritiba,1,2,Corinthians,5,Aug 25,0,3,55," [Genílson 12'; Deivid 67', Leandro Azevedo 81']"
-Portuguesa,1,0,Gama,5,Aug 25,3,0,56, [Ricardo Oliveira 46']
-Cruzeiro,2,1,Bahia,5,Aug 25,3,0,57," [Cris 2', 44'; Valdomiro 25']"
-Vitória,2,1,Juventude,5,Aug 25,3,0,58," [Aristizábal 10', 85'; Edmílson 32']"
-Ponte Preta,1,1,Grêmio,5,Aug 25,1,1,59, [Valdir Lucas 66'; Rodrigo Fabri 31']
-Goiás,2,4,Vasco da Gama,5,Aug 25,0,3,60," [Géder 6'og, Finazzi 79'; Souza 15', Rodrigo Souto 34', Washington Silva 63', Cadu 73']"
-Guarani,1,1,Internacional,6,Aug 28,1,1,61, [Sangaletti 90+2'; Fernando Baiano 90+2'p]
-Juventude,2,0,Fluminense,6,Aug 28,3,0,62," [Cláudio Pitbull 39', 85']"
-Santos,2,1,Paraná,6,Aug 28,3,0,63," [Léo 63', Diego Ribas 77'p; Maurílio 46']"
-Gama,2,1,Flamengo,6,Aug 28,3,0,64," [Rafael 26', Paulo Nunes 72'; Zé Carlos 66']"
-Atlético-PR,1,0,Palmeiras,6,Aug 28,3,0,65, [Kléber 34']
-Corinthians,1,1,Cruzeiro,6,Aug 28,1,1,66, [Rogério Régis 24'; Fábio Júnior 15']
-Bahia,1,2,Figueirense,6,Aug 28,0,3,67," [Robgol 84'p; William 60', Pires 67']"
-São Paulo,2,0,Goiás,6,Aug 29,3,0,68," [Luís Fabiano 47', 89']"
-Grêmio,0,0,Portuguesa,6,Aug 29,1,1,69,NA
-Atlético-MG,2,1,Vitória,6,Aug 29,3,0,70," [Renaldo 12', Marques 53'; Fernando 45']"
-Coritiba,2,0,Fluminense,7,Aug 31,3,0,71," [Da Silva 16', Jabá 85']"
-Botafogo,1,0,Gama,7,Aug 31,3,0,72, [Galeano 77']
-Corinthians,0,3,Atlético-PR,7,Aug 31,0,3,73," [Kléber 23', Fabiano 30', Kléberson 83']"
-Internacional,3,0,Santos,7,Aug 31,3,0,74," [Fernando Baiano 13'p, Mahicon Librelatto 60', Carlos Miguel 90']"
-Flamengo,1,1,Cruzeiro,7,Sep 1,1,1,75, [Iranildo 32'; Fábio Júnior 16']
-São Paulo,2,0,Grêmio,7,Sep 1,3,0,76," [Fábio Simplício 31', Kaká 33']"
-Atlético-MG,0,0,Portuguesa,7,Sep 1,1,1,77,NA
-Paraná,5,1,Palmeiras,7,Sep 1,3,0,78," [Márcio 6'p, 34', 55', 66', Fabinho 90+1'; Dodô 1']"
-Vitória,5,1,Paysandu,7,Sep 1,3,0,79," [Samir 21', André 32', 56', 74', 84'; Jóbson 34'p]"
-Ponte Preta,0,1,São Caetano,7,Sep 1,0,3,80, [Marlon 63']
-Juventude,1,0,Vasco da Gama,7,Sep 1,3,0,81, [Marcelo Pereira 53'p]
-Goiás,1,2,Guarani,7,Sep 1,0,3,82," [Zé Carlos 46'; Bruno Quadros 10', Sérgio Alves 77']"
-Vasco da Gama,1,2,Atlético-MG,8,Sep 4,0,3,83," [Cadu 21'; Mancini 22', Kim 64']"
-Flamengo,5,2,Fluminense,8,Sep 4,3,0,84," [Athirson 12', Zé Carlos 18', Liédson 58', Iranildo 68', Fábio Baiano 78'; César 1', Roni 90+1']"
-Palmeiras,2,2,Coritiba,8,Sep 4,1,1,85," [Fabiano Eller 25', Darío Muñoz 68'; Lima 39', Da Silva 45']"
-Cruzeiro,3,1,São Paulo,8,Sep 4,3,0,86," [Marcelo Ramos 24', Luisão 48', Fábio Júnior 85'; Luís Fabiano 72']"
-Atlético-PR,2,0,Botafogo,8,Sep 4,3,0,87," [Alex Mineiro 62', Dagoberto 67']"
-Paysandu,0,1,Corinthians,8,Sep 4,0,3,88, [Fábio Luciano 11']
-Bahia,3,2,Paraná,8,Sep 4,3,0,89," [Nonato 50', Gil Baiano 55', Daniel 74'; Maurílio 58', Márcio 83']"
-Gama,0,0,Ponte Preta,8,Sep 4,1,1,90,NA
-São Caetano,2,1,Guarani,8,Sep 4,3,0,91," [Adãozinho 44', Somália 56'; Émerson Ávila 69']"
-Portuguesa,0,2,Internacional,8,Sep 5,0,3,92," [Mahicon Librelato 59', Fernando Baiano 90+1']"
-Santos,3,0,Vitória,8,Sep 5,3,0,93," [Alberto 8', 11', Robinho 42']"
-Vasco da Gama,1,0,Coritiba,9,Sep 7,3,0,94, [Dejan Petkovic 90+1']
-Palmeiras,2,2,Gama,9,Sep 7,1,1,95," [Zinho 5', Dodô 21'; Dimba 41', 85']"
-São Caetano,3,0,São Paulo,9,Sep 7,3,0,96," [Magrão 37', Marco Aurélio 54', Claudecir 90+3']"
-Atlético-MG,2,0,Ponte Preta,9,Sep 7,3,0,97," [Hélcio 21', Neguete 37']"
-Goiás,2,2,Botafogo,9,Sep 7,1,1,98," [Evair 22'p, 24'; Romeu 15', Ademílson 90+1']"
-Fluminense,4,3,Figueirense,9,Sep 8,3,0,99," [Magno Alves 2', 43', Yan 75', Romário 88'; Selmir 50', 79', Mendes 85']"
-Santos,2,2,Atlético-PR,9,Sep 8,1,1,100," [William 52', Alberto 70'; Canindé 6'og, Kléberson 69'p]"
-Grêmio,4,0,Corinthians,9,Sep 8,3,0,101," [Rodrigo Fabri 16', 22', 47', Rodrigo Mendes 69']"
-Paraná,3,0,Flamengo,9,Sep 8,3,0,102," [Márcio 40', Fabinho 66', Alexandre 77']"
-Vitória,0,0,Internacional,9,Sep 8,1,1,103,NA
-Juventude,2,1,Bahia,9,Sep 8,3,0,104," [Leonardo Manzi 14', 49'; Nonato 1']"
-Guarani,2,0,Paysandu,9,Sep 8,3,0,105," [Brenner 10', Marquinhos 65']"
-Flamengo,3,2,Atlético-PR,10,Sep 11,3,0,106," [Liédson 28', 39', Iranildo 69'p; Kléberson 10', Kléber 54']"
-Portuguesa,3,2,São Caetano,10,Sep 11,3,0,107," [Édson Araújo 15', 42', Alexandre Gaúcho 39'; Adhemar 52', 76']"
-Internacional,3,2,Palmeiras,10,Sep 11,3,0,108," [Luiz Alberto 22', Fernando Baiano 11', Cris 85'; Nenê 72', César 81']"
-Coritiba,4,2,Santos,10,Sep 11,3,0,109," [Lúcio Flávio 38'p, Edinho Baiano 40', Reginaldo Araújo 41', Da Silva 65'; Diego Ribas 24', 30']"
-Bahia,1,1,Grêmio,10,Sep 11,1,1,110, [Robgol 1'; Gilberto 66']
-Ponte Preta,1,0,Paraná,10,Sep 11,3,0,111, [Macedo 6']
-Figueirense,0,2,Vitória,10,Sep 11,0,3,112," [André 23', Samir 86']"
-Paysandu,2,0,Vasco da Gama,10,Sep 11,3,0,113," [Albertinho 41', Marcos Dobrada 61']"
-Botafogo,0,4,Juventude,10,Sep 12,0,3,114," [Marcelo Pereira 20', Leonardo Manzi 46', Michel 57', 63']"
-Corinthians,3,0,Goiás,10,Sep 12,3,0,115," [Deivid 36', 42', Rogério Régis 39']"
-Cruzeiro,0,2,Guarani,10,Sep 12,0,3,116," [Sérgio Alves 51', João Paulo 87']"
-Gama,1,2,Fluminense,10,Sep 12,0,3,117," [Dimba 9'; César 25', Magno Alves 63']"
-Internacional,2,4,Figueirense,11,Sep 14,0,3,118," [Márcio 86', Leandrão 90+1'; Thiago Gentil 28', Selmir 59', Marcelinho 85', "
-Santos,2,0,Grêmio,11,Sep 14,3,0,119," [Alberto 33', Léo 89']"
-Paraná,2,2,Atlético-PR,11,Sep 14,1,1,120," [Émerson 28', Fabinho 56'; Kléber 22', 33']"
-Palmeiras,1,2,Bahia,11,Sep 14,0,3,121," [Alexandre 71'; Gil Baiano 14', Geraldo 88']"
-São Paulo,6,0,Fluminense,11,Sep 15,3,0,122," [Júlio Baptista 6', Kaká 56', Régis 69', Leandro Amaral 81', Luís Fabiano 85', 89']"
-Coritiba,3,1,Goiás,11,Sep 15,3,0,123," [Reginaldo Nascimento 74', Danilo 79', Lúcio Flávio 85'; Neném 39']"
-Botafogo,1,1,Vasco da Gama,11,Sep 15,1,1,124, [Carlos Alberto 44'; Cadu 9']
-Guarani,0,0,Corinthians,11,Sep 15,1,1,125,NA
-São Caetano,4,0,Gama,11,Sep 15,3,0,126," [Wágner 4', Somália 15', 58', Lúcio 44']"
-Vitória,4,3,Portuguesa,11,Sep 15,3,0,127," [Fernando 18', André 56', Ramalho 61', Marcos 89'; Alexandre Gaúcho 41', 74', Júnior 57']"
-Juventude,1,0,Atlético-MG,11,Sep 15,3,0,128, [Índio 71']
-Cruzeiro,3,1,Paysandu,11,Sep 15,3,0,129," [Marcelo Ramos 51', 53', Alessandro 90'; Gino 2']"
-Vasco da Gama,1,2,Santos,12,Sep 18,0,3,130," [Rodrigo Souza 16'; Elano 5', Alex Rodrigo 62']"
-Portuguesa,2,0,Botafogo,12,Sep 18,3,0,131," [Édson Araújo 76', Ricardo Oliveira 77']"
-Goiás,3,0,São Caetano,12,Sep 18,3,0,132," [Neném 50', Jefferson Feijão 65', Tiago 82']"
-Figueirense,3,1,Cruzeiro,12,Sep 18,3,0,133," [Igor 21', Thiago Gentil 39', William 90+2'; Luisão 45']"
-Paysandu,1,1,Coritiba,12,Sep 18,1,1,134, [Jóbson 90+1'p; Lima 30']
-Atlético-PR,1,3,Gama,12,Sep 18,0,3,135," [Kléber 70'; Dimba 7', 75', Rafael 27']"
-Bahia,2,0,São Paulo,12,Sep 18,3,0,136," [Geraldo 75', Bebeto Campos 90+1']"
-Ponte Preta,2,0,Palmeiras,12,Sep 18,3,0,137," [Elivélton 57'p, 62'p]"
-Grêmio,2,0,Juventude,12,Sep 19,3,0,138," [Adriano Chuva 38', Tinga 76']"
-Corinthians,2,1,Vitória,12,Sep 19,3,0,139," [Deivid 25', Fábio Luciano 57'; Allann Delon 85']"
-Atlético-MG,4,1,Paraná,12,Sep 19,3,0,140," [Souza 9', Mancini 56', 63, 72'; Rodrigão 71']"
-Botafogo,0,2,Coritiba,13,Sep 21,0,3,141, [Jabá 24' 86']
-Portuguesa,0,1,Cruzeiro,13,Sep 21,0,3,142, [Alessandro 75']
-Figueirense,1,0,Palmeiras,13,Sep 21,3,0,143, [Selmir 38']
-Santos,1,1,Goiás,13,Sep 21,1,1,144, [Elano 39'; Araújo 34']
-Vasco da Gama,1,1,Internacional,13,Sep 22,1,1,145, [Ely Thadeu 73'; Fernando Baiano 56']
-Corinthians,2,1,Paraná,13,Sep 22,3,0,146," [Guilherme 83', 86'; Márcio 21']"
-Atlético-MG,0,3,Flamengo,13,Sep 22,0,3,147," [Liédson 48', 62'; Zé Carlos 58']"
-Atlético-PR,1,1,São Paulo,13,Sep 22,1,1,148, [Dagoberto 74'; Ricardinho 87']
-Paysandu,4,3,Ponte Preta,13,Sep 22,3,0,149," [Jóbson 21', 48', Rato 63', Wélber 76'; Humberto 41', 50', Fabrício Carvalho 43']"
-Guarani,0,0,Juventude,13,Sep 22,1,1,150,NA
-São Caetano,1,0,Bahia,13,Sep 22,3,0,151, [Daniel 18']
-Grêmio,4,0,Vitória,13,Sep 22,3,0,152," [Rodrigo Fabri 2', 61', 85', Emerson 83']"
-São Paulo,1,2,Atlético-MG,14,Sep 25,0,3,153," [Júlio Baptista 87'; Mancini 11', Paulinho 84']"
-Cruzeiro,4,0,Vasco da Gama,14,Sep 25,3,0,154," [Marcelo Ramos 32', Paulo Miranda 45', Fábio Júnior 53', Alessandro 68']"
-Internacional,1,0,Bahia,14,Sep 25,3,0,155, [Mahicon Librelato 40']
-Fluminense,0,1,Atlético-PR,14,Sep 25,0,3,156, [Adriano Vieira 46']
-Paraná,1,2,Guarani,14,Sep 25,0,3,157," [Márcio 41'; Sérgio Alves 35', 58']"
-Vitória,2,2,São Caetano,14,Sep 25,1,1,158," [Alessandro 66', Nadson 90+2'; Adhemar 45+1', Wágner 60']"
-Ponte Preta,3,2,Figueirense,14,Sep 25,3,0,159," [Humberto 20', Hernâni 50', Farício Carvalho 54'; André Luís 25', Thiago Gentil 61']"
-Juventude,0,1,Corinthians,14,Sep 25,0,3,160, [Renato 64'og]
-Gama,0,0,Santos,14,Sep 26,1,1,161,NA
-Coritiba,2,0,Portuguesa,14,Sep 26,3,0,162," [Lima 10', 43']"
-Palmeiras,1,0,Paysandu,14,Sep 26,3,0,163, [Itamar 70']
-Flamengo,2,3,Grêmio,14,Sep 26,0,3,164," [Fábio Baiano 64', Hugo 81'; Gilberto 45+1', Tinga 53', Rodrigo Fabri 55']"
-Internacional,1,2,Paraná,15,Sep 28,0,3,165," [Cleitão 4'; Maurílio 6', 16']"
-Fluminense,2,1,Guarani,15,Sep 28,3,0,166," [Magno Alves 3', Marcão 8'; Sérgio Alves 86'p]"
-Bahia,1,2,Botafogo,15,Sep 28,0,3,167," [Geraldo 36'; Lúcio 85', 88']"
-Cruzeiro,2,1,Juventude ,15,Sep 28,3,0,168," [Alex 34', Alessandro 63'; Valdo 45']"
-Atlético-PR,0,1,São Caetano,15,Sep 28,0,3,169, [Claudecir 22']
-Vasco da Gama,4,0,Portuguesa,15,Sep 29,3,0,170," [Geder 26', Valdir Bigode 45+1', 48', Léo Lima 90+1']"
-São Paulo,2,2,Corinthians,15,Sep 29,1,1,171," [Reinaldo Oliveira 70', 80'; Gil 57', 90']"
-Paysandu,5,2,Atlético-MG,15,Sep 29,3,0,172," [Jóbson 21'p, Luís Fernando 29', Magno 61, Zé Augusto 63', Sandro 71'; Mancini 16', 80']"
-Ponte Preta,3,1,Flamengo,15,Sep 29,3,0,173," [Fabrício Carvalho 45+1', 52', Caíco 51; Fábio Baiano 85'p]"
-Figueirense,2,1,Gama,15,Sep 29,3,0,174," [Igor 55', 60'; Dimba 70']"
-Goiás,4,1,Grêmio,15,Sep 29,3,0,175," [Araújo 41', 72', Neném 47'p, 49'; Rodrigo Fabri 45'p]"
-Santos,1,1,Palmeiras,15,Sep 29,1,1,176, [Robinho 21'; Javier Arce 87']
-Grêmio,3,0,Paysandu,16,Oct 2,3,0,177," [Rodrigo Fabri 70', 81', 83']"
-Botafogo,2,1,Ponte Preta,16,Oct 2,3,0,178," [Ademílson 63', Galeano 78'p; Elivélton 83'p]"
-Gama,1,1,Internacional,16,Oct 2,1,1,179, [Dimba 51'; Cleiton Xavier 52']
-São Caetano,1,0,Coritiba,16,Oct 2,3,0,180, [Robert 73']
-Palmeiras,1,1,São Paulo,16,Oct 2,1,1,181, [Darío Muñoz 37'; Luís Fabiano 40']
-Vitória,2,1,Fluminense,16,Oct 2,3,0,182," [Aristizábal 49', Paulo Rodrigues 62'; Beto 56']"
-Juventude,2,1,Goiás,16,Oct 2,3,0,183," [Índio 23', Leonardo Manzi 27'; Jefferson Feijão 46']"
-Flamengo,1,1,Bahia,16,Oct 2,1,1,184, [Iranildo 1'p; Nei Fabiano 82']
-Paraná,1,1,Cruzeiro,16,Oct 3,1,1,185, [Emerson 20'; Paulo Miranda 75']
-Corinthians,2,4,Santos,16,Oct 3,0,3,186," [Fabinho 56', Leandro Azevedo 80'; Alberto 18', 31', Elano 47', 53']"
-Atlético-MG,0,2,Figueirense,16,Oct 3,0,3,187," [Lino 15', 90'p]"
-Botafogo,1,1,São Caetano,17,Oct 5,1,1,188, [Ademílson 32'; Robert 71']
-Flamengo,2,3,São Paulo,17,Oct 5,0,3,189," [Liédson 59', 89'; Reinaldo Oliveira 25', 57', Kaká 81']"
-Gama,2,0,Paysandu,17,Oct 5,3,0,190," [Rafael 8', Dimba 64']"
-Palmeiras,2,1,Portuguesa,17,Oct 5,3,0,191," [Juninho 11', Alexandre 67'; Alex Alves 20']"
-Goiás,0,0,Atlético-PR,17,Oct 5,1,1,192,NA
-Guarani,1,2,Vasco da Gama,17,Oct 5,0,3,193," [Léo 33'; Rodrigo Souto 22', Ramón Menezes 35']"
-Fluminense,3,2,Paraná,18,Oct 8,3,0,194," [Romário 9', 21', Magno Alves 81'; Márcio 45', Alexandre 73']"
-São Paulo,3,1,Coritiba,18,Oct 8,3,0,195," [Reinaldo Oliveira 7', 68', Jorginho Paulista 83'; Willians 89']"
-Guarani,3,1,Gama,18,Oct 8,3,0,196," [Sérgio Alves 3', 66', Léo 87'; Dimba 41']"
-Grêmio,1,1,Botafogo,18,Oct 9,1,1,197, [Roberto 59'; Odvan 77']
-Flamengo,2,0,São Caetano,18,Oct 9,3,0,198," [Liédson 3', 75']"
-Corinthians,2,2,Figueirense,18,Oct 9,1,1,199," [Rogério Régis 7', Guilherme 81'; Mendes 60', Lino 82'p]"
-Santos,3,2,Atlético-MG,18,Oct 9,3,0,200," [Alberto 27', Alex Rodrigo 84', Robinho 88'; Souza 55', Paulinho 90+2']"
-Atlético-PR,0,1,Ponte Preta,18,Oct 9,0,3,201, [Macedo 81']
-Paysandu,3,2,Bahia,18,Oct 9,3,0,202," [Souza 4', 76', Jóbson 29'; Nonato 14', Jair 18']"
-Vitória,4,2,Cruzeiro,18,Oct 9,3,0,203," [Aristizábal 42'p, 76', 85', Élson 50'; Maicon 16', Fábio Júnior 30']"
-Juventude,1,1,Portuguesa,18,Oct 9,1,1,204, [Edmílson 83'; Alex Alves 54']
-Goiás,4,2,Palmeiras,18,Oct 9,3,0,205," [Fabão 23', Araújo 30', 57', Evair 34'; Javier Arce 50'p, 73'p]"
-Palmeiras,2,2,Juventude,19,Oct 12,1,1,206," [Javier Arce 54'p, Rubens Cardoso 90+1'; Leonardo Manzi 83', 85']"
-Figueirense,0,3,São Paulo,19,Oct 12,0,3,207," [Kaká 34', 77', Luís Fabiano 86']"
-São Caetano,2,0,Vasco da Gama,19,Oct 12,3,0,208," [Marco Aurélio 27', Adhemar 48']"
-Paraná,1,0,Vitória,19,Oct 12,3,0,209, [Márcio 65']
-Botafogo,1,0,Paysandu,19,Oct 13,3,0,210, [Rodrigão 19']
-Portuguesa,1,1,Atlético-PR,19,Oct 13,1,1,211, [Édson Araújo 90'p; Dagoberto 60']
-Ponte Preta,3,2,Goiás,19,Oct 13,3,0,212," [Caíco 14', Alex Oliveira 31', Fabrício Carvalho 39'; Araújo 22', André Cruz 28']"
-Cruzeiro,1,4,Santos,19,Oct 13,0,3,213," [Elano 4', 53', André Luiz 18', Robinho 62'; Joãozinho 86']"
-Internacional,2,2,Fluminense,19,Oct 13,1,1,214," [Daniel Carvalho 53', Mahicon Librelato 86'; Magno Alves 32', Romário 78']"
-Coritiba,0,1,Guarani,19,Oct 13,0,3,215, [Luís Fernando Martinez 51']
-Gama,1,3,Corinthians,19,Oct 13,0,3,216," [Lindomar 5'p; Deivid 32', Renato 54', Gil 64']"
-Bahia,5,3,Atlético-MG,19,Oct 13,3,0,217," [Nonato 11', Gutiérrez 14'og, Valdomiro 55', Robgol 79', Geraldo 89'; Marques 9', Mancini 19', Michel 45+1']"
-Paysandu,3,1,Paraná,20,Oct 16,3,0,218," [Balão 65', 69', 84'; Waldir 90']"
-Vasco da Gama,2,1,Flamengo,20,Oct 16,3,0,219," [Ramón Menezes 31', 84'; Iranildo 40'p]"
-Coritiba,0,0,Grêmio,20,Oct 16,1,1,220,NA
-Internacional,1,2,Goiás,20,Oct 16,0,3,221," [Mahicon Librelato 83'; Márcio 31'og, Evair 47']"
-Figueirense,3,2,Atlético-PR,20,Oct 16,3,0,222," [Thiago Gentil 23', 64', Paulo Sérgio 50'; Adriano Vieira 31', Kléberson 55']"
-Gama,1,0,Juventude,20,Oct 16,3,0,223, [Dimba 71']
-São Paulo,3,2,Santos,20,Oct 16,3,0,224," [Luís Fabiano 56'p, Reinaldo Oliveira 58', Ricardinho 89'p; Robert 70', Diego Ribas 83'p]"
-Bahia,2,1,Ponte Preta,20,Oct 16,3,0,225," [Robgol 40'p, Nonato 65'; Valdir Lucas 63']"
-Palmeiras,4,2,Guarani,20,Oct 17,3,0,226," [Juninho 4', Javier Arce 28'p, Itamar 38', César 41'; Sérgio Alves 50'p, Adriano 53']"
-Botafogo,1,4,Vitória,20,Oct 17,0,3,227," [Lúcio 51'; Allann Delon 4', 40', Aristizábal 13', 67']"
-Atlético-MG,2,1,São Caetano,20,Oct 17,3,0,228," [Paulinho 27', Michel 40'; Magrão 81'p]"
-Santos,1,2,Portuguesa,21,Oct 19,0,3,229," [Diego Ribas 10'; César 32', Danilo 67']"
-Vasco da Gama,1,0,Paraná,21,Oct 19,3,0,230, [Ramón Menezes 43']
-Grêmio,3,1,Gama,21,Oct 19,3,0,231," [Rodrigo Fabri 73', Anderson Lima 76'p, 90'p; Dimba 13']"
-Corinthians,1,0,Ponte Preta,21,Oct 20,3,0,232, [Marcinho 74']
-Fluminense,1,0,Bahia,21,Oct 20,3,0,233, [Romário 60']
-Cruzeiro,1,2,Atlético-MG,21,Oct 20,0,3,234," [Luisão 81'; Souza 56', Paulinho 65']"
-Guarani,1,2,São Paulo,21,Oct 20,0,3,235," [Luís Fernando Martinez 40'; Ricardinho 24', Luís Fabiano 38'p]"
-Vitória,1,2,Flamengo,21,Oct 20,0,3,236," [Allann Delon 79'; Zé Carlos 14', Liédson 58']"
-São Caetano,2,1,Paysandu,21,Oct 20,3,0,237," [Magrão 74'p, Adhemar 85'; Balão 79']"
-Goiás,1,0,Figueirense,21,Oct 20,3,0,238, [Josué 80']
-Atlético-PR,2,3,Internacional,21,Oct 20,0,3,239," [Alex Mineiro 23', Fabiano 85'; Mahicon Librelato 22', Luís Alberto 47', 73']"
-Juventude,5,3,Coritiba,21,Oct 20,3,0,240," [Índio 6', Edmílson 19', Cláudio Pitbull 38', 49', Itaqui 66'; Da Silva 21', Lúcio Flávio 62'p, 64'p]"
-Corinthians,2,2,Palmeiras,22,Oct 23,1,1,241," [Gil 6', Rogério Régis 70'p; Itamar 18', Javier Arce 61'p]"
-Portuguesa,2,0,Guarani,22,Oct 23,3,0,242," [Ricardo Oliveira 30', Édson Araújo 45']"
-São Caetano,1,1,Cruzeiro,22,Oct 23,1,1,243, [Adhemar 73'; Luisão 32']
-Figueirense,2,1,Flamengo,22,Oct 23,3,0,244," [Lino 59'p, Thiago Gentil 82'; Felipe Mello 46']"
-Fluminense,2,2,Goiás,22,Oct 23,1,1,245," [Romário 26', 72'; Araújo 43', Danilo 89']"
-Paraná,2,1,Gama,22,Oct 23,3,0,246," [Maurílio 31'p, 58'; Jackson 17']"
-Paysandu,2,1,Santos,22,Oct 23,3,0,247," [Zé Augusto 11', Vandick 86'; Elano 13']"
-Ponte Preta,1,1,Vitória,22,Oct 23,1,1,248, [Hernâni 80'; Allann Delon 12']
-Bahia,4,2,Vasco da Gama,22,Oct 23,3,0,249," [Nonato 30', Jair 33', Calisto 58', Robgol 62'; Ramón Menezes 61', 69']"
-Botafogo,2,3,Fluminense,23,Oct 26,0,3,250," [Galeano 32'p, Leonardo Inácio 62'; César 39', Magno Alves 70', Romário 81'p]"
-Portuguesa,1,3,São Paulo,23,Oct 26,0,3,251," [Rogério Ceni 30', Luís Fabiano 63', 73'; Luiz Henrique 42']"
-Internacional,0,1,Grêmio,23,Oct 26,0,3,252, [Rodrigo Mendes 80']
-Santos,3,0,Flamengo,23,Oct 26,3,0,253," [William 26', Robert 32', Robinho 40']"
-Atlético-PR,1,0,Coritiba,23,Oct 26,3,0,254, [Kléber 13']
-Gama,0,1,Goiás,23,Oct 26,0,3,255, [Tiago 8']
-Juventude,3,2,Figueirense,23,Oct 26,3,0,256," [Leonardo Manzi 52', 79', Gaúcho 90+2'; Selmir 6', Igor 50']"
-Guarani,2,4,Ponte Preta,23,Oct 28,0,3,257," [Sérgio Alves 15', João Paulo 36'; Marinho 39', Valdir Lucas 40', Basílio 75', Elivélton 89'p]"
-Flamengo,0,1,Corinthians,24,Oct 30,0,3,258, [Guilherme 19']
-Palmeiras,2,1,Botafogo,24,Oct 30,3,0,259," [Darío Muñoz 3', Nenê 4'; Carlos Alberto 19']"
-Atlético-MG,3,2,Internacional,24,Oct 30,3,0,260," [Marques 33', 74'p, Kim 69'; Fabiano Costa 20', Cássio 90+1']"
-Grêmio,2,1,Atlético-PR,24,Oct 30,3,0,261," [Douglas Silva 27'og, Rodrigo Mendes 56'; Fabiano 64']"
-Coritiba,3,1,Cruzeiro,24,Oct 30,3,0,262," [Alexandre Fávaro 21', Lima 86', Reginaldo Araújo 90+3'; Fábio Júnior 7']"
-Paysandu,1,2,Goiás,24,Oct 30,0,3,263," [Souza 52'; Araújo 48', 77']"
-Bahia,1,1,Santos,24,Oct 30,1,1,264, [Robgol 56'p; Léo 90+2']
-Figueirense,1,2,São Caetano,24,Oct 30,0,3,265," [Selmir 14'; Claudecir 24', Robert 42']"
-Fluminense,2,1,Vasco da Gama,24,Oct 31,3,0,266," [César 66', Beto 84'; Valdir Bigode 71']"
-São Paulo,5,2,Ponte Preta,24,Oct 31,3,0,267," [Ameli 11', Luís Fabiano 18', 35'p, Reinaldo Oliveira 43', Kaká 88'p; Caíco 6', Alex Oliveira 81'p]"
-Paraná,3,1,Juventude,24,Oct 31,3,0,268," [Maurílio 62'p, 85', Márcio 78'; Michel 20']"
-Flamengo,2,0,Botafogo,25,Nov 2,3,0,269," [Zé Carlos 21', Iranildo 67']"
-Guarani,0,2,Santos,25,Nov 2,0,3,270," [Diego Ribas 31', Robinho 43']"
-Internacional,0,1,Coritiba,25,Nov 2,0,3,271, [Lima 89']
-Vasco da Gama,1,0,Palmeiras,25,Nov 3,3,0,272, [Léo Lima 64']
-Corinthians,0,2,Fluminense,25,Nov 3,0,3,273," [Andrei 29', Roni 41']"
-Cruzeiro,3,2,Grêmio,25,Nov 3,3,0,274," [Alex 3', Fábio Júnior 38', 57'p; Rodrigo Fabri 15', 88']"
-Ponte Preta,0,0,Portuguesa,25,Nov 3,1,1,275,NA
-Atlético-PR,2,2,Atlético-MG,25,Nov 3,1,1,276," [David 5', Dagoberto 28'; Hélcio 65', Alexandre 84']"
-Paysandu,2,1,Figueirense,25,Nov 3,3,0,277," [Vandick 73', Wélber 82'; Lino 6'p]"
-Goiás,4,0,Paraná,25,Nov 3,3,0,278," [Neném 13', Evair 39'p, 83', Bismarck 81']"
-São Caetano,2,1,Juventude,25,Nov 3,3,0,279," [Adhemar 21', Magrão 71'; Valdo 85']"
-Vitória,1,0,Bahia,25,Nov 3,3,0,280, [Fernando 38'p]
-Fluminense,0,3,Palmeiras,26,Nov 6,0,3,281," [Zinho 22', Flávio Luís 58', Juninho 85']"
-São Paulo,5,3,Vasco da Gama,26,Nov 6,3,0,282," [Luís Fabiano 45+1'p, 69', 73', Jean Narde 62', Júlio Santos 75'; Ramón Menezes 36', 39', Zé Carlos 68']"
-Atlético-PR,2,1,Paysandu,26,Nov 6,3,0,283," [Douglas Silva 31', Adriano Vieira 35'; Vandick 71']"
-Vitória,3,1,Guarani,26,Nov 6,3,0,284," [Alexsandro 75', 90+1', Fernando 85'; Júnior 49']"
-Figueirense,0,2,Grêmio,26,Nov 6,0,3,285," [Rodrigo Mendes 31, Rodrigo Fabri 80']"
-Gama,2,3,Cruzeiro,26,Nov 6,0,3,286," [Romualdo 12', Anderson 16'; Fábio Júnior 57', Leandro Wanderley 74', Cris 82']"
-São Caetano,1,1,Internacional,26,Nov 6,1,1,287, [Luís Carlos Capixaba 45'; Fernando Baiano 83']
-Atlético-MG,3,1,Coritiba,26,Nov 7,3,0,288," [Kim 13', Marques 40'p, 90'; Da Silva 25']"
-Paraná,2,0,Botafogo,26,Nov 7,3,0,289," [Fábio Luís 33', Márcio 72']"
-Corinthians,5,2,Portuguesa,26,Nov 7,3,0,290," [Deivid 28', 75', Guilherme 35', 52', 78'; Éder 41', Alex Alves 57'p]"
-Vasco da Gama,4,1,Vitória,27,Nov 9,3,0,291," [Russo 39', Ramón Menezes 48'p, Dejan Petkovic 67', Valdir Bigode 88'; Zé Roberto 37']"
-Cruzeiro,4,1,Atlético-PR,27,Nov 9,3,0,292," [Igor 15'og, Fábio Júnior 25', Luisão 44', Marcelo Batatais 58'; Igor 24']"
-Santos,1,3,Ponte Preta,27,Nov 9,0,3,293," [Robinho 49'p; Basílio 15', 29', Caíco 32']"
-Grêmio,2,2,São Caetano,27,Nov 9,1,1,294," [Rodrigo Fabri 1', Gilberto 76'; Luís Carlos Capixaba 41', Marlon 83']"
-Paysandu,3,2,Fluminense,27,Nov 9,3,0,295," [Souza 43'p, Rato 70', Marcos Dobrada 83'; Andrei 6', Fábio Bala 89']"
-Botafogo,2,1,Corinthians,27,Nov 10,3,0,296," [Lúcio 10', Fábio 89'; Rogério Régis 19'p]"
-Portuguesa,1,2,Flamengo,27,Nov 10,0,3,297," [Ricardo Oliveira 55'; Alessandro 41', Athirson 79'p]"
-Coritiba,2,0,Paraná,27,Nov 10,3,0,298," [Tcheco 84', Jabá 89']"
-Guarani,1,1,Bahia,27,Nov 10,1,1,299, [Sérgio Alves 58'p; Bebeto Campos 64']
-Juventude,3,2,Internacional,27,Nov 10,3,0,300," [Marcelo Pereira 5', Cláudio Pitbull 36', Michel 58'; Fabiano Costa 33', Chris 70']"
-Goiás,3,1,Atlético-MG,27,Nov 10,3,0,301," [Evair 24'p, 28'p, Araújo 60'; Mancini 17']"
-Vasco da Gama,2,0,Ponte Preta,28,Nov 13,3,0,302," [Valdir Bigode 33', Ramón Menezes 79']"
-Palmeiras,1,1,Flamengo,28,Nov 13,1,1,303, [Nenê 60'; Liédson 33']
-Atlético-MG,6,4,Gama,28,Nov 13,3,0,304," [Renaldo 14', 52', 90+3'p, Mancini 43', Kim 79', Marques 82'; Anderson 50', Nen 57', Rodriguinho 74', Dimba 86'p]"
-Internacional,0,1,Cruzeiro,28,Nov 13,0,3,305, [Luisão 24']
-Coritiba,1,2,Figueirense,28,Nov 13,0,3,306," [Lúcio Flávio 16'; Thiago Gentil 1', 56']"
-Bahia,0,0,Corinthians,28,Nov 13,1,1,307,NA
-Juventude,0,0,Paysandu,28,Nov 13,1,1,308,NA
-Fluminense,2,0,Portuguesa,28,Nov 14,3,0,309," [Romário 41'´p, 57'p]"
-São Paulo,3,2,Vitória,28,Nov 14,3,0,310," [Kaká 25', Leandro Amaral 30', Reinaldo Oliveira 55'p; Zé Roberto 9', Leílton 14']"
-Paraná,1,1,Grêmio,28,Nov 14,1,1,311, [William 82'; Ânderson Polga 43']
-Guarani,2,0,Botafogo,28,Nov 14,3,0,312," [Marquinhos 7', Luís Fernando Martinez 51']"
-Flamengo,2,2,Guarani,29,Nov 17,1,1,313," [Zé Carlos 7', Liédson 63'; Creedence 19', Sérgio Alves 23']"
-Botafogo,0,1,São Paulo,29,Nov 17,0,3,314, [Dill 55']
-Corinthians,1,1,Vasco da Gama,29,Nov 17,1,1,315, [Guilherme 65'; Ramón Menezes 86'p]
-Portuguesa,2,4,Bahia,29,Nov 17,0,3,316," [Ricardo Oliveira 64', 85'; Nonato 36', 48', 74', Bebeto Campos 79']"
-Cruzeiro,2,0,Goiás,29,Nov 17,3,0,317," [Marcelo Ramos 55', 82']"
-Grêmio,1,0,Atlético-MG,29,Nov 17,3,0,318, [Anderson Lima 29']
-Atlético-PR,4,0,Juventude,29,Nov 17,3,0,319," [Jadílson 65', 75', 85', Alex Mineiro 71']"
-Paysandu,0,2,Internacional,29,Nov 17,0,3,320," [Mahicon Librelato 58', Fernando Baiano 61']"
-Vitória,4,3,Palmeiras,29,Nov 17,3,0,321," [Allann Delon 3', Aristizábal 26'p, Zé Roberto 76', André 85'; Flávio Luís 4', Nenê 48', Javier Arce 88'p]"
-Ponte Preta,2,3,Fluminense,29,Nov 17,0,3,322," [Caíco 52', Fabrício Carvalho 64'; Roni 68', 72', Romário 80']"
-Figueirense,2,2,Paraná,29,Nov 17,1,1,323," [Lino 9', Thiago Gentil 32'; Maurílio 78', 83']"
-Gama,4,0,Coritiba,29,Nov 17,3,0,324," [Dimba 45+2', 85', Dario Larrosa 80', Rodriguinho 83']"
-São Caetano,3,2,Santos,29,Nov 17,3,0,325," [Claudecir 41', 63', Luís Carlos Capixaba 53'; Alex Rodrigo 58', Alberto 87'p]"
+id,time_mandante,gols_mandante,gols_visitante,time_visitante,rodada,campeonato,data,pontos_mandante,pontos_visitante,detalhes
+1,Vasco da Gama,2,0,Figueirense,1,2002,Aug 10,3,0," [Ramón Menezes 24', 26']"
+2,São Paulo,4,2,Paysandu,1,2002,Aug 10,3,0," [Jean Narde 15', Jorginho Paulista 30', Luís Fabiano 60', 88'; Jóbson 27'p, 67']"
+3,Paraná,2,1,São Caetano,1,2002,Aug 10,3,0," [Maurílio 45+1', 56'; Serginho 65']"
+4,Santos,2,1,Botafogo,1,2002,Aug 10,3,0," [Elano 4', Diego Ribas 43'; Ademílson 85']"
+5,Goiás,3,1,Portuguesa,1,2002,Aug 10,3,0," [Danilo 17', Araújo 66', Finazzi 79'; Ricardo Oliveira 16']"
+6,Fluminense,5,1,Cruzeiro,1,2002,Aug 11,3,0," [Magno Alves 29', Fernando Diniz 32', Romário 43'p, 90+2', Beto 47'; Fábio Júnior 88']"
+7,Palmeiras,1,1,Grêmio,1,2002,Aug 11,1,1, [Nenê 79'; Anderson Lima 84']
+8,Atlético-MG,1,2,Corinthians,1,2002,Aug 11,0,3," [Renaldo 32'; Scheidt 23', Renato 54']"
+9,Internacional,1,3,Flamengo,1,2002,Aug 11,0,3," [Fabiano Costa 16'; Liédson 11', 29', Felipe Mello 8']"
+10,Guarani,2,1,Atlético-PR,1,2002,Aug 11,3,0," [Luís Fernando Martinez 63', 65'; Kléber 8']"
+11,Coritiba,1,0,Vitória,1,2002,Aug 11,3,0, [Tcheco 48']
+12,Bahia,1,0,Gama,1,2002,Aug 11,3,0, [Robgol 64']
+13,Juventude,1,0,Ponte Preta,1,2002,Aug 11,3,0, [Marcelo Pereira 36'p]
+14,São Caetano,2,0,Fluminense,2,2002,Aug 14,3,0," [Adhemar 16', Claudecir 22']"
+15,Botafogo,1,1,Atlético-MG,2,2002,Aug 14,1,1, [Galeano 82'; Alexandre 63'] 
+16,Cruzeiro,1,1,Palmeiras,2,2002,Aug 14,1,1, [Fábio Júnior 26'p; Itamar 87']
+17,Grêmio,3,2,Vasco da Gama,2,2002,Aug 14,3,0," [Anderson Lima 1', 18'p, Rodrigo Fabri 81'; Ramón Menezes 68'p, 71']"
+18,Atlético-PR,4,0,Bahia,2,2002,Aug 14,3,0," [Fabiano 45+1', 80', Dagoberto 55', Rodriguinho 90+3']"
+19,Figueirense,0,0,Guarani,2,2002,Aug 14,1,1,NA
+20,Ponte Preta,2,0,Coritiba,2,2002,Aug 14,3,0," [Elivélton 43', Alex Oliveira 72']"
+21,Vitória,4,1,Goiás,2,2002,Aug 14,3,0," [André 20', 75', 78', Marcelo Heleno 22'; Neném 48']"
+22,Corinthians,3,2,Internacional,2,2002,Aug 14,3,0," [Deivid 27', Guilherme 43', 87'; Fabiano Costa 21', 69']"
+23,Flamengo,0,0,Juventude,2,2002,Aug 14,1,1,NA
+24,Portuguesa,1,0,Paraná,2,2002,Aug 14,3,0, [Ricardo Oliveira 3']
+25,Gama,0,1,São Paulo,2,2002,Aug 14,0,3, [Júlio Santos 81']
+26,Fluminense,3,1,Grêmio,3,2002,Aug 17,3,0," [Magno Alves 10', Romário 62', 82'; Luiz Mário 77']"
+27,Internacional,1,0,Ponte Preta,3,2002,Aug 17,3,0, [Leandrão 56']
+28,Atlético-PR,2,1,Vasco da Gama,3,2002,Aug 17,3,0," [Kléber 45', 51'; Siston 48']"
+29,Juventude,2,1,Santos,3,2002,Aug 18,3,0," [Cláudio Pitbull 61', Leonardo Manzi 71'; William 83']"
+30,Guarani,1,4,Atlético-MG,3,2002,Aug 18,0,3," [Marquinhos 5'; Paulinho 26', Marques 35'p, 53'p, Hélcio 65']"
+31,Flamengo,1,1,Goiás,3,2002,Aug 18,1,1, [Athirson 60'p; Neném 61']
+32,Paraná,2,3,São Paulo,3,2002,Aug 18,0,3," [Maurílio 72'p, Emerson 88'; Kaká 17', Júlio Baptista 32', Reinaldo Oliveira 53']"
+33,Cruzeiro,0,0,Botafogo,3,2002,Aug 18,1,1,NA
+34,Portuguesa,0,0,Figueirense,3,2002,Aug 18,1,1,NA
+35,Bahia,1,2,Coritiba,3,2002,Aug 18,0,3," [Robgol 74'; Lima 44', Alexandre Fávaro 86']"
+36,Gama,2,1,Vitória,3,2002,Aug 18,3,0," [Dimba 57', 58'; Aristizábal 31']"
+37,São Caetano,3,0,Corinthians,3,2002,Aug 18,3,0," [Claudecir 12', 18', Edu Sales 77']"
+38,Botafogo,2,2,Internacional,4,2002,Aug 21,1,1," [Carlos Miguel 27', Cleiton 38'; Adenílson 82', 90+2']"
+39,São Paulo,0,1,Juventude,4,2002,Aug 21,0,3, [Hélder 2']
+40,Atlético-MG,1,1,Fluminense,4,2002,Aug 21,1,1, [Alexandre Lindo 24'; Magno Alves 51']
+41,Paysandu,1,2,Portuguesa,4,2002,Aug 21,0,3," [Jóbson 9'; Alex Alves 21, Édson Araújo 76']"
+42,Coritiba,2,1,Flamengo,4,2002,Aug 21,3,0," [Lima 56', Lúcio Flávio 81'; Andrezinho 55']"
+43,Vitória,1,1,Atlético-PR,4,2002,Aug 21,1,1, [Fernando 44'; Kléber 45+1']
+44,Goiás,1,1,Bahia,4,2002,Aug 21,1,1, [Kley 70'; Nonato 25']
+45,Santos,3,0,Figueirense,4,2002,Aug 21,3,0," [Léo 42', Renato 48', Douglas 87']"
+46,Vasco da Gama,0,1,Gama,4,2002,Aug 22,0,3, [Dimba 40']
+47,Palmeiras,3,2,São Caetano,4,2002,Aug 22,3,0," [Javier Arce 11', 80', Dodô 68'; Adhemar 66', Marco Aurélio 90+1']"
+48,Grêmio,0,2,Guarani,4,2002,Aug 22,0,3," [Brener 30', Sérgio Alves 60']"
+49,Ponte Preta,2,0,Cruzeiro,4,2002,Aug 22,3,0," [Alex Oliveira 35', Rodrigo Costa 43']"
+50,Flamengo,1,2,Paysandu,5,2002,Aug 24,0,3," [Zé Carlos 59'; Jóbson 61'p, Balão 76']"
+51,Internacional,2,2,São Paulo,5,2002,Aug 24,1,1," [Fabiano Costa 46', Cleiton Xavier 45+4'; Reinaldo Oliveira 32', 63']"
+52,Figueirense,0,3,Botafogo,5,2002,Aug 24,0,3," [Carlos Alberto 22', Ademílson 47', Galeano 67']"
+53,Palmeiras,0,4,Atlético-MG,5,2002,Aug 25,0,3," [Mancini 20', 44', Leonardo Oliveira 70', Souza 84']"
+54,Fluminense,1,1,Santos,5,2002,Aug 25,1,1, [Roni 90+2'; Diego Ribas 56']
+55,Coritiba,1,2,Corinthians,5,2002,Aug 25,0,3," [Genílson 12'; Deivid 67', Leandro Azevedo 81']"
+56,Portuguesa,1,0,Gama,5,2002,Aug 25,3,0, [Ricardo Oliveira 46']
+57,Cruzeiro,2,1,Bahia,5,2002,Aug 25,3,0," [Cris 2', 44'; Valdomiro 25']"
+58,Vitória,2,1,Juventude,5,2002,Aug 25,3,0," [Aristizábal 10', 85'; Edmílson 32']"
+59,Ponte Preta,1,1,Grêmio,5,2002,Aug 25,1,1, [Valdir Lucas 66'; Rodrigo Fabri 31']
+60,Goiás,2,4,Vasco da Gama,5,2002,Aug 25,0,3," [Géder 6'og, Finazzi 79'; Souza 15', Rodrigo Souto 34', Washington Silva 63', Cadu 73']"
+61,Guarani,1,1,Internacional,6,2002,Aug 28,1,1, [Sangaletti 90+2'; Fernando Baiano 90+2'p]
+62,Juventude,2,0,Fluminense,6,2002,Aug 28,3,0," [Cláudio Pitbull 39', 85']"
+63,Santos,2,1,Paraná,6,2002,Aug 28,3,0," [Léo 63', Diego Ribas 77'p; Maurílio 46']"
+64,Gama,2,1,Flamengo,6,2002,Aug 28,3,0," [Rafael 26', Paulo Nunes 72'; Zé Carlos 66']"
+65,Atlético-PR,1,0,Palmeiras,6,2002,Aug 28,3,0, [Kléber 34']
+66,Corinthians,1,1,Cruzeiro,6,2002,Aug 28,1,1, [Rogério Régis 24'; Fábio Júnior 15']
+67,Bahia,1,2,Figueirense,6,2002,Aug 28,0,3," [Robgol 84'p; William 60', Pires 67']"
+68,São Paulo,2,0,Goiás,6,2002,Aug 29,3,0," [Luís Fabiano 47', 89']"
+69,Grêmio,0,0,Portuguesa,6,2002,Aug 29,1,1,NA
+70,Atlético-MG,2,1,Vitória,6,2002,Aug 29,3,0," [Renaldo 12', Marques 53'; Fernando 45']"
+71,Coritiba,2,0,Fluminense,7,2002,Aug 31,3,0," [Da Silva 16', Jabá 85']"
+72,Botafogo,1,0,Gama,7,2002,Aug 31,3,0, [Galeano 77']
+73,Corinthians,0,3,Atlético-PR,7,2002,Aug 31,0,3," [Kléber 23', Fabiano 30', Kléberson 83']"
+74,Internacional,3,0,Santos,7,2002,Aug 31,3,0," [Fernando Baiano 13'p, Mahicon Librelatto 60', Carlos Miguel 90']"
+75,Flamengo,1,1,Cruzeiro,7,2002,Sep 1,1,1, [Iranildo 32'; Fábio Júnior 16']
+76,São Paulo,2,0,Grêmio,7,2002,Sep 1,3,0," [Fábio Simplício 31', Kaká 33']"
+77,Atlético-MG,0,0,Portuguesa,7,2002,Sep 1,1,1,NA
+78,Paraná,5,1,Palmeiras,7,2002,Sep 1,3,0," [Márcio 6'p, 34', 55', 66', Fabinho 90+1'; Dodô 1']"
+79,Vitória,5,1,Paysandu,7,2002,Sep 1,3,0," [Samir 21', André 32', 56', 74', 84'; Jóbson 34'p]"
+80,Ponte Preta,0,1,São Caetano,7,2002,Sep 1,0,3, [Marlon 63']
+81,Juventude,1,0,Vasco da Gama,7,2002,Sep 1,3,0, [Marcelo Pereira 53'p]
+82,Goiás,1,2,Guarani,7,2002,Sep 1,0,3," [Zé Carlos 46'; Bruno Quadros 10', Sérgio Alves 77']"
+83,Vasco da Gama,1,2,Atlético-MG,8,2002,Sep 4,0,3," [Cadu 21'; Mancini 22', Kim 64']"
+84,Flamengo,5,2,Fluminense,8,2002,Sep 4,3,0," [Athirson 12', Zé Carlos 18', Liédson 58', Iranildo 68', Fábio Baiano 78'; César 1', Roni 90+1']"
+85,Palmeiras,2,2,Coritiba,8,2002,Sep 4,1,1," [Fabiano Eller 25', Darío Muñoz 68'; Lima 39', Da Silva 45']"
+86,Cruzeiro,3,1,São Paulo,8,2002,Sep 4,3,0," [Marcelo Ramos 24', Luisão 48', Fábio Júnior 85'; Luís Fabiano 72']"
+87,Atlético-PR,2,0,Botafogo,8,2002,Sep 4,3,0," [Alex Mineiro 62', Dagoberto 67']"
+88,Paysandu,0,1,Corinthians,8,2002,Sep 4,0,3, [Fábio Luciano 11']
+89,Bahia,3,2,Paraná,8,2002,Sep 4,3,0," [Nonato 50', Gil Baiano 55', Daniel 74'; Maurílio 58', Márcio 83']"
+90,Gama,0,0,Ponte Preta,8,2002,Sep 4,1,1,NA
+91,São Caetano,2,1,Guarani,8,2002,Sep 4,3,0," [Adãozinho 44', Somália 56'; Émerson Ávila 69']"
+92,Portuguesa,0,2,Internacional,8,2002,Sep 5,0,3," [Mahicon Librelato 59', Fernando Baiano 90+1']"
+93,Santos,3,0,Vitória,8,2002,Sep 5,3,0," [Alberto 8', 11', Robinho 42']"
+94,Vasco da Gama,1,0,Coritiba,9,2002,Sep 7,3,0, [Dejan Petkovic 90+1']
+95,Palmeiras,2,2,Gama,9,2002,Sep 7,1,1," [Zinho 5', Dodô 21'; Dimba 41', 85']"
+96,São Caetano,3,0,São Paulo,9,2002,Sep 7,3,0," [Magrão 37', Marco Aurélio 54', Claudecir 90+3']"
+97,Atlético-MG,2,0,Ponte Preta,9,2002,Sep 7,3,0," [Hélcio 21', Neguete 37']"
+98,Goiás,2,2,Botafogo,9,2002,Sep 7,1,1," [Evair 22'p, 24'; Romeu 15', Ademílson 90+1']"
+99,Fluminense,4,3,Figueirense,9,2002,Sep 8,3,0," [Magno Alves 2', 43', Yan 75', Romário 88'; Selmir 50', 79', Mendes 85']"
+100,Santos,2,2,Atlético-PR,9,2002,Sep 8,1,1," [William 52', Alberto 70'; Canindé 6'og, Kléberson 69'p]"
+101,Grêmio,4,0,Corinthians,9,2002,Sep 8,3,0," [Rodrigo Fabri 16', 22', 47', Rodrigo Mendes 69']"
+102,Paraná,3,0,Flamengo,9,2002,Sep 8,3,0," [Márcio 40', Fabinho 66', Alexandre 77']"
+103,Vitória,0,0,Internacional,9,2002,Sep 8,1,1,NA
+104,Juventude,2,1,Bahia,9,2002,Sep 8,3,0," [Leonardo Manzi 14', 49'; Nonato 1']"
+105,Guarani,2,0,Paysandu,9,2002,Sep 8,3,0," [Brenner 10', Marquinhos 65']"
+106,Flamengo,3,2,Atlético-PR,10,2002,Sep 11,3,0," [Liédson 28', 39', Iranildo 69'p; Kléberson 10', Kléber 54']"
+107,Portuguesa,3,2,São Caetano,10,2002,Sep 11,3,0," [Édson Araújo 15', 42', Alexandre Gaúcho 39'; Adhemar 52', 76']"
+108,Internacional,3,2,Palmeiras,10,2002,Sep 11,3,0," [Luiz Alberto 22', Fernando Baiano 11', Cris 85'; Nenê 72', César 81']"
+109,Coritiba,4,2,Santos,10,2002,Sep 11,3,0," [Lúcio Flávio 38'p, Edinho Baiano 40', Reginaldo Araújo 41', Da Silva 65'; Diego Ribas 24', 30']"
+110,Bahia,1,1,Grêmio,10,2002,Sep 11,1,1, [Robgol 1'; Gilberto 66']
+111,Ponte Preta,1,0,Paraná,10,2002,Sep 11,3,0, [Macedo 6']
+112,Figueirense,0,2,Vitória,10,2002,Sep 11,0,3," [André 23', Samir 86']"
+113,Paysandu,2,0,Vasco da Gama,10,2002,Sep 11,3,0," [Albertinho 41', Marcos Dobrada 61']"
+114,Botafogo,0,4,Juventude,10,2002,Sep 12,0,3," [Marcelo Pereira 20', Leonardo Manzi 46', Michel 57', 63']"
+115,Corinthians,3,0,Goiás,10,2002,Sep 12,3,0," [Deivid 36', 42', Rogério Régis 39']"
+116,Cruzeiro,0,2,Guarani,10,2002,Sep 12,0,3," [Sérgio Alves 51', João Paulo 87']"
+117,Gama,1,2,Fluminense,10,2002,Sep 12,0,3," [Dimba 9'; César 25', Magno Alves 63']"
+118,Internacional,2,4,Figueirense,11,2002,Sep 14,0,3," [Márcio 86', Leandrão 90+1'; Thiago Gentil 28', Selmir 59', Marcelinho 85', "
+119,Santos,2,0,Grêmio,11,2002,Sep 14,3,0," [Alberto 33', Léo 89']"
+120,Paraná,2,2,Atlético-PR,11,2002,Sep 14,1,1," [Émerson 28', Fabinho 56'; Kléber 22', 33']"
+121,Palmeiras,1,2,Bahia,11,2002,Sep 14,0,3," [Alexandre 71'; Gil Baiano 14', Geraldo 88']"
+122,São Paulo,6,0,Fluminense,11,2002,Sep 15,3,0," [Júlio Baptista 6', Kaká 56', Régis 69', Leandro Amaral 81', Luís Fabiano 85', 89']"
+123,Coritiba,3,1,Goiás,11,2002,Sep 15,3,0," [Reginaldo Nascimento 74', Danilo 79', Lúcio Flávio 85'; Neném 39']"
+124,Botafogo,1,1,Vasco da Gama,11,2002,Sep 15,1,1, [Carlos Alberto 44'; Cadu 9']
+125,Guarani,0,0,Corinthians,11,2002,Sep 15,1,1,NA
+126,São Caetano,4,0,Gama,11,2002,Sep 15,3,0," [Wágner 4', Somália 15', 58', Lúcio 44']"
+127,Vitória,4,3,Portuguesa,11,2002,Sep 15,3,0," [Fernando 18', André 56', Ramalho 61', Marcos 89'; Alexandre Gaúcho 41', 74', Júnior 57']"
+128,Juventude,1,0,Atlético-MG,11,2002,Sep 15,3,0, [Índio 71']
+129,Cruzeiro,3,1,Paysandu,11,2002,Sep 15,3,0," [Marcelo Ramos 51', 53', Alessandro 90'; Gino 2']"
+130,Vasco da Gama,1,2,Santos,12,2002,Sep 18,0,3," [Rodrigo Souza 16'; Elano 5', Alex Rodrigo 62']"
+131,Portuguesa,2,0,Botafogo,12,2002,Sep 18,3,0," [Édson Araújo 76', Ricardo Oliveira 77']"
+132,Goiás,3,0,São Caetano,12,2002,Sep 18,3,0," [Neném 50', Jefferson Feijão 65', Tiago 82']"
+133,Figueirense,3,1,Cruzeiro,12,2002,Sep 18,3,0," [Igor 21', Thiago Gentil 39', William 90+2'; Luisão 45']"
+134,Paysandu,1,1,Coritiba,12,2002,Sep 18,1,1, [Jóbson 90+1'p; Lima 30']
+135,Atlético-PR,1,3,Gama,12,2002,Sep 18,0,3," [Kléber 70'; Dimba 7', 75', Rafael 27']"
+136,Bahia,2,0,São Paulo,12,2002,Sep 18,3,0," [Geraldo 75', Bebeto Campos 90+1']"
+137,Ponte Preta,2,0,Palmeiras,12,2002,Sep 18,3,0," [Elivélton 57'p, 62'p]"
+138,Grêmio,2,0,Juventude,12,2002,Sep 19,3,0," [Adriano Chuva 38', Tinga 76']"
+139,Corinthians,2,1,Vitória,12,2002,Sep 19,3,0," [Deivid 25', Fábio Luciano 57'; Allann Delon 85']"
+140,Atlético-MG,4,1,Paraná,12,2002,Sep 19,3,0," [Souza 9', Mancini 56', 63, 72'; Rodrigão 71']"
+141,Botafogo,0,2,Coritiba,13,2002,Sep 21,0,3, [Jabá 24' 86']
+142,Portuguesa,0,1,Cruzeiro,13,2002,Sep 21,0,3, [Alessandro 75']
+143,Figueirense,1,0,Palmeiras,13,2002,Sep 21,3,0, [Selmir 38']
+144,Santos,1,1,Goiás,13,2002,Sep 21,1,1, [Elano 39'; Araújo 34']
+145,Vasco da Gama,1,1,Internacional,13,2002,Sep 22,1,1, [Ely Thadeu 73'; Fernando Baiano 56']
+146,Corinthians,2,1,Paraná,13,2002,Sep 22,3,0," [Guilherme 83', 86'; Márcio 21']"
+147,Atlético-MG,0,3,Flamengo,13,2002,Sep 22,0,3," [Liédson 48', 62'; Zé Carlos 58']"
+148,Atlético-PR,1,1,São Paulo,13,2002,Sep 22,1,1, [Dagoberto 74'; Ricardinho 87']
+149,Paysandu,4,3,Ponte Preta,13,2002,Sep 22,3,0," [Jóbson 21', 48', Rato 63', Wélber 76'; Humberto 41', 50', Fabrício Carvalho 43']"
+150,Guarani,0,0,Juventude,13,2002,Sep 22,1,1,NA
+151,São Caetano,1,0,Bahia,13,2002,Sep 22,3,0, [Daniel 18']
+152,Grêmio,4,0,Vitória,13,2002,Sep 22,3,0," [Rodrigo Fabri 2', 61', 85', Emerson 83']"
+153,São Paulo,1,2,Atlético-MG,14,2002,Sep 25,0,3," [Júlio Baptista 87'; Mancini 11', Paulinho 84']"
+154,Cruzeiro,4,0,Vasco da Gama,14,2002,Sep 25,3,0," [Marcelo Ramos 32', Paulo Miranda 45', Fábio Júnior 53', Alessandro 68']"
+155,Internacional,1,0,Bahia,14,2002,Sep 25,3,0, [Mahicon Librelato 40']
+156,Fluminense,0,1,Atlético-PR,14,2002,Sep 25,0,3, [Adriano Vieira 46']
+157,Paraná,1,2,Guarani,14,2002,Sep 25,0,3," [Márcio 41'; Sérgio Alves 35', 58']"
+158,Vitória,2,2,São Caetano,14,2002,Sep 25,1,1," [Alessandro 66', Nadson 90+2'; Adhemar 45+1', Wágner 60']"
+159,Ponte Preta,3,2,Figueirense,14,2002,Sep 25,3,0," [Humberto 20', Hernâni 50', Farício Carvalho 54'; André Luís 25', Thiago Gentil 61']"
+160,Juventude,0,1,Corinthians,14,2002,Sep 25,0,3, [Renato 64'og]
+161,Gama,0,0,Santos,14,2002,Sep 26,1,1,NA
+162,Coritiba,2,0,Portuguesa,14,2002,Sep 26,3,0," [Lima 10', 43']"
+163,Palmeiras,1,0,Paysandu,14,2002,Sep 26,3,0, [Itamar 70']
+164,Flamengo,2,3,Grêmio,14,2002,Sep 26,0,3," [Fábio Baiano 64', Hugo 81'; Gilberto 45+1', Tinga 53', Rodrigo Fabri 55']"
+165,Internacional,1,2,Paraná,15,2002,Sep 28,0,3," [Cleitão 4'; Maurílio 6', 16']"
+166,Fluminense,2,1,Guarani,15,2002,Sep 28,3,0," [Magno Alves 3', Marcão 8'; Sérgio Alves 86'p]"
+167,Bahia,1,2,Botafogo,15,2002,Sep 28,0,3," [Geraldo 36'; Lúcio 85', 88']"
+168,Cruzeiro,2,1,Juventude ,15,2002,Sep 28,3,0," [Alex 34', Alessandro 63'; Valdo 45']"
+169,Atlético-PR,0,1,São Caetano,15,2002,Sep 28,0,3, [Claudecir 22']
+170,Vasco da Gama,4,0,Portuguesa,15,2002,Sep 29,3,0," [Geder 26', Valdir Bigode 45+1', 48', Léo Lima 90+1']"
+171,São Paulo,2,2,Corinthians,15,2002,Sep 29,1,1," [Reinaldo Oliveira 70', 80'; Gil 57', 90']"
+172,Paysandu,5,2,Atlético-MG,15,2002,Sep 29,3,0," [Jóbson 21'p, Luís Fernando 29', Magno 61, Zé Augusto 63', Sandro 71'; Mancini 16', 80']"
+173,Ponte Preta,3,1,Flamengo,15,2002,Sep 29,3,0," [Fabrício Carvalho 45+1', 52', Caíco 51; Fábio Baiano 85'p]"
+174,Figueirense,2,1,Gama,15,2002,Sep 29,3,0," [Igor 55', 60'; Dimba 70']"
+175,Goiás,4,1,Grêmio,15,2002,Sep 29,3,0," [Araújo 41', 72', Neném 47'p, 49'; Rodrigo Fabri 45'p]"
+176,Santos,1,1,Palmeiras,15,2002,Sep 29,1,1, [Robinho 21'; Javier Arce 87']
+177,Grêmio,3,0,Paysandu,16,2002,Oct 2,3,0," [Rodrigo Fabri 70', 81', 83']"
+178,Botafogo,2,1,Ponte Preta,16,2002,Oct 2,3,0," [Ademílson 63', Galeano 78'p; Elivélton 83'p]"
+179,Gama,1,1,Internacional,16,2002,Oct 2,1,1, [Dimba 51'; Cleiton Xavier 52']
+180,São Caetano,1,0,Coritiba,16,2002,Oct 2,3,0, [Robert 73']
+181,Palmeiras,1,1,São Paulo,16,2002,Oct 2,1,1, [Darío Muñoz 37'; Luís Fabiano 40']
+182,Vitória,2,1,Fluminense,16,2002,Oct 2,3,0," [Aristizábal 49', Paulo Rodrigues 62'; Beto 56']"
+183,Juventude,2,1,Goiás,16,2002,Oct 2,3,0," [Índio 23', Leonardo Manzi 27'; Jefferson Feijão 46']"
+184,Flamengo,1,1,Bahia,16,2002,Oct 2,1,1, [Iranildo 1'p; Nei Fabiano 82']
+185,Paraná,1,1,Cruzeiro,16,2002,Oct 3,1,1, [Emerson 20'; Paulo Miranda 75']
+186,Corinthians,2,4,Santos,16,2002,Oct 3,0,3," [Fabinho 56', Leandro Azevedo 80'; Alberto 18', 31', Elano 47', 53']"
+187,Atlético-MG,0,2,Figueirense,16,2002,Oct 3,0,3," [Lino 15', 90'p]"
+188,Botafogo,1,1,São Caetano,17,2002,Oct 5,1,1, [Ademílson 32'; Robert 71']
+189,Flamengo,2,3,São Paulo,17,2002,Oct 5,0,3," [Liédson 59', 89'; Reinaldo Oliveira 25', 57', Kaká 81']"
+190,Gama,2,0,Paysandu,17,2002,Oct 5,3,0," [Rafael 8', Dimba 64']"
+191,Palmeiras,2,1,Portuguesa,17,2002,Oct 5,3,0," [Juninho 11', Alexandre 67'; Alex Alves 20']"
+192,Goiás,0,0,Atlético-PR,17,2002,Oct 5,1,1,NA
+193,Guarani,1,2,Vasco da Gama,17,2002,Oct 5,0,3," [Léo 33'; Rodrigo Souto 22', Ramón Menezes 35']"
+194,Fluminense,3,2,Paraná,18,2002,Oct 8,3,0," [Romário 9', 21', Magno Alves 81'; Márcio 45', Alexandre 73']"
+195,São Paulo,3,1,Coritiba,18,2002,Oct 8,3,0," [Reinaldo Oliveira 7', 68', Jorginho Paulista 83'; Willians 89']"
+196,Guarani,3,1,Gama,18,2002,Oct 8,3,0," [Sérgio Alves 3', 66', Léo 87'; Dimba 41']"
+197,Grêmio,1,1,Botafogo,18,2002,Oct 9,1,1, [Roberto 59'; Odvan 77']
+198,Flamengo,2,0,São Caetano,18,2002,Oct 9,3,0," [Liédson 3', 75']"
+199,Corinthians,2,2,Figueirense,18,2002,Oct 9,1,1," [Rogério Régis 7', Guilherme 81'; Mendes 60', Lino 82'p]"
+200,Santos,3,2,Atlético-MG,18,2002,Oct 9,3,0," [Alberto 27', Alex Rodrigo 84', Robinho 88'; Souza 55', Paulinho 90+2']"
+201,Atlético-PR,0,1,Ponte Preta,18,2002,Oct 9,0,3, [Macedo 81']
+202,Paysandu,3,2,Bahia,18,2002,Oct 9,3,0," [Souza 4', 76', Jóbson 29'; Nonato 14', Jair 18']"
+203,Vitória,4,2,Cruzeiro,18,2002,Oct 9,3,0," [Aristizábal 42'p, 76', 85', Élson 50'; Maicon 16', Fábio Júnior 30']"
+204,Juventude,1,1,Portuguesa,18,2002,Oct 9,1,1, [Edmílson 83'; Alex Alves 54']
+205,Goiás,4,2,Palmeiras,18,2002,Oct 9,3,0," [Fabão 23', Araújo 30', 57', Evair 34'; Javier Arce 50'p, 73'p]"
+206,Palmeiras,2,2,Juventude,19,2002,Oct 12,1,1," [Javier Arce 54'p, Rubens Cardoso 90+1'; Leonardo Manzi 83', 85']"
+207,Figueirense,0,3,São Paulo,19,2002,Oct 12,0,3," [Kaká 34', 77', Luís Fabiano 86']"
+208,São Caetano,2,0,Vasco da Gama,19,2002,Oct 12,3,0," [Marco Aurélio 27', Adhemar 48']"
+209,Paraná,1,0,Vitória,19,2002,Oct 12,3,0, [Márcio 65']
+210,Botafogo,1,0,Paysandu,19,2002,Oct 13,3,0, [Rodrigão 19']
+211,Portuguesa,1,1,Atlético-PR,19,2002,Oct 13,1,1, [Édson Araújo 90'p; Dagoberto 60']
+212,Ponte Preta,3,2,Goiás,19,2002,Oct 13,3,0," [Caíco 14', Alex Oliveira 31', Fabrício Carvalho 39'; Araújo 22', André Cruz 28']"
+213,Cruzeiro,1,4,Santos,19,2002,Oct 13,0,3," [Elano 4', 53', André Luiz 18', Robinho 62'; Joãozinho 86']"
+214,Internacional,2,2,Fluminense,19,2002,Oct 13,1,1," [Daniel Carvalho 53', Mahicon Librelato 86'; Magno Alves 32', Romário 78']"
+215,Coritiba,0,1,Guarani,19,2002,Oct 13,0,3, [Luís Fernando Martinez 51']
+216,Gama,1,3,Corinthians,19,2002,Oct 13,0,3," [Lindomar 5'p; Deivid 32', Renato 54', Gil 64']"
+217,Bahia,5,3,Atlético-MG,19,2002,Oct 13,3,0," [Nonato 11', Gutiérrez 14'og, Valdomiro 55', Robgol 79', Geraldo 89'; Marques 9', Mancini 19', Michel 45+1']"
+218,Paysandu,3,1,Paraná,20,2002,Oct 16,3,0," [Balão 65', 69', 84'; Waldir 90']"
+219,Vasco da Gama,2,1,Flamengo,20,2002,Oct 16,3,0," [Ramón Menezes 31', 84'; Iranildo 40'p]"
+220,Coritiba,0,0,Grêmio,20,2002,Oct 16,1,1,NA
+221,Internacional,1,2,Goiás,20,2002,Oct 16,0,3," [Mahicon Librelato 83'; Márcio 31'og, Evair 47']"
+222,Figueirense,3,2,Atlético-PR,20,2002,Oct 16,3,0," [Thiago Gentil 23', 64', Paulo Sérgio 50'; Adriano Vieira 31', Kléberson 55']"
+223,Gama,1,0,Juventude,20,2002,Oct 16,3,0, [Dimba 71']
+224,São Paulo,3,2,Santos,20,2002,Oct 16,3,0," [Luís Fabiano 56'p, Reinaldo Oliveira 58', Ricardinho 89'p; Robert 70', Diego Ribas 83'p]"
+225,Bahia,2,1,Ponte Preta,20,2002,Oct 16,3,0," [Robgol 40'p, Nonato 65'; Valdir Lucas 63']"
+226,Palmeiras,4,2,Guarani,20,2002,Oct 17,3,0," [Juninho 4', Javier Arce 28'p, Itamar 38', César 41'; Sérgio Alves 50'p, Adriano 53']"
+227,Botafogo,1,4,Vitória,20,2002,Oct 17,0,3," [Lúcio 51'; Allann Delon 4', 40', Aristizábal 13', 67']"
+228,Atlético-MG,2,1,São Caetano,20,2002,Oct 17,3,0," [Paulinho 27', Michel 40'; Magrão 81'p]"
+229,Santos,1,2,Portuguesa,21,2002,Oct 19,0,3," [Diego Ribas 10'; César 32', Danilo 67']"
+230,Vasco da Gama,1,0,Paraná,21,2002,Oct 19,3,0, [Ramón Menezes 43']
+231,Grêmio,3,1,Gama,21,2002,Oct 19,3,0," [Rodrigo Fabri 73', Anderson Lima 76'p, 90'p; Dimba 13']"
+232,Corinthians,1,0,Ponte Preta,21,2002,Oct 20,3,0, [Marcinho 74']
+233,Fluminense,1,0,Bahia,21,2002,Oct 20,3,0, [Romário 60']
+234,Cruzeiro,1,2,Atlético-MG,21,2002,Oct 20,0,3," [Luisão 81'; Souza 56', Paulinho 65']"
+235,Guarani,1,2,São Paulo,21,2002,Oct 20,0,3," [Luís Fernando Martinez 40'; Ricardinho 24', Luís Fabiano 38'p]"
+236,Vitória,1,2,Flamengo,21,2002,Oct 20,0,3," [Allann Delon 79'; Zé Carlos 14', Liédson 58']"
+237,São Caetano,2,1,Paysandu,21,2002,Oct 20,3,0," [Magrão 74'p, Adhemar 85'; Balão 79']"
+238,Goiás,1,0,Figueirense,21,2002,Oct 20,3,0, [Josué 80']
+239,Atlético-PR,2,3,Internacional,21,2002,Oct 20,0,3," [Alex Mineiro 23', Fabiano 85'; Mahicon Librelato 22', Luís Alberto 47', 73']"
+240,Juventude,5,3,Coritiba,21,2002,Oct 20,3,0," [Índio 6', Edmílson 19', Cláudio Pitbull 38', 49', Itaqui 66'; Da Silva 21', Lúcio Flávio 62'p, 64'p]"
+241,Corinthians,2,2,Palmeiras,22,2002,Oct 23,1,1," [Gil 6', Rogério Régis 70'p; Itamar 18', Javier Arce 61'p]"
+242,Portuguesa,2,0,Guarani,22,2002,Oct 23,3,0," [Ricardo Oliveira 30', Édson Araújo 45']"
+243,São Caetano,1,1,Cruzeiro,22,2002,Oct 23,1,1, [Adhemar 73'; Luisão 32']
+244,Figueirense,2,1,Flamengo,22,2002,Oct 23,3,0," [Lino 59'p, Thiago Gentil 82'; Felipe Mello 46']"
+245,Fluminense,2,2,Goiás,22,2002,Oct 23,1,1," [Romário 26', 72'; Araújo 43', Danilo 89']"
+246,Paraná,2,1,Gama,22,2002,Oct 23,3,0," [Maurílio 31'p, 58'; Jackson 17']"
+247,Paysandu,2,1,Santos,22,2002,Oct 23,3,0," [Zé Augusto 11', Vandick 86'; Elano 13']"
+248,Ponte Preta,1,1,Vitória,22,2002,Oct 23,1,1, [Hernâni 80'; Allann Delon 12']
+249,Bahia,4,2,Vasco da Gama,22,2002,Oct 23,3,0," [Nonato 30', Jair 33', Calisto 58', Robgol 62'; Ramón Menezes 61', 69']"
+250,Botafogo,2,3,Fluminense,23,2002,Oct 26,0,3," [Galeano 32'p, Leonardo Inácio 62'; César 39', Magno Alves 70', Romário 81'p]"
+251,Portuguesa,1,3,São Paulo,23,2002,Oct 26,0,3," [Rogério Ceni 30', Luís Fabiano 63', 73'; Luiz Henrique 42']"
+252,Internacional,0,1,Grêmio,23,2002,Oct 26,0,3, [Rodrigo Mendes 80']
+253,Santos,3,0,Flamengo,23,2002,Oct 26,3,0," [William 26', Robert 32', Robinho 40']"
+254,Atlético-PR,1,0,Coritiba,23,2002,Oct 26,3,0, [Kléber 13']
+255,Gama,0,1,Goiás,23,2002,Oct 26,0,3, [Tiago 8']
+256,Juventude,3,2,Figueirense,23,2002,Oct 26,3,0," [Leonardo Manzi 52', 79', Gaúcho 90+2'; Selmir 6', Igor 50']"
+257,Guarani,2,4,Ponte Preta,23,2002,Oct 28,0,3," [Sérgio Alves 15', João Paulo 36'; Marinho 39', Valdir Lucas 40', Basílio 75', Elivélton 89'p]"
+258,Flamengo,0,1,Corinthians,24,2002,Oct 30,0,3, [Guilherme 19']
+259,Palmeiras,2,1,Botafogo,24,2002,Oct 30,3,0," [Darío Muñoz 3', Nenê 4'; Carlos Alberto 19']"
+260,Atlético-MG,3,2,Internacional,24,2002,Oct 30,3,0," [Marques 33', 74'p, Kim 69'; Fabiano Costa 20', Cássio 90+1']"
+261,Grêmio,2,1,Atlético-PR,24,2002,Oct 30,3,0," [Douglas Silva 27'og, Rodrigo Mendes 56'; Fabiano 64']"
+262,Coritiba,3,1,Cruzeiro,24,2002,Oct 30,3,0," [Alexandre Fávaro 21', Lima 86', Reginaldo Araújo 90+3'; Fábio Júnior 7']"
+263,Paysandu,1,2,Goiás,24,2002,Oct 30,0,3," [Souza 52'; Araújo 48', 77']"
+264,Bahia,1,1,Santos,24,2002,Oct 30,1,1, [Robgol 56'p; Léo 90+2']
+265,Figueirense,1,2,São Caetano,24,2002,Oct 30,0,3," [Selmir 14'; Claudecir 24', Robert 42']"
+266,Fluminense,2,1,Vasco da Gama,24,2002,Oct 31,3,0," [César 66', Beto 84'; Valdir Bigode 71']"
+267,São Paulo,5,2,Ponte Preta,24,2002,Oct 31,3,0," [Ameli 11', Luís Fabiano 18', 35'p, Reinaldo Oliveira 43', Kaká 88'p; Caíco 6', Alex Oliveira 81'p]"
+268,Paraná,3,1,Juventude,24,2002,Oct 31,3,0," [Maurílio 62'p, 85', Márcio 78'; Michel 20']"
+269,Flamengo,2,0,Botafogo,25,2002,Nov 2,3,0," [Zé Carlos 21', Iranildo 67']"
+270,Guarani,0,2,Santos,25,2002,Nov 2,0,3," [Diego Ribas 31', Robinho 43']"
+271,Internacional,0,1,Coritiba,25,2002,Nov 2,0,3, [Lima 89']
+272,Vasco da Gama,1,0,Palmeiras,25,2002,Nov 3,3,0, [Léo Lima 64']
+273,Corinthians,0,2,Fluminense,25,2002,Nov 3,0,3," [Andrei 29', Roni 41']"
+274,Cruzeiro,3,2,Grêmio,25,2002,Nov 3,3,0," [Alex 3', Fábio Júnior 38', 57'p; Rodrigo Fabri 15', 88']"
+275,Ponte Preta,0,0,Portuguesa,25,2002,Nov 3,1,1,NA
+276,Atlético-PR,2,2,Atlético-MG,25,2002,Nov 3,1,1," [David 5', Dagoberto 28'; Hélcio 65', Alexandre 84']"
+277,Paysandu,2,1,Figueirense,25,2002,Nov 3,3,0," [Vandick 73', Wélber 82'; Lino 6'p]"
+278,Goiás,4,0,Paraná,25,2002,Nov 3,3,0," [Neném 13', Evair 39'p, 83', Bismarck 81']"
+279,São Caetano,2,1,Juventude,25,2002,Nov 3,3,0," [Adhemar 21', Magrão 71'; Valdo 85']"
+280,Vitória,1,0,Bahia,25,2002,Nov 3,3,0, [Fernando 38'p]
+281,Fluminense,0,3,Palmeiras,26,2002,Nov 6,0,3," [Zinho 22', Flávio Luís 58', Juninho 85']"
+282,São Paulo,5,3,Vasco da Gama,26,2002,Nov 6,3,0," [Luís Fabiano 45+1'p, 69', 73', Jean Narde 62', Júlio Santos 75'; Ramón Menezes 36', 39', Zé Carlos 68']"
+283,Atlético-PR,2,1,Paysandu,26,2002,Nov 6,3,0," [Douglas Silva 31', Adriano Vieira 35'; Vandick 71']"
+284,Vitória,3,1,Guarani,26,2002,Nov 6,3,0," [Alexsandro 75', 90+1', Fernando 85'; Júnior 49']"
+285,Figueirense,0,2,Grêmio,26,2002,Nov 6,0,3," [Rodrigo Mendes 31, Rodrigo Fabri 80']"
+286,Gama,2,3,Cruzeiro,26,2002,Nov 6,0,3," [Romualdo 12', Anderson 16'; Fábio Júnior 57', Leandro Wanderley 74', Cris 82']"
+287,São Caetano,1,1,Internacional,26,2002,Nov 6,1,1, [Luís Carlos Capixaba 45'; Fernando Baiano 83']
+288,Atlético-MG,3,1,Coritiba,26,2002,Nov 7,3,0," [Kim 13', Marques 40'p, 90'; Da Silva 25']"
+289,Paraná,2,0,Botafogo,26,2002,Nov 7,3,0," [Fábio Luís 33', Márcio 72']"
+290,Corinthians,5,2,Portuguesa,26,2002,Nov 7,3,0," [Deivid 28', 75', Guilherme 35', 52', 78'; Éder 41', Alex Alves 57'p]"
+291,Vasco da Gama,4,1,Vitória,27,2002,Nov 9,3,0," [Russo 39', Ramón Menezes 48'p, Dejan Petkovic 67', Valdir Bigode 88'; Zé Roberto 37']"
+292,Cruzeiro,4,1,Atlético-PR,27,2002,Nov 9,3,0," [Igor 15'og, Fábio Júnior 25', Luisão 44', Marcelo Batatais 58'; Igor 24']"
+293,Santos,1,3,Ponte Preta,27,2002,Nov 9,0,3," [Robinho 49'p; Basílio 15', 29', Caíco 32']"
+294,Grêmio,2,2,São Caetano,27,2002,Nov 9,1,1," [Rodrigo Fabri 1', Gilberto 76'; Luís Carlos Capixaba 41', Marlon 83']"
+295,Paysandu,3,2,Fluminense,27,2002,Nov 9,3,0," [Souza 43'p, Rato 70', Marcos Dobrada 83'; Andrei 6', Fábio Bala 89']"
+296,Botafogo,2,1,Corinthians,27,2002,Nov 10,3,0," [Lúcio 10', Fábio 89'; Rogério Régis 19'p]"
+297,Portuguesa,1,2,Flamengo,27,2002,Nov 10,0,3," [Ricardo Oliveira 55'; Alessandro 41', Athirson 79'p]"
+298,Coritiba,2,0,Paraná,27,2002,Nov 10,3,0," [Tcheco 84', Jabá 89']"
+299,Guarani,1,1,Bahia,27,2002,Nov 10,1,1, [Sérgio Alves 58'p; Bebeto Campos 64']
+300,Juventude,3,2,Internacional,27,2002,Nov 10,3,0," [Marcelo Pereira 5', Cláudio Pitbull 36', Michel 58'; Fabiano Costa 33', Chris 70']"
+301,Goiás,3,1,Atlético-MG,27,2002,Nov 10,3,0," [Evair 24'p, 28'p, Araújo 60'; Mancini 17']"
+302,Vasco da Gama,2,0,Ponte Preta,28,2002,Nov 13,3,0," [Valdir Bigode 33', Ramón Menezes 79']"
+303,Palmeiras,1,1,Flamengo,28,2002,Nov 13,1,1, [Nenê 60'; Liédson 33']
+304,Atlético-MG,6,4,Gama,28,2002,Nov 13,3,0," [Renaldo 14', 52', 90+3'p, Mancini 43', Kim 79', Marques 82'; Anderson 50', Nen 57', Rodriguinho 74', Dimba 86'p]"
+305,Internacional,0,1,Cruzeiro,28,2002,Nov 13,0,3, [Luisão 24']
+306,Coritiba,1,2,Figueirense,28,2002,Nov 13,0,3," [Lúcio Flávio 16'; Thiago Gentil 1', 56']"
+307,Bahia,0,0,Corinthians,28,2002,Nov 13,1,1,NA
+308,Juventude,0,0,Paysandu,28,2002,Nov 13,1,1,NA
+309,Fluminense,2,0,Portuguesa,28,2002,Nov 14,3,0," [Romário 41'´p, 57'p]"
+310,São Paulo,3,2,Vitória,28,2002,Nov 14,3,0," [Kaká 25', Leandro Amaral 30', Reinaldo Oliveira 55'p; Zé Roberto 9', Leílton 14']"
+311,Paraná,1,1,Grêmio,28,2002,Nov 14,1,1, [William 82'; Ânderson Polga 43']
+312,Guarani,2,0,Botafogo,28,2002,Nov 14,3,0," [Marquinhos 7', Luís Fernando Martinez 51']"
+313,Flamengo,2,2,Guarani,29,2002,Nov 17,1,1," [Zé Carlos 7', Liédson 63'; Creedence 19', Sérgio Alves 23']"
+314,Botafogo,0,1,São Paulo,29,2002,Nov 17,0,3, [Dill 55']
+315,Corinthians,1,1,Vasco da Gama,29,2002,Nov 17,1,1, [Guilherme 65'; Ramón Menezes 86'p]
+316,Portuguesa,2,4,Bahia,29,2002,Nov 17,0,3," [Ricardo Oliveira 64', 85'; Nonato 36', 48', 74', Bebeto Campos 79']"
+317,Cruzeiro,2,0,Goiás,29,2002,Nov 17,3,0," [Marcelo Ramos 55', 82']"
+318,Grêmio,1,0,Atlético-MG,29,2002,Nov 17,3,0, [Anderson Lima 29']
+319,Atlético-PR,4,0,Juventude,29,2002,Nov 17,3,0," [Jadílson 65', 75', 85', Alex Mineiro 71']"
+320,Paysandu,0,2,Internacional,29,2002,Nov 17,0,3," [Mahicon Librelato 58', Fernando Baiano 61']"
+321,Vitória,4,3,Palmeiras,29,2002,Nov 17,3,0," [Allann Delon 3', Aristizábal 26'p, Zé Roberto 76', André 85'; Flávio Luís 4', Nenê 48', Javier Arce 88'p]"
+322,Ponte Preta,2,3,Fluminense,29,2002,Nov 17,0,3," [Caíco 52', Fabrício Carvalho 64'; Roni 68', 72', Romário 80']"
+323,Figueirense,2,2,Paraná,29,2002,Nov 17,1,1," [Lino 9', Thiago Gentil 32'; Maurílio 78', 83']"
+324,Gama,4,0,Coritiba,29,2002,Nov 17,3,0," [Dimba 45+2', 85', Dario Larrosa 80', Rodriguinho 83']"
+325,São Caetano,3,2,Santos,29,2002,Nov 17,3,0," [Claudecir 41', 63', Luís Carlos Capixaba 53'; Alex Rodrigo 58', Alberto 87'p]"

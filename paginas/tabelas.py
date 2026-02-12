@@ -11,7 +11,7 @@ def render_tabela_classificacao(df: pd.DataFrame):
     # --- 1. Tratamento Inicial ---
     df['TIME'] = bases.grafia(df['TIME'])
     
-    # --- 2. Filtro de Temporada ---
+    # --- 2. FILTRO TEMPORADA ---
     if 'CAMPEONATO' in df.columns:
         # Ordena as temporadas
         temporadas = sorted(df['CAMPEONATO'].unique(), reverse=True)
@@ -29,12 +29,30 @@ def render_tabela_classificacao(df: pd.DataFrame):
     # Imagens
     # Passo A: Obter o código
     df_show['codigo_temp'] = df_show['TIME'].apply(bases.codigo_clube)
-    
     # Passo B: Montar a URL completa
     base_url = "https://tmssl.akamaized.net//images/wappen/head/"
     df_show['ESCUDO'] = df_show['codigo_temp'].apply(lambda x: f"{base_url}{x}")
+    
+    # --- 3.0. APLICAÇÃO DE PUNIÇÕES (Lógica Inserida Aqui) ---
+        # Verifica se o ano selecionado tem punições registradas
+        # Convertemos selecao_temp para string para garantir match com o dict, 
+    ano_chave = selecao_temp
+    
+    if ano_chave in PUNICOES:
+        ajustes = PUNICOES[ano_chave]
+        for time, delta in ajustes.items():
+            mask = df_show['TIME'] == time
+            
+            if mask.any():
+                # Aplica a matemática na coluna PONTOS
+                df_show.loc[mask, 'PONTOS'] += delta
+                
+                # Opcional: Mostra um aviso visual pro usuário
+                sinal = "-" if delta < 0 else "+"
+                st.toast(
+                    f"⚠ Punição extracampo (STJD): {time} ({sinal}{abs(delta)} pts)")
 
-    # --- 3. Ordenação padrão ---
+    # --- 3.1. Ordenação padrão ---
     cols_sort = ['PONTOS', 'VITORIAS', 'SALDO_GOLS', 'GOLS_PRO']
     cols_existentes_sort = [c for c in cols_sort if c in df_show.columns]
     
@@ -74,6 +92,15 @@ def render_tabela_classificacao(df: pd.DataFrame):
         }
     )
 
+
+PUNICOES = {# pontos
+    2003:{'Barueri': -3, 'Corinthians': 2, 'Fluminense': 2,
+             'Internacional': 2, 'Juventude': 3, 'Paysandu SC': -8,
+             'Ponte Preta': -4, 'São Caetano': 3},
+    2004:{'São Caetano':-24},
+    2010:{'Barueri':-3},
+    2013:{'Flamengo':-4, 'Portuguesa':-4}
+    }
 dados = bases.ler('TabelaFinal.xlsx', 'br')
 df = pd.DataFrame(dados)
 render_tabela_classificacao(df)

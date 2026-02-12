@@ -45,7 +45,7 @@ def calcular_classificacao_completa(df_filtrado):
         'Fluminense': 2,
         'Internacional': 2,
         'Juventude': 3,
-        'Paysandu SC': 8,
+        'Paysandu SC': -8,
         'Ponte Preta': - 4 + 3,
         'Portuguesa': - 4,
         'São Caetano':3 - 24        
