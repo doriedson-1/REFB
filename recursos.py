@@ -17,6 +17,7 @@ class Bases:
     def classifica(self, df, ano = 2020, exportar = False):
         """
         Retorna a classificação final a partir da tabela de jogos.
+        Utiliza grafia().
         ----------
         df : DataFrame
             Objeto do Pandas.
@@ -29,6 +30,10 @@ class Bases:
         -------
         classificacao (TabelaFinal) : DataFrame
         """
+        # -1. Formatação de nomes
+        df['time_mandante'] = Bases.grafia(self, df['time_mandante'])
+        df['time_visitante'] = Bases.grafia(self, df['time_visitante'])
+
         
         # 0. Selecionar o ano e as variáveis necessárias na tabela final
         #df = df[df['ano_campeonato'] == ano]
@@ -185,6 +190,7 @@ class Bases:
         df['dif_gols'] = (df['gols_mandante'] - df['gols_visitante']).abs()
         return df        
     
+
     def grafia(self, coluna):
         """
         Limpeza de colunas.

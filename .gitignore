@@ -18,7 +18,9 @@ rascunho.ipynb
 messages.pot
 locales/
 traduzir_po.py
+babel.cfg
 
+#
 .streamlit/secrets.toml
 
 environment.yml
