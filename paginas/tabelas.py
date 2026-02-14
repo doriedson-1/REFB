@@ -88,7 +88,8 @@ def render_tabela_classificacao(df: pd.DataFrame):
             "SALDO_GOLS": st.column_config.NumberColumn("Saldo",format = "%d"),
             "APROVEITAMENTO": st.column_config.ProgressColumn(
                 "Aprov. %", format="%.1f%%", min_value=0, max_value=100,),
-        }
+        },
+        hide_index = True
     )
 
 

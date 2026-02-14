@@ -80,12 +80,21 @@ with col_filtro:
 
 st.subheader('Primeira fase')
 
-tab = bases.classifica(dados, selecao_temp)
+tab = bases.classifica(df_show, selecao_temp)
+
+# Imagens
+tab['codigo_temp'] = tab['TIME'].apply(bases.codigo_clube)
+base_url = "https://tmssl.akamaized.net//images/wappen/head/"
+tab['ESCUDO'] = tab['codigo_temp'].apply(lambda x: f"{base_url}{x}")
+
+# seleção de colunas
+tab = tab.iloc[:, [11,0,1,2,3,4,5,6,7,8,9]]
+
 st.dataframe(tab,
              width='stretch',
              column_config={
                  # Configuração da Imagem
-                 #"ESCUDO": st.column_config.ImageColumn("", width="small"),
+                 "ESCUDO": st.column_config.ImageColumn("", width="small"),
                  "TIME": st.column_config.TextColumn("Clube", width="medium"),
                  "PONTOS": st.column_config.NumberColumn("Pontos", format = "%d",),
                  "JOGOS": st.column_config.NumberColumn("Jogos"),
@@ -97,7 +106,8 @@ st.dataframe(tab,
                  "SALDO_GOLS": st.column_config.NumberColumn("Saldo",format = "%d"),
                  "APROVEITAMENTO": st.column_config.ProgressColumn(
                      "Aprov. %", format="%.1f%%", min_value=0, max_value=100,),
-             })
+             },
+             hide_index=True)
 
 # # # # # # 
 st.divider()

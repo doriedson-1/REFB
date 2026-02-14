@@ -67,7 +67,7 @@ class Bases:
             'derrotas': 'sum',
             'gols_pro': 'sum',
             'gols_contra': 'sum'
-        })
+            })
         
         # 5. Criar colunas extras (Saldo de Gols e Jogos)
         classificacao['saldo_gols'] = classificacao['gols_pro'] - classificacao['gols_contra']
@@ -80,6 +80,9 @@ class Bases:
             by=['pontos', 'saldo_gols', 'gols_pro'], 
             ascending=False
         )
+        
+        # 'TIME' volta a ser o nome da coluna
+        classificacao = classificacao.reset_index()
         
         # 7. Formatação
         classificacao.rename(columns = {'pontos':'PONTOS', 'vitorias':'VITORIAS',
@@ -147,7 +150,10 @@ class Bases:
             'Sport Recife':'8718.png?lm=1708623979',
             'São Caetano':'291.png?lm=1455314787',
             'São Paulo':'585.png?lm=1409133922',
-            'Vasco da Gama':'978.png?lm=1651168164'
+            'Vasco da Gama':'978.png?lm=1651168164',
+            
+            # times (1971-2002)
+            'Gama':''
         }
         
         # Retorna o código se existir, ou um código padrão 'default' se não achar
