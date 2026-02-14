@@ -64,10 +64,9 @@ def render_tabela_classificacao(df: pd.DataFrame):
     df_show.index = df_show.index + 1
 
     # --- 5. Seleção de colunas ---
-    cols_display = [
-        'ESCUDO', 'TIME', 'PONTOS', 'JOGOS', 'VITORIAS', 'EMPATES', 'DERROTAS', 
-        'GOLS_PRO', 'GOLS_CONTRA', 'SALDO_GOLS', 'APROVEITAMENTO'
-    ]
+    cols_display = ['ESCUDO', 'TIME', 'PONTOS', 'JOGOS', 'VITORIAS', 'EMPATES',
+                    'DERROTAS', 'GOLS_PRO', 'GOLS_CONTRA', 'SALDO_GOLS',
+                    'APROVEITAMENTO']
     # Filtro
     cols_finais = [c for c in cols_display if c in df_show.columns]
 
@@ -101,6 +100,7 @@ PUNICOES = {# pontos
     2010:{'Barueri':-3},
     2013:{'Flamengo':-4, 'Portuguesa':-4}
     }
-dados = bases.ler('TabelaFinal.xlsx', 'br')
-df = pd.DataFrame(dados)
-render_tabela_classificacao(df)
+
+render_tabela_classificacao(
+    bases.ler('TabelaFinal.xlsx', 'br')
+    )

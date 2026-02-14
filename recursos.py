@@ -154,20 +154,29 @@ class Bases:
         return codigos.get(nome_clube)
     
     
-    def descritivas(self, torneio = 'br'):
+    def descritivas(self, torneio = 'brpc'):
         """
-        Parameters
-        ----------
         torneio : str
             Diretório do arquivo.
 
-        Returns
+        Retorna
         -------
-        None.
+        Nome de todos times na base de dados selecionada.
 
         """
-        if torneio == 'br':
-            arq = self.caminhos.get(torneio) + "TabelaFinal.xlsx"
+        if torneio == 'brpc':   # pós 2003
+            arq = self.caminhos.get('br') + "TabelaFinal.xlsx"
+            arquivo = pd.read_excel(arq)
+            
+            # Faz correções ortográficas
+            arquivo['TIME'] = Bases.grafia(self, arquivo['TIME'])
+            
+            t_times = sorted(arquivo['TIME'].unique())
+            
+            return t_times
+        
+        elif torneio == 'brmm':    # pré 2003
+            arq = self.caminhos.get('br') + "2002fi.csv"
             arquivo = pd.read_excel(arq)
             
             # Faz correções ortográficas

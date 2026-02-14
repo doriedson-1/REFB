@@ -15,5 +15,25 @@
 
 .bracket {
   border-collapse: separate;
-  border-spacing: 60px 0; /* ← controls distance between phases */
+  border-spacing: 60px 0;
+}
+
+
+
+body.light .team {
+  color: #222222;
+}
+
+body.dark .team {
+  color: #f0f2f6;
+}
+
+body.light .team.winner {
+  color: #1f77b4;
+  font-weight: bold;
+}
+
+body.dark .team.winner {
+  color: #4da3ff;
+  font-weight: bold;
 }

@@ -1,5 +1,4 @@
 # Tabelas brasileirão 1971-2002
-import pandas as pd
 import streamlit as st
 from pathlib import Path
 import streamlit.components.v1 as components
@@ -41,6 +40,13 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
     html = html_path.read_text(encoding="utf-8")
     css = css_path.read_text(encoding="utf-8")
 
+    # 🔹 Get current theme
+    theme = st.get_option("theme.base")  # "light" or "dark"
+    print('tema:', theme)
+
+    # 🔹 Inject theme class in body
+    html = html.replace("<body>", f'<body class="{theme}">')
+    
     # Remove <link rel="stylesheet"> se existir
     html = html.replace('<link rel="stylesheet" href="style.css">', '')
 
@@ -59,7 +65,6 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
 
 
 st.divider()
-st.subheader('Primeira fase')
 
 dados = bases.ler('2002fi.csv', 'br')
 
@@ -73,12 +78,32 @@ with col_filtro:
     # Filtra o DataFrame
     df_show = dados[dados['campeonato'] == selecao_temp].copy()
 
-tab = bases.classifica(dados, selecao_temp)
-st.dataframe(tab)
+st.subheader('Primeira fase')
 
+tab = bases.classifica(dados, selecao_temp)
+st.dataframe(tab,
+             width='stretch',
+             column_config={
+                 # Configuração da Imagem
+                 #"ESCUDO": st.column_config.ImageColumn("", width="small"),
+                 "TIME": st.column_config.TextColumn("Clube", width="medium"),
+                 "PONTOS": st.column_config.NumberColumn("Pontos", format = "%d",),
+                 "JOGOS": st.column_config.NumberColumn("Jogos"),
+                 "VITORIAS": st.column_config.NumberColumn("Vitórias"),
+                 "EMPATES": st.column_config.NumberColumn("Empates"),
+                 "DERROTAS": st.column_config.NumberColumn("Derrotas"),
+                 "GOLS_PRO": st.column_config.NumberColumn("Gols pró"),
+                 "GOLS_CONTRA": st.column_config.NumberColumn("Gols contra"),
+                 "SALDO_GOLS": st.column_config.NumberColumn("Saldo",format = "%d"),
+                 "APROVEITAMENTO": st.column_config.ProgressColumn(
+                     "Aprov. %", format="%.1f%%", min_value=0, max_value=100,),
+             })
+
+# # # # # # 
 st.divider()
 
 st.subheader('Fase final')
+
 render_html_css(
     html_path = st.secrets.atalhos.bd_cb_ff + "2002CB.html",
     css_path= st.secrets.atalhos.css,
