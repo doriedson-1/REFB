@@ -29,6 +29,10 @@ st.set_page_config(page_title = "Repositório Estatístico do Futebol Brasileiro
 st.header("Repositório Estatístico do Futebol Brasileiro")
 
 # Listagem das páginas do site
+estat_av_pag = st.Page(
+    page = 'paginas/estat_avan.py',
+    title = 'Estatísticas avançadas')
+
 cbmm_pag = st.Page(
     page = 'paginas/tabelas2.py',
     title = 'Tabelas (1971-2002)')
@@ -66,6 +70,7 @@ home_pag = st.Page(
 pg = st.navigation({_('Início'):[home_pag],
                     'Campeonato Brasileiro':[cbmm_pag, tab_pag, ranking_pag],
                     'Times':[jogos_pag, confrontos_pag, estat_placar_pag],
+                    'Jogadores':[estat_av_pag]
                     'Para você':[com_pag]
                     })
 
