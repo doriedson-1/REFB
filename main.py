@@ -70,7 +70,7 @@ home_pag = st.Page(
 pg = st.navigation({_('Início'):[home_pag],
                     'Campeonato Brasileiro':[cbmm_pag, tab_pag, ranking_pag],
                     'Times':[jogos_pag, confrontos_pag, estat_placar_pag],
-                    'Jogadores':[estat_av_pag]
+                    'Jogadores':[estat_av_pag],
                     'Para você':[com_pag]
                     })
 

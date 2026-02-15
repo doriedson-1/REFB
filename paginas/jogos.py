@@ -110,8 +110,7 @@ def render_confrontos_detalhados(df: pd.DataFrame):
                     ),
                     "Placar": st.column_config.TextColumn(
                         "Placar",
-                        width="small"
-                    )
+                        width="small")
                 }
             )
             
