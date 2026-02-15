@@ -21,7 +21,7 @@ def preparar_base_times(df):
     df_vis = df[['id_jogo', 'data', 'ano_campeonato', 'time_visitante', 'time_mandante', 'gols_visitante', 'gols_mandante']].copy()
     df_vis.columns = ['id_jogo', 'data', 'ano', 'time', 'oponente', 'gols_pro', 'gols_contra']
     df_vis['mando'] = 'Fora'
-
+    
     # Unifica
     df_final = pd.concat([df_mand, df_vis], ignore_index=True)
     
@@ -92,7 +92,7 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
             
             # Formata Placar para exibição (ex: "4 x 0")
             df_goleadas['Placar'] = df_goleadas.apply(
-                lambda x: f"{x['gols_pro']} x {x['gols_contra']}", axis=1
+                lambda x: f"{int(x['gols_pro'])} x {int(x['gols_contra'])}", axis=1
             )
             
             # Configuração visual da tabela

@@ -63,7 +63,7 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
         scrolling=scrolling
     )
 
-
+# # # # # # # # # # # # # # # # # # # #
 st.divider()
 
 dados = bases.ler('2002fi.csv', 'br')
@@ -78,7 +78,7 @@ with col_filtro:
     # Filtra o DataFrame
     df_show = dados[dados['campeonato'] == selecao_temp].copy()
 
-st.subheader('Primeira fase')
+st.subheader('Primeira fase (classificatória)')
 
 tab = bases.classifica(df_show, selecao_temp)
 
@@ -112,7 +112,7 @@ st.dataframe(tab,
 # # # # # # 
 st.divider()
 
-st.subheader('Fase final')
+st.subheader('Fase final (mata-mata)')
 
 render_html_css(
     html_path = st.secrets.atalhos.bd_cb_ff + "2002CB.html",

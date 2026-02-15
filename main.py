@@ -33,13 +33,9 @@ cbmm_pag = st.Page(
     page = 'paginas/tabelas2.py',
     title = 'Tabelas (1971-2002)')
 
-estat2_pag = st.Page(
-    page = 'paginas/estat2.py',
-    title = 'Estat.')
-
-estati_pag = st.Page(
-    page = 'paginas/estat_ind.py',
-    title = 'Estatísticas individuais')
+estat_placar_pag = st.Page(
+    page = 'paginas/placares.py',
+    title = 'Placares (goleadas)')
 
 tab_pag = st.Page(
     page = 'paginas/tabelas.py',
@@ -69,7 +65,7 @@ home_pag = st.Page(
 # Barra de navegação
 pg = st.navigation({_('Início'):[home_pag],
                     'Campeonato Brasileiro':[cbmm_pag, tab_pag, ranking_pag],
-                    'Times':[jogos_pag, confrontos_pag, estati_pag, estat2_pag],
+                    'Times':[jogos_pag, confrontos_pag, estat_placar_pag],
                     'Para você':[com_pag]
                     })
 
