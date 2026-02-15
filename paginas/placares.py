@@ -53,7 +53,7 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
         st.caption("Filtre jogos com grandes diferenças de placar.")
         
         # Filtros no topo
-        c1, c2, c3 = st.columns(3)
+        c1, c2, c3, c4 = st.columns(4)
         with c1:
             # Slider define o que é goleada (ex: >= 3 gols de diferença)
             criterio_gols = st.slider("Diferença mínima de gols:", 2, 7, 3)
@@ -63,20 +63,26 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
         with c3:
             anos = sorted(df_times['ano'].unique(), reverse=True)
             ano_sel = st.selectbox("Temporada:", ["Todas"] + list(anos))
+        with c4:
+            times = sorted(df_times['time'].unique())
+            time_sel = st.selectbox("Clube:", ["Todos"] + list(times))
 
         # Aplicação dos Filtros
         # 1. Filtra pelo saldo (positivo se aplicou, negativo se sofreu)
         if "aplicadas" in tipo_filtro:
             mask = df_times['saldo'] >= criterio_gols
-            cor_metric = "normal" # Verde/Padrão
-            label_col = "Vitórias por Goleada"
+            #cor_metric = "normal" # Verde/Padrão
+            #label_col = "Vitórias por Goleada"
         else:
             mask = df_times['saldo'] <= -criterio_gols
-            cor_metric = "inverse" # Vermelho
-            label_col = "Derrotas por Goleada"
+            #cor_metric = "inverse" # Vermelho
+            #label_col = "Derrotas por Goleada"
 
         if ano_sel != "Todas":
             mask = mask & (df_times['ano'] == ano_sel)
+            
+        elif time_sel != "Todos":
+                mask = mask & (df_times['time'] == time_sel)
 
         df_goleadas = df_times[mask].copy()
 
@@ -90,7 +96,7 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
             # Visualização 2: Tabela Detalhada
             st.subheader("Lista de Jogos")
             
-            # Formata Placar para exibição (ex: "4 x 0")
+            # Formata Placar para exibição
             df_goleadas['Placar'] = df_goleadas.apply(
                 lambda x: f"{int(x['gols_pro'])} x {int(x['gols_contra'])}", axis=1
             )
@@ -127,7 +133,8 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
             st.warning("Selecione times diferentes.")
         else:
             # Filtra jogos SOMENTE entre esses dois
-            # A lógica aqui busca na base original onde (Mandante=A e Visitante=B) OU (Mandante=B e Visitante=A)
+            # A lógica aqui busca na base original onde (Mandante=A e Visitante=B)
+            # OU (Mandante=B e Visitante=A)
             mask_confronto = (
                 ((df_original['time_mandante'] == time_1) & 
                  (df_original['time_visitante'] == time_2)) |
