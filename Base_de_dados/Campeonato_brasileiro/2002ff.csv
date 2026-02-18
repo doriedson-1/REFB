@@ -1,15 +1,15 @@
 time_mandante,time_visitante,gols_mandante,gols_visitante,data,fase,jogo,ano
 São Caetano,Fluminense,0,3,Nov 24,Quartas de final,Ida,2002
 Fluminense,São Caetano,0,2,Nov 27,Quartas de final,Volta,2002
-Atlético-MG,Corinthians,2,6,Nov 24,Quartas de final,Ida,2002
-Atlético-MG,Corinthians,1,2,Nov 27,Quartas de final,Volta,2002
-Grêmio,Juventude,0,0,Nov 24,Quartas de final,Ida,2002
+Corinthians,Atlético-MG,6,2,Nov 24,Quartas de final,Ida,2002
+Atlético-MG,Corinthians,2,1,Nov 27,Quartas de final,Volta,2002
+Juventude,Grêmio,0,0,Nov 24,Quartas de final,Ida,2002
 Grêmio,Juventude,1,0,Nov 27,Quartas de final,Volta,2002
-Santos,São Paulo,3,1,Nov 24,Quartas de final,Ida,2002
-Santos,São Paulo,2,1,Nov 28,Quartas de final,Volta,2002
-Fluminense,Corinthians,1,0,Dec 1,Semifinal,Ida,2002
+São Paulo,Santos,1,3,Nov 24,Quartas de final,Ida,2002
+Santos,São Paulo,1,2,Nov 28,Quartas de final,Volta,2002
+Corinthians,Fluminense,0,1,Dec 1,Semifinal,Ida,2002
 Fluminense,Corinthians,2,3,Dec 4,Semifinal,Volta,2002
 Santos,Grêmio,3,0,Dec 1,Semifinal,Ida,2002
-Santos,Grêmio,0,1,Dec 4,Semifinal,Volta,2002
+Grêmio,Santos,1,0,Dec 4,Semifinal,Volta,2002
 Santos,Corinthians,2,0,Dec 8,Final,Ida,2002
-Santos,Corinthians,3,2,Dec 15,Final,Volta,2002
+Corinthians,Santos,2,3,Dec 15,Final,Volta,2002

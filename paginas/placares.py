@@ -82,7 +82,7 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
         if ano_sel != "Todas":
             mask = mask & (df_times['ano'] == ano_sel)
             
-        elif time_sel != "Todos":
+        if time_sel != "Todos":
                 mask = mask & (df_times['time'] == time_sel)
 
         df_goleadas = df_times[mask].copy()
