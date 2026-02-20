@@ -42,7 +42,6 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
 
     # 🔹 Get current theme
     theme = st.get_option("theme.base")  # "light" or "dark"
-    print('tema:', theme)
 
     # 🔹 Inject theme class in body
     html = html.replace("<body>", f'<body class="{theme}">')

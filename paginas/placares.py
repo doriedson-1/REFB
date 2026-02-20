@@ -109,9 +109,9 @@ def render_estatisticas_avancadas(df_original: pd.DataFrame):
                 hide_index=True,
                 column_config={
                     "data": st.column_config.DateColumn("Data", format="DD/MM/YYYY"),
-                    "time": st.column_config.TextColumn("Time Analisado"),
+                    "time": st.column_config.TextColumn("Time analisado"),
                     "oponente": st.column_config.TextColumn("Adversário"),
-                    "saldo": st.column_config.NumberColumn("Dif. Gols"),
+                    "saldo": st.column_config.NumberColumn("Diferença de gols"),
                     "ano": st.column_config.TextColumn("Temp."),
                 }
             )
