@@ -1,6 +1,9 @@
 # Ambiente virtual
 .venv/
 
+# Vscode
+.vscode/
+
 # Importação
 basedosdados.py
 scraping_transfermarkt_brasileirao_serie_a.py

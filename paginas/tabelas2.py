@@ -89,29 +89,48 @@ tab['ESCUDO'] = tab['codigo_temp'].apply(lambda x: f"{base_url}{x}")
 # seleção de colunas
 tab = tab.iloc[:, [11,0,1,2,3,4,5,6,7,8,9]]
 
-st.dataframe(tab,
-             width='stretch',
-             column_config={
-                 # Configuração da Imagem
-                 "ESCUDO": st.column_config.ImageColumn("", width="small"),
-                 "TIME": st.column_config.TextColumn("Clube", width="medium"),
-                 "PONTOS": st.column_config.NumberColumn("Pontos", format = "%d",),
-                 "JOGOS": st.column_config.NumberColumn("Jogos"),
-                 "VITORIAS": st.column_config.NumberColumn("Vitórias"),
-                 "EMPATES": st.column_config.NumberColumn("Empates"),
-                 "DERROTAS": st.column_config.NumberColumn("Derrotas"),
-                 "GOLS_PRO": st.column_config.NumberColumn("Gols pró"),
-                 "GOLS_CONTRA": st.column_config.NumberColumn("Gols contra"),
-                 "SALDO_GOLS": st.column_config.NumberColumn("Saldo",format = "%d"),
-                 "APROVEITAMENTO": st.column_config.ProgressColumn(
-                     "Aprov. %", format="%.1f%%", min_value=0, max_value=100,),
-             },
-             hide_index=True)
+st.dataframe(
+    tab,
+    width='stretch',
+    column_config={
+        # Configuração da Imagem
+        "ESCUDO": st.column_config.ImageColumn("", width="small"),
+        "TIME": st.column_config.TextColumn("Clube", width="medium"),
+        "PONTOS": st.column_config.NumberColumn("Pontos", format = "%d",),
+        "JOGOS": st.column_config.NumberColumn("Jogos"),
+        "VITORIAS": st.column_config.NumberColumn("Vitórias"),
+        "EMPATES": st.column_config.NumberColumn("Empates"),
+        "DERROTAS": st.column_config.NumberColumn("Derrotas"),
+        "GOLS_PRO": st.column_config.NumberColumn("Gols pró"),
+        "GOLS_CONTRA": st.column_config.NumberColumn("Gols contra"),
+        "SALDO_GOLS": st.column_config.NumberColumn("Saldo",format = "%d"),
+        "APROVEITAMENTO": st.column_config.ProgressColumn(
+            "Aprov. %", format="%.1f%%", min_value=0, max_value=100,),
+    },
+    hide_index=True)
 
 # # # # # # 
 st.divider()
 
 st.subheader('Fase final (mata-mata)')
+
+st.dataframe(
+    bases.ler('2002ff.csv', 'br'),
+    width='stretch',
+    column_config={
+        "time_mandante": st.column_config.TextColumn("Time mandante", width="small"),
+        "time_visitante": st.column_config.TextColumn("Time visitante", width="small"),
+        "gols_mandante": st.column_config.NumberColumn("Gols mandante", format = "%d"),
+        "gols_visitante": st.column_config.NumberColumn("Gols visitante", format = "%d"),
+        "data": st.column_config.TextColumn("Data", width="small"),
+        "fase": st.column_config.TextColumn("Fase", width="small"),
+        "jogo": st.column_config.TextColumn("Partida", width="small"),
+        "ano": st.column_config.TextColumn("Ano", width="small"),
+        },
+    hide_index=True,
+    )
+
+st.markdown("#### Chaves")
 
 render_html_css(
     html_path = st.secrets.atalhos.bd_cb_ff + "2002CB.html",

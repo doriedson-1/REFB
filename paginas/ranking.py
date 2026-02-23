@@ -1,3 +1,4 @@
+# Página do ranking geral do campeonato brasileiro de pontos corridos (2003-2025)
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -9,6 +10,9 @@ bases = Bases()
 
 @st.cache_data
 def calcular_classificacao_completa(df_filtrado):
+    """
+    Calcula a classificação dado um dataframe de partidas.
+    """
     # 1. Processar dados como Mandante
     mandantes = df_filtrado.groupby('time_mandante').agg(
         JOGOS=('time_mandante', 'count'),
@@ -146,11 +150,9 @@ if not df_filtrado.empty:
     )
 else:
     st.warning("Nenhum jogo encontrado no período selecionado.")
-###############################################################################
-st.divider()
-st.markdown('#### Evolução')
-
-bases.video('CB_pc.mp4')
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+with st.expander('Evolução dos pontos corridos (vídeo)'):
+    bases.video('CB_pc.mp4')
 
 ###############################################################################
 st.subheader("Série temporal")
@@ -202,44 +204,44 @@ st.markdown('---')
 
 st.subheader('Decisões do STJD')
 
-st.markdown('**2003**')
-st.markdown('- Ponte Preta perdeu 4 pontos por escalar irregularmente o jogador\
-            Roberto nas partidas contra Internacional e Juventude;')
-st.markdown('- Juventude ganhou 3 pontos do jogo contra a Ponte Preta;')
-st.markdown('- Internacional ganhou 2 pontos do jogo contra a Ponte Preta;')
-st.markdown('- O Paysandu perdeu 8 pontos pela escalação irregular dos jogadores\
-            Júnior Amorim e Aldrovani, nos jogos contra São Caetano, Fluminense,\
-                Corinthians e Ponte Preta;')
-st.markdown('- São Caetano ganhou 3 pontos dos jogos contra o Paysandu;')
-st.markdown('- Corinthians ganhou 2 pontos dos jogos contra o Paysandu;')
-st.markdown('- Fluminense ganhou 2 pontos dos jogos contra o Paysandu.')
+with st.expander('**2003**'):
+    st.markdown('- Ponte Preta perdeu 4 pontos por escalar irregularmente o jogador \
+        Roberto nas partidas contra Internacional e Juventude;')
+    st.markdown('- Juventude ganhou 3 pontos do jogo contra a Ponte Preta;')
+    st.markdown('- Internacional ganhou 2 pontos do jogo contra a Ponte Preta;')
+    st.markdown('- O Paysandu perdeu 8 pontos pela escalação irregular dos jogadores\
+        Júnior Amorim e Aldrovani, nos jogos contra São Caetano, Fluminense,\
+        Corinthians e Ponte Preta;')
+    st.markdown('- São Caetano ganhou 3 pontos dos jogos contra o Paysandu;')
+    st.markdown('- Corinthians ganhou 2 pontos dos jogos contra o Paysandu;')
+    st.markdown('- Fluminense ganhou 2 pontos dos jogos contra o Paysandu.')
 
-st.markdown('**2004**')
-st.markdown('- O São Caetano foi punido com a perda de 24 pontos\
-            pelo STJD, pela morte do jogador Serginho. Analistas indicaram que\
-            o clube teve conhecimento que o atleta tinha problemas cardíacos e\
-            não poderia continuar sua carreira.')
+with st.expander('**2004**'):
+    st.markdown('- O São Caetano foi punido com a perda de 24 pontos\' \
+        pelo STJD, pela morte do jogador Serginho. Analistas indicaram que\
+        o clube teve conhecimento que o atleta tinha problemas cardíacos e\
+        não poderia continuar sua carreira.')
 
-st.markdown('**2005**')
-st.markdown('- A CBF havia punido o Brasiliense com o jogo de estreia sem torcida,\
-            a justiça comum reverteu a punição e o público viu a partida entre \
-            Brasiliense e Vasco da Gama terminar empatada em 2 a 2; posteriormente,\
-            a vitória foi atribuída ao Vasco da Gama (0-1);')
-st.markdown('- O esquema de manipulação de resultados conhecido como "Máfia do apito"\
-            causou a anulação de onze jogos.')
+with st.expander('**2005**'):
+    st.markdown('- A CBF havia punido o Brasiliense com o jogo de estreia sem torcida,\
+        a justiça comum reverteu a punição e o público viu a partida entre \
+        Brasiliense e Vasco da Gama terminar empatada em 2 a 2; posteriormente,\
+        a vitória foi atribuída ao Vasco da Gama (0-1);')
+    st.markdown('- O esquema de manipulação de resultados conhecido como "Máfia do apito"\
+        causou a anulação de onze jogos.')
 
-st.markdown('**2010**')
-st.markdown('- O Grêmio Prudente (posteriormente, Barueri) perdeu 3 pontos pela\
-            escalação irregular do zagueiro Paulão na derrota para o Flamengo.')
+with st.expander('**2010**'):
+    st.markdown('- O Grêmio Prudente (posteriormente, Barueri) perdeu 3 pontos pela \
+        escalação irregular do zagueiro Paulão na derrota para o Flamengo.')
 
-st.markdown('**2013**')
-st.markdown('- A Portuguesa de Desportos perdeu 4 pontos, foi punida por ter \
-            escalado irregularmente o jogador Héverton contra o Grêmio, na última\
-            rodada;')
-st.markdown('- O Flamengo perdeu 4 pontos, foi punido pela escalação irregular do\
-            lateral-esquerdo André Santos na partida contra o Cruzeiro.')
+with st.expander('**2013**'):
+    st.markdown('- A Portuguesa de Desportos perdeu 4 pontos, foi punida por ter \
+        escalado irregularmente o jogador Héverton contra o Grêmio, na última\
+        rodada;')
+    st.markdown('- O Flamengo perdeu 4 pontos, foi punido pela escalação irregular do\
+        lateral-esquerdo André Santos na partida contra o Cruzeiro.')
 
-st.markdown('**2016**')
-st.markdown('- Atlético-MG e Chapecoense obtiveram WO (_walkover_) duplo em virtude do desastre\
-             aéreo que vitimou a delegação da Chapecoense no dia 29 de novembro,\
-             na Colômbia; foram adicionados 3 gols negativos.')
+with st.expander('**2016**'):
+    st.markdown('- Atlético-MG e Chapecoense obtiveram WO (_walkover_) duplo em virtude do desastre\
+        aéreo que vitimou a delegação da Chapecoense no dia 29 de novembro,\
+        na Colômbia; foram adicionados 3 gols negativos.')
