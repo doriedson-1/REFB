@@ -8,9 +8,6 @@ altair < 5
 matplotlib
 plotly == 6.3.0
 
-# Calculos
-sklearn == 1.8.0
-
 # Futebol
 mplsoccer == 1.6.1
 

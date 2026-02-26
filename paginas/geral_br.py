@@ -5,13 +5,15 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from sklearn.preprocessing import MinMaxScaler
 from recursos import Bases
 
 def gini(array):
     array = np.sort(array)
     n = len(array)
     return (2 * np.sum((np.arange(1, n+1) * array))) / (n * np.sum(array)) - (n + 1) / n
+
+def minmax_escala(vetor):
+    return (vetor - np.min(vetor, axis=0)) / (np.max(vetor, axis=0) - np.min(vetor, axis=0))
 
 bases = Bases()
 # Adicionar outras informações relevantes, como número de times, formato do campeonato, etc.
@@ -135,8 +137,7 @@ with tab6:
                 próximo de 0, menos competitivo.")
     # Normaliza métricas
     metrics = np.array([desvios, gap_campeao, gini_temporadas]).T
-    scaler = MinMaxScaler()
-    metrics_scaled = scaler.fit_transform(metrics)
+    metrics_scaled = (metrics - metrics.min(axis=0)) / (metrics.max(axis=0) - metrics.min(axis=0))
 
     # Competitividade = 1 - média das métricas de desigualdade
     competitividade = 1 - np.mean(metrics_scaled, axis=1)
