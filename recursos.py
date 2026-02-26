@@ -101,64 +101,78 @@ class Bases:
         return classificacao
     
     
-    def codigo_clube(self, nome_clube):
+    def codigo_clube(self, nome_clube, local = 'tm'):
         """
         """
-        # Dicionário de exemplo (substitua pelos seus códigos reais)
-        codigos = {
-            'América-MG':'2863.png?lm=1646322335',
-            'América-RN':'1751.png?lm=1450820578',
-            'Athletico-PR':'679.png?lm=1548711363',
-            'Atlético-GO':'15172.png?lm=1598605472',
-            'Atlético-MG':'330.png?lm=1411033853',
-            'Avaí FC':'2035.png?lm=1419949249',
-            'Barueri':'8698.png?lm=1455960413',
-            'Botafogo':'537.png?lm=1651494898',
-            'Brasiliense':'3973.png?lm=1455824776',
-            'CSA':'18545.png?lm=1445634683',
-            'Ceará SC':'2029.png?lm=1437429449',
-            'Chapecoense':'17776.png?lm=1677130387',
-            'Corinthians':'199.png?lm=1649430398',
-            'Coritiba FC':'776.png?lm=1412879464',
-            'Criciúma EC':'7178.png?lm=1412878993',
-            'Cruzeiro':'609.png?lm=1757639240',
-            'Cuiabá':'28022.png?lm=1451243370',
-            'EC Bahia':'10010.png?lm=1412879423',
-            'EC Vitória':'2125.png?lm=1412879373',
-            'Figueirense FC':'4064.png?lm=1412879618',
-            'Flamengo':'614.png?lm=1551023331',
-            'Fluminense':'2462.png?lm=1648225934',
-            'Fortaleza EC':'10870.png?lm=1631541450',
-            'Goiás EC':'3197.png?lm=1668099048',
-            'Grêmio':'210.png?lm=1412879265',
-            'Guarani':'1755.png?lm=1450819625',
-            'Internacional':'6600.png?lm=1644878605',
-            'Ipatinga FC':'3270.png?lm=1463474815',
-            'Joinville-SC':'3330.png?lm=1419949314',
-            'Juventude':'10492.png?lm=1416046262',
-            'Mirassol':'3876.png?lm=1585083395',
-            'Náutico':'2646.png?lm=1429043382',
-            'Palmeiras':'1023.png?lm=1411204983',
-            'Paraná':'309.png?lm=1435963615',
-            'Paysandu SC':'6347.png?lm=1769784741',
-            'Ponte Preta':'1134.png?lm=1419949200',
-            'Portuguesa':'10247.png?lm=1673282057',
-            'RB Bragantino':'8793.png?lm=1577915313',
-            'Santa Cruz':'1785.png?lm=1769785782',
-            'Santo André':'7478.png?lm=1450820536',
-            'Santos FC':'221.png?lm=1412879099',
-            'Sport Recife':'8718.png?lm=1708623979',
-            'São Caetano':'291.png?lm=1455314787',
-            'São Paulo':'585.png?lm=1409133922',
-            'Vasco da Gama':'978.png?lm=1651168164',
-            
-            # times (1971-2002)
-            'Gama':''
-        }
+
+        if local == 'tm':  # Transfermarkt
         
-        # Retorna o código se existir, ou um código padrão 'default' se não achar
-        return codigos.get(nome_clube)
-    
+            # Transfermarkt
+            codigos = {
+                'América-MG':'2863.png?lm=1646322335',
+                'América-RN':'1751.png?lm=1450820578',
+                'Athletico-PR':'679.png?lm=1548711363',
+                'Atlético-GO':'15172.png?lm=1598605472',
+                'Atlético-MG':'330.png?lm=1411033853',
+                'Avaí FC':'2035.png?lm=1419949249',
+                'Barueri':'8698.png?lm=1455960413',
+                'Botafogo':'537.png?lm=1651494898',
+                'Brasiliense':'3973.png?lm=1455824776',
+                'CSA':'18545.png?lm=1445634683',
+                'Ceará SC':'2029.png?lm=1437429449',
+                'Chapecoense':'17776.png?lm=1677130387',
+                'Corinthians':'199.png?lm=1649430398',
+                'Coritiba FC':'776.png?lm=1412879464',
+                'Criciúma EC':'7178.png?lm=1412878993',
+                'Cruzeiro':'609.png?lm=1757639240',
+                'Cuiabá':'28022.png?lm=1451243370',
+                'EC Bahia':'10010.png?lm=1412879423',
+                'EC Vitória':'2125.png?lm=1412879373',
+                'Figueirense FC':'4064.png?lm=1412879618',
+                'Flamengo':'614.png?lm=1551023331',
+                'Fluminense':'2462.png?lm=1648225934',
+                'Fortaleza EC':'10870.png?lm=1631541450',
+                'Goiás EC':'3197.png?lm=1668099048',
+                'Grêmio':'210.png?lm=1412879265',
+                'Guarani':'1755.png?lm=1450819625',
+                'Internacional':'6600.png?lm=1644878605',
+                'Ipatinga FC':'3270.png?lm=1463474815',
+                'Joinville-SC':'3330.png?lm=1419949314',
+                'Juventude':'10492.png?lm=1416046262',
+                'Mirassol':'3876.png?lm=1585083395',
+                'Náutico':'2646.png?lm=1429043382',
+                'Palmeiras':'1023.png?lm=1411204983',
+                'Paraná':'309.png?lm=1435963615',
+                'Paysandu SC':'6347.png?lm=1769784741',
+                'Ponte Preta':'1134.png?lm=1419949200',
+                'Portuguesa':'10247.png?lm=1673282057',
+                'RB Bragantino':'8793.png?lm=1577915313',
+                'Santa Cruz':'1785.png?lm=1769785782',
+                'Santo André':'7478.png?lm=1450820536',
+                'Santos FC':'221.png?lm=1412879099',
+                'Sport Recife':'8718.png?lm=1708623979',
+                'São Caetano':'291.png?lm=1455314787',
+                'São Paulo':'585.png?lm=1409133922',
+                'Vasco da Gama':'978.png?lm=1651168164',
+                
+                # times (1971-2002)
+                'Gama':''
+            }
+            return codigos.get(nome_clube)        
+
+        if local == 'parquet':
+            codigos = {
+                1219: "Internacional", 1220: "Juventude", 1221: "Bahia",
+                1224: "São Paulo", 1226: "Vasco", 1227: "Botafogo",
+                1230: "Cruzeiro", 1231: "Sport", 1232: "Fluminense",
+                1234: "Palmeiras", 1235: "Atlético Mineiro",
+                1237: "Corinthians", 1238: "Vitória", 1239: "Flamengo",
+                1241: "Santos", 1244: "Grêmio", 2065: "Fortaleza",
+                5438: "Red Bull Bragantino", 6332: "Mirassol", 7334: "Ceará",
+            }        
+            # Retorna o código se existir, ou um código padrão 'default' se não achar
+            return codigos.get(nome_clube)
+
     
     def descritivas(self, torneio = 'brpc'):
         """
@@ -228,7 +242,7 @@ class Bases:
         coluna = coluna.replace(["Atlético-PR", "Athletico Paranaense"], "Athletico-PR")
         
         coluna = coluna.replace("Atlético Goianiense", "Atlético-GO")
-        coluna = coluna.replace("Atlético Mineiro", "Atlético-MG")
+        coluna = coluna.replace(["Atlético Mineiro", "Atletico MG"], "Atlético-MG")
 
         # ' ' FC
         coluna = coluna.replace("Coritiba", "Coritiba FC")
@@ -240,14 +254,17 @@ class Bases:
         coluna = coluna.replace("Criciúma", "Criciúma EC")
         coluna = coluna.replace("Goiás", "Goiás EC")
         coluna = coluna.replace(["Fortaleza", "Fortaleza Ec"], "Fortaleza EC")
-        coluna = coluna.replace("Vitória", "EC Vitória")
+        coluna = coluna.replace(["Vitória", "Vitoria"], "EC Vitória")
 
         # SC
-        coluna = coluna.replace("Ceará", "Ceará SC")
+        coluna = coluna.replace(["Ceará", "Ceara"], "Ceará SC")
         coluna = coluna.replace("Paysandu", "Paysandu SC")
         
         # Outros
+        coluna = coluna.replace("Botafogo RJ", "Botafogo")
         coluna = coluna.replace("Cuiabá-MT", "Cuiabá")
+        coluna = coluna.replace("Gremio", "Grêmio")
+        coluna = coluna.replace("Sao Paulo", "São Paulo")
         coluna = coluna.replace("Red Bull Bragantino", "RB Bragantino")
 
         return coluna
