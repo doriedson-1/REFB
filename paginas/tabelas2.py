@@ -55,7 +55,7 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
     </style>
     {html}
     """
-    
+
     components.html(
         full_html,
         height=height,
@@ -133,6 +133,6 @@ st.dataframe(
 st.markdown("#### Chaves")
 
 render_html_css(
-    html_path = st.secrets.atalhos.bd_cb_ff + "2002CB.html",
-    css_path= st.secrets.atalhos.css,
+    html_path = bases.caminhos['mata-mata'] + "2002CB.html",
+    css_path= bases.caminhos['mata-mata'] + "definicoes.css",
     height=700)

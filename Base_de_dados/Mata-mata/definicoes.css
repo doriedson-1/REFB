@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 24px 24px;
   column-gap: 4px;
   align-items: center;
+  font-size: 32px;
 }
 
 .score {
@@ -15,10 +16,9 @@
 
 .bracket {
   border-collapse: separate;
-  border-spacing: 60px 0;
+  border-spacing: 60px 20px;
+  font-size: 24px;
 }
-
-
 
 body.light .team {
   color: #222222;

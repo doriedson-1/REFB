@@ -270,7 +270,7 @@ class Bases:
         return coluna
 
     
-    def ler(self, arquivo, torneio):
+    def ler(self, arquivo, torneio, sep=','):
         """
         Parâmetros
         ----------
@@ -294,7 +294,7 @@ class Bases:
         if arquivo.split('.')[-1] == 'csv':
             try:
                 # Tenta ler o arquivo CSV
-                df = pd.read_csv(caminho_cheio)
+                df = pd.read_csv(caminho_cheio, sep=sep)
                 return df
             
             except FileNotFoundError:
