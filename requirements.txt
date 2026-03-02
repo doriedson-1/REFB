@@ -1,7 +1,7 @@
 # Básico
 pandas
 numpy
-streamlit == 1.53.0
+streamlit == 1.54.0
 
 # Gráficos e visualizações
 altair < 5
