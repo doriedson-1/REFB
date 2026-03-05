@@ -1,0 +1,704 @@
+id,time_mandante,gols_mandante,gols_visitante,time_visitante,rodada,campeonato,data,pontos_mandante,pontos_visitante,detalhes
+1,Guarani,1,3,Palmeiras,1,2001,2001-08-01,0,3," [Fernando Fumagalli 85'; Javier Arce 14', Tuta 53', Lopes 73']"
+2,Botafogo-RJ,1,1,América-MG,1,2001,2001-08-01,1,1, [Rodrigo Almeida 60'; Michael 43']
+3,Portuguesa,0,1,Goiás,1,2001,2001-08-01,0,3, [Gauchinho 22']
+4,Flamengo,0,0,Ponte Preta,1,2001,2001-08-01,1,1,NA
+5,Corinthians,2,0,Vitória,1,2001,2001-08-01,3,0," [Ricardinho 13', Paulo Nunes 57']"
+6,Paraná,1,0,Cruzeiro,1,2001,2001-08-01,3,0, [Lúcio Flávio 81']
+7,Internacional,0,2,Juventude,1,2001,2001-08-01,0,3," [Edinho 33', Fernando 50']"
+8,Sport,1,1,Fluminense,1,2001,2001-08-01,1,1, [Júnior Amorim 27'; Magno Alves 83']
+9,Bahia,5,0,São Caetano,1,2001,2001-08-01,3,0," [Nonato 8', 60', Marcos Vinícius 21', 79', Alex Alves 86']"
+10,Botafogo-SP,2,2,São Paulo,1,2001,2001-08-01,1,1," [Mateus 22', Marcos Denner 67'; Belletti 38', Júlio Batista 77']"
+11,Gama,0,0,Vasco da Gama,1,2001,2001-08-01,1,1,NA
+12,Atlético-MG,1,1,Coritiba,1,2001,2001-08-01,1,1, [Ronildo 52'; Edmílson 22']
+13,Santos,1,1,Santa Cruz,1,2001,2001-08-02,1,1, [Weldon 75'; Luizinho Vieira 84']
+14,Atlético-PR,2,0,Grêmio,1,2001,2001-08-02,3,0," [Kléber 4', Kléberson 58']"
+15,Palmeiras,2,1,Bahia,2,2001,2001-08-04,3,0," [Darío Muñoz 22', Lopes 24'; Preto 54']"
+16,Fluminense,2,0,Botafogo-SP,2,2001,2001-08-04,3,0," [Jorginho 65', Agnaldo 90+2']"
+17,América-MG,0,0,Portuguesa,2,2001,2001-08-04,1,1,NA
+18,Juventude,1,4,Atlético-MG,2,2001,2001-08-04,0,3," [Fernando 84'p; Kim 13', Marques 47', 77', Álvaro 71']"
+19,Ponte Preta,2,2,Corinthians,2,2001,2001-08-05,1,1," [Rodrigo Costa 12', Marquinhos 53'; Paulo Nunes 17', Gil 43']"
+20,Vasco da Gama,7,1,Guarani,2,2001,2001-08-05,3,0," [Juninho Paulista 13', Romário 16'p, 19', 27', 36'p, Jorginho 51', Botti 80';"
+21,São Paulo,0,0,Gama,2,2001,2001-08-05,1,1,NA
+22,Cruzeiro,1,2,Atlético-PR,2,2001,2001-08-05,0,3," [Edmundo 11'; Nem 8', Alex Mineiro 45+1']"
+23,Coritiba,3,2,Internacional,2,2001,2001-08-05,3,0," [Edmílson 30', Evair 38'p, Messias 81'; Luís Cláudio 7', Jackson 36']"
+24,Grêmio,2,1,Paraná,2,2001,2001-08-05,3,0," [Luiz Mário 29', Rodrigo Mendes 77'; Lúcio Flávio 21']"
+25,Santa Cruz,0,4,Botafogo-RJ,2,2001,2001-08-05,0,3," [Rodrigo Almeida 3', 50', Cláudio 51', 82']"
+26,Vitória,1,1,Santos,2,2001,2001-08-05,1,1, [Marcos 56'; Robert 4']
+27,São Caetano,2,0,Sport,2,2001,2001-08-05,3,0," [Magrão 41', Wágner 52']"
+28,Goiás,2,0,Flamengo,2,2001,2001-08-05,3,0," [Gauchinho 22', Índio 50']"
+29,Juventude,0,0,Palmeiras,3,2001,2001-08-08,1,1,NA
+30,Coritiba,1,0,Vasco da Gama,3,2001,2001-08-08,3,0, [Diego Rincón 84']
+31,Vitória,2,1,São Paulo,3,2001,2001-08-08,3,0," [Allann Delon 25', Dudu 31'; Kaká 90+2']"
+32,Corinthians,3,2,Botafogo-SP,3,2001,2001-08-08,3,0," [Paulo Nunes 39', Deivid 67', Ricardinho 87'p; Marcos Denner 43', Anderson 50']"
+33,Cruzeiro,0,0,Ponte Preta,3,2001,2001-08-08,1,1,NA
+34,Grêmio,0,0,Goiás,3,2001,2001-08-08,1,1,NA
+35,Santa Cruz,1,2,Internacional,3,2001,2001-08-08,0,3," [Luizinho Vieira 27'; Carlinhos 72', Luís Cláudio 82']"
+36,Flamengo,0,1,Paraná,3,2001,2001-08-08,0,3, [Lúcio Flávio 71']
+37,Gama,1,1,Santos,3,2001,2001-08-08,1,1, [Lindomar 54'; Renato 11']
+38,São Caetano,0,0,Atlético-PR,3,2001,2001-08-08,1,1,NA
+39,Botafogo-RJ,3,2,Bahia,3,2001,2001-08-09,3,0," [Rodrigo Almeida 11', 55', Taílson 68'; Preto 44', Nonato 62']"
+40,Guarani,1,1,Fluminense,3,2001,2001-08-09,1,1, [Fernando Fumagalli 65'p; Roger Flores 31']
+41,Portuguesa,2,1,Sport,3,2001,2001-08-09,3,0," [Sílvio Criciúma 10', Ricardo Oliveira 69'; Audrovani 18']"
+42,América-MG,0,1,Atlético-MG,3,2001,2001-08-09,0,3, [Marques 37']
+43,Vasco da Gama,1,1,Juventude,4,2001,2001-08-11,1,1, [Dedé 67'; William 83'og]
+44,São Paulo,3,1,Santa Cruz,4,2001,2001-08-11,3,0," [Kaká 5', Júlio Baptista 70', França 84'; Andreoli 77']"
+45,Atlético-PR,4,0,Flamengo,4,2001,2001-08-11,3,0," [Gustavo 1', Alex Mineiro 37', Kléber 66', Rodrigo 84']"
+46,Botafogo-SP,1,4,Cruzeiro,4,2001,2001-08-11,0,3," [Alan 41'; Ricardinho 13', Oséas 35', Neném 56', Edmundo 84']"
+47,Paraná,3,1,Corinthians,4,2001,2001-08-12,3,0," [Lúcio Flávio 15', Márcio 27', Marquinhos 76'og; Fabinho 42']"
+48,Ponte Preta,3,1,Botafogo-RJ,4,2001,2001-08-12,3,0," [Washington Cerqueira 16', Leonardo 71'og, Alex 90'; Denis 80']"
+49,Fluminense,1,1,Vitória,4,2001,2001-08-12,1,1, [Yan 12'; Váldson 85']
+50,Atlético-MG,3,0,Guarani,4,2001,2001-08-12,3,0," [Gilberto Silva 13', Ramón Menezes 24', Marques 41']"
+51,Internacional,2,0,Gama,4,2001,2001-08-12,3,0," [Luís Cláudio 49', 76']"
+52,Sport,2,1,Grêmio,4,2001,2001-08-12,3,0," [Marcelo Passos 20', 66'p; Luiz Mário 67']"
+53,Bahia,2,1,Portuguesa,4,2001,2001-08-12,3,0," [Nonato 12', Jean 85'; Lúcio 41']"
+54,Goiás,0,0,São Caetano,4,2001,2001-08-12,1,1,NA
+55,Santos,2,0,Coritiba,4,2001,2001-08-12,3,0," [Robert 15'p, 66']"
+56,Palmeiras,3,1,América-MG,4,2001,2001-08-12,3,0," [Pedrinho 14', Fábio Júnior 86', Lopes 88'; Fabrício 17']"
+57,Flamengo,2,1,Sport,5,2001,2001-08-15,3,0," [Beto 15', Reinaldo Oliveira 42'; Edu Manga 45']"
+58,Corinthians,0,0,Juventude,5,2001,2001-08-15,1,1,NA
+59,Cruzeiro,0,3,América-MG,5,2001,2001-08-15,0,3," [Tucho 12', Somália 62', Ricardo 73']"
+60,Paraná,1,2,Ponte Preta,5,2001,2001-08-15,0,3," [Maurílio 35'; Fabinho 52', Washington Cerqueira 76']"
+61,Santa Cruz,3,2,Palmeiras,5,2001,2001-08-15,3,0," [Luizinho Vieira 29', Jorge Luiz 50', 87'; Lopes 34', Rovílson 64']"
+62,Vitória,1,0,Vasco da Gama,5,2001,2001-08-15,3,0, [Xavier 53']
+63,São Caetano,1,1,Fluminense,5,2001,2001-08-15,1,1, [Magrão 5'; Paulo César 45']
+64,Internacional,2,0,Bahia,5,2001,2001-08-16,3,0," [Fábio Luciano 17', Jackson 32']"
+65,Botafogo-RJ,0,1,Goiás,5,2001,2001-08-16,0,3, [Araújo 37']
+66,Portuguesa,1,0,Coritiba,5,2001,2001-08-16,3,0, [Thiago Silva 36']
+67,Atlético-PR,1,0,Atlético-MG,5,2001,2001-08-16,3,0, [Ilan 64']
+68,Guarani,1,2,São Paulo,5,2001,2001-08-16,0,3," [Fernando Fumagalli 15'; Kaká 53', Reinaldo 59']"
+69,Botafogo-SP,0,1,Santos,5,2001,2001-08-16,0,3, [Elano 65']
+70,Gama,2,1,Grêmio,5,2001,2001-08-16,3,0," [Anderson Barbosa 30', Reinaldo 88'; Marinho 12']"
+71,Vasco da Gama,1,1,Santa Cruz,6,2001,2001-08-18,1,1, [Euller 46'; Luzinho Vieira 61']
+72,Palmeiras,3,1,Paraná,6,2001,2001-08-18,3,0," [Fábio Júnior 24'p, Lopes 33', Darío Muñoz 56'; Lúcio Flávio 66'p]"
+73,América-MG,0,1,São Caetano,6,2001,2001-08-18,0,3, [Anaílson 57']
+74,Sport,2,1,Corinthians,6,2001,2001-08-19,3,0," [Júnior Amorim 35', Edu Manga 57'; Gil 1']"
+75,Bahia,0,2,Flamengo,6,2001,2001-08-19,0,3," [Reinaldo Oliveira 28', Edílson 72']"
+76,Fluminense,4,3,Gama,6,2001,2001-08-19,3,0," [Roni 33', 52', Yan 58', Agnaldo Pereira 68'; Ânderson 57', Gérson 61', "
+77,São Paulo,2,1,Atlético-PR,6,2001,2001-08-19,3,0," [Lino 5', Kaká 21'; Kléber 83']"
+78,Atlético-MG,2,0,Botafogo-SP,6,2001,2001-08-19,3,0," [Guilherme 35', Marques 41']"
+79,Coritiba,3,2,Cruzeiro,6,2001,2001-08-19,3,0," [Edmílson 49', 61', Messias 55'; Alex 19', João Carlos 69']"
+80,Grêmio,0,0,Vitória,6,2001,2001-08-19,1,1,NA
+81,Ponte Preta,2,1,Portuguesa,6,2001,2001-08-19,3,0," [Washington Cerqueira 15'p, Rodrigo Costa 74'; Lúcio 85']"
+82,Goiás,0,1,Internacional,6,2001,2001-08-19,0,3, [Juca 56']
+83,Santos,0,0,Botafogo-RJ,6,2001,2001-08-19,1,1,NA
+84,Juventude,1,0,Guarani,6,2001,2001-08-19,3,0, [Leonardo Manzi 90+3']
+85,Fluminense,3,2,Santa Cruz,7,2001,2001-08-25,3,0," [Paulão 8'og, Roni 30', Paulo César 38'; Evando 51', Luizinho Vieira 73']"
+86,Palmeiras,3,2,Goiás,7,2001,2001-08-25,3,0," [Arce 44', Pedrinho 64', Tuta 81'; Araújo 71', 80']"
+87,Paraná,0,1,Portuguesa,7,2001,2001-08-25,0,3, [Lúcio 82']
+88,Bahia,1,0,Corinthians,7,2001,2001-08-26,3,0, [Jefferson 43']
+89,Botafogo-SP,1,0,Flamengo,7,2001,2001-08-26,3,0, [Anderson 10']
+90,Vasco da Gama,4,0,Atlético-PR,7,2001,2001-08-26,3,0," [Euller 46', 76'p, Juninho Paulista 86', Fabiano Eller 88']"
+91,São Paulo,4,0,Ponte Preta,7,2001,2001-08-26,3,0," [Kaká 13', 66', Luís Fabiano 29', França 77']"
+92,Atlético-MG,3,0,Vitória,7,2001,2001-08-26,3,0," [Ramon Menezes 10', Alexandre 69', Baiano 71']"
+93,Coritiba,1,1,São Caetano,7,2001,2001-08-26,1,1, [Enílton 14'; Magrão 82']
+94,Grêmio,3,1,América-MG,7,2001,2001-08-26,3,0," [Ânderson Lima 21', Zinho 66', 90+1'; Rui 54']"
+95,Sport,0,1,Cruzeiro,7,2001,2001-08-26,0,3, [Ricardinho 71']
+96,Guarani,2,2,Internacional,7,2001,2001-08-26,1,1," [Eduardo Marques 16', Élder 54'; Leandro Machado 27', 30']"
+97,Gama,0,0,Botafogo-RJ,7,2001,2001-08-26,1,1,NA
+98,Santos,2,2,Juventude,7,2001,2001-08-26,1,1," [Vágner 2', Valdir 72'; Fernando 12', Leonardo Manzi 88']"
+99,Corinthians,2,2,Gama,8,2001,2001-08-29,1,1," [Gil 62', Ricardinho 67'p; Palhinha 78', Romualdo 81']"
+100,América-MG,1,1,Vasco da Gama,8,2001,2001-08-29,1,1, [Ricardo 27'; Euller 83']
+101,Atlético-PR,1,1,Santos,8,2001,2001-08-29,1,1, [Daniel 85'; Viola 90+2']
+102,Internacional,2,0,Botafogo-SP,8,2001,2001-08-29,3,0," [Leandro Machado 7', Jackson 37']"
+103,Santa Cruz,1,1,Atlético-MG,8,2001,2001-08-29,1,1, [Donizete 60'; Marques 65']
+104,Vitória,1,3,Palmeiras,8,2001,2001-08-29,0,3," [Allann Delon 46'; Tuta 25', 71', Lopes 63']"
+105,Ponte Preta,3,2,Grêmio,8,2001,2001-08-29,3,0," [Macedo 20', Piá 63'p, Washington Cerqueira 80'; Rodrigo Gral 53', Luiz "
+106,Goiás,2,0,Fluminense,8,2001,2001-08-29,3,0," [Itamar 27', Araújo 88']"
+107,São Caetano,4,1,Paraná,8,2001,2001-08-29,3,0," [Bechara 1', Serginho 48', Sandro Gaúcho 81', Marlon 87'; Maurílio 50']"
+108,Juventude,3,3,São Paulo,8,2001,2001-08-29,1,1," [Fernando 25', Michel 69', Leonardo Manzi 77'; França 64', 74', Luís Fabiano 64']"
+109,Botafogo-RJ,3,1,Sport,8,2001,2001-08-29,3,0," [Rodrigo Almeida 24', 34', 44'; Edu Manga 27']"
+110,Flamengo,0,1,Coritiba,8,2001,2001-08-30,0,3, [Evair 70'p]
+111,Portuguesa,1,2,Guarani,8,2001,2001-08-30,0,3," [Élson 39'; Fernando Fumagalli 3', Marcinho 67']"
+112,Cruzeiro,1,1,Bahia,8,2001,2001-08-30,1,1, [Leonardo 56'; Bebeto Campos 72']
+113,Fluminense,2,1,Juventude,9,2001,2001-09-01,3,0," [André Luiz 45+2', Roni 54'; Dauri 30']"
+114,Palmeiras,2,0,Atlético-PR,9,2001,2001-09-01,3,0," [Lopes 15'p, Fábio Júnior 89']"
+115,Paraná,3,0,Internacional,9,2001,2001-09-01,3,0," [André 7', Edílson 30', Maurílio 39']"
+116,Atlético-MG,3,0,Sport,9,2001,2001-09-01,3,0," [Marques 57', 87', Alexandre 82']"
+117,Santa Cruz,2,1,Flamengo,9,2001,2001-09-02,3,0," [Luizinho Vieira 40', Joãozinho 67'; Edílson 21']"
+118,América-MG,4,4,Corinthians,9,2001,2001-09-02,1,1," [Mirandinha 35', Somália 40', 52', Fabrício 55'; Batata 1', 23', Ricardinho 14', "
+119,Vasco da Gama,2,2,Botafogo-SP,9,2001,2001-09-02,1,1," [Bóvio 73', Bebeto 84'; Bell 60'p, Paulinho 75']"
+120,São Paulo,0,1,Bahia,9,2001,2001-09-02,0,3, [Jean Elias 80']
+121,Coritiba,2,3,Botafogo-RJ,9,2001,2001-09-02,0,3," [Rincón 4', Evair 86'p; Ronaldo 17', Taílson 46', 49']"
+122,Grêmio,1,0,Guarani,9,2001,2001-09-02,3,0, [Anderson Polga 56']
+123,Vitória,2,2,Cruzeiro,9,2001,2001-09-02,1,1," [Adriano 39', Allann Delon 86'; Oséas 54', João Carlos 65']"
+124,Gama,0,1,Portuguesa,9,2001,2001-09-02,0,3, [Fabiano 74']
+125,Santos,1,2,Goiás,9,2001,2001-09-02,0,3," [Robert 19'p; Roni 11', Danilo 25']"
+126,Ponte Preta,3,6,São Caetano,9,2001,2001-09-02,0,3," [Washington Cerqueira 23', Marco Aurélio 59', Marquinhos 90'; Magrão 15', "
+127,Flamengo,2,0,Santos,9,2001,2001-09-06,3,0," [Roma 31', Reinaldo Oliveira 90+3']"
+128,São Caetano,1,0,Palmeiras,9,2001,2001-09-06,3,0, [Bechara 88'p]
+129,Botafogo-RJ,0,2,Paraná,10,2001,2001-09-08,0,3," [Lúcio Flávio 33', Tiago 72'og]"
+130,Corinthians,3,2,Coritiba,10,2001,2001-09-08,3,0," [Gil 2', Marcelo 16', Renato 86'; Evair 5'p, Diego Rincón 89']"
+131,Cruzeiro,4,1,Santa Cruz,10,2001,2001-09-08,3,0," [Luisão 31', Adriano 42', Leonardo 65', Edmundo 90+1'; Grafite 80']"
+132,Atlético-PR,1,2,Fluminense,10,2001,2001-09-09,0,3," [Rodriguinho 80'; André Luiz 30', Sidnei 81']"
+133,Goiás,2,3,São Paulo,10,2001,2001-09-09,0,3," [Itamar 53', Bilu 84'; França 71', Leandro 73', 88']"
+134,Flamengo,1,1,América-MG,10,2001,2001-09-09,1,1, [Reinaldo Oliveira 42'; Rui 70']
+135,Internacional,2,2,Ponte Preta,10,2001,2001-09-09,1,1," [Fernando Cardoso 43', Carlinhos 77'; Marquinhos 7', Elivélton 82'p]"
+136,Sport,3,3,Vasco da Gama,10,2001,2001-09-09,1,1," [Edu Manga 1', 25'p, Bóvio 62'p; Bóvio 16', Bebeto 24', Euller 85']"
+137,Bahia,4,0,Atlético-MG,10,2001,2001-09-09,3,0," [Nonato 39', 55', Preto 89', 90']"
+138,Guarani,1,1,Santos,10,2001,2001-09-09,1,1, [Élder 60'; Marceliho Carioca 57'p]
+139,Botafogo-SP,0,1,Palmeiras,10,2001,2001-09-09,0,3, [Tuta 33']
+140,São Caetano,3,2,Gama,10,2001,2001-09-09,3,0," [Sandro Gaúcho 60', 72', Bechara 71'; Palhinha 75', Lindomar 59'p]"
+141,Juventude,1,2,Grêmio,10,2001,2001-09-09,0,3," [Leonardo Manzi 83'; Pedrinho 73', Rodrigo Mendes 88']"
+142,Portuguesa,3,2,Vitória,10,2001,2001-09-09,3,0," [Sandro Fonseca 57', Ricardo Oliveira 61', Alex Afonso 67'; Allann Delon 8', 76']"
+143,Fluminense,2,0,Ponte Preta,11,2001,2001-09-15,3,0," [Agnaldo 53', Roger Flores 60']"
+144,São Paulo,1,3,Paraná,11,2001,2001-09-15,0,3," [Luís Fabiano 68'; Ageu 6', 11', Flávio 46']"
+145,Guarani,2,0,Cruzeiro,11,2001,2001-09-15,3,0," [Sinval 40', 57']"
+146,Vitória,2,0,Internacional,11,2001,2001-09-15,3,0," [Allann Delon 70', 84']"
+147,Palmeiras,3,0,Sport,11,2001,2001-09-16,3,0," [Leonardo 5', Pedrinho 60', Thiago Gentil 87']"
+148,Goiás,2,3,Corinthians,11,2001,2001-09-16,0,3," [Edmílson 16', Araújo 34'p; Ricardinho 59'p, 81', Deivid 73']"
+149,Juventude,1,1,Flamengo,11,2001,2001-09-16,1,1, [Dauri 64'; Edílson 25']
+150,Vasco da Gama,0,1,Bahia,11,2001,2001-09-16,0,3, [Marcos Vinícius 90+1']
+151,Atlético-MG,2,1,Gama,11,2001,2001-09-16,3,0," [Kim 24', 43'; Lindomar 40']"
+152,Atlético-PR,3,1,Portuguesa,11,2001,2001-09-16,3,0," [Kléber 31'p, 57', Alex Mineiro 90+2'; Ricardo Oliveira 5']"
+153,Grêmio,2,0,Coritiba,11,2001,2001-09-16,3,0," [Leandro 39', Rodrigo Mendes 46']"
+154,Santa Cruz,0,1,São Caetano,11,2001,2001-09-16,0,3, [Adãozinho 50']
+155,Botafogo-SP,0,2,Botafogo-RJ,11,2001,2001-09-16,0,3," [Marko Ciurlizza 18', Rodrigo Almeida 88']"
+156,Santos,3,0,América-MG,11,2001,2001-09-16,3,0," [Viola 38', 63', Marcelinho Carioca 84']"
+157,Botafogo-RJ,0,2,Guarani,12,2001,2001-09-19,0,3," [Marcinho 68', Wolnei Caio 86']"
+158,Corinthians,2,2,Santa Cruz,12,2001,2001-09-19,1,1," [Renato 28', Batata 34'; Souza 32', Renatinho 79']"
+159,Cruzeiro,1,2,Goiás,12,2001,2001-09-19,0,3," [Cris 86'p; Bilu 22', Edmílson 90+2'p]"
+160,Paraná,2,0,Vasco da Gama,12,2001,2001-09-19,3,0," [Lúcio Flávio 31', Ageu 63']"
+161,Internacional,4,4,Atlético-PR,12,2001,2001-09-19,1,1," [Wederson 31', 66', Luís Cláudio 55', Fábio Pinto 77'; Kléber 19'p, Nem 49', "
+162,Sport,0,2,Santos,12,2001,2001-09-19,0,3," [Robert 29', Viola 64']"
+163,Ponte Preta,4,3,Atlético-MG,12,2001,2001-09-19,3,0," [Piá 44', Humberto 62', Washington Cerqueira 67', Marco Aurélio 89'; Alexandre "
+164,Gama,1,1,Palmeiras,12,2001,2001-09-19,1,1," [Anderson 46', Javier Arce 23']"
+165,São Caetano,0,1,Botafogo-SP,12,2001,2001-09-19,0,3, [Adiel 2']
+166,Bahia,1,1,Grêmio,12,2001,2001-09-20,1,1, [Róbson 47'; Marinho 22']
+167,Flamengo,1,1,Vitória,12,2001,2001-09-20,1,1, [Dejan Petkovic 61'; Paulo Isidoro 34']
+168,Portuguesa,1,2,Juventude,12,2001,2001-09-20,0,3," [Sílvio Criciúma 10'; Leonardo Manzi 57', Didi 86']"
+169,América-MG,1,0,Fluminense,12,2001,2001-09-20,3,0, [Fabrício 56']
+170,Coritiba,0,1,São Paulo,12,2001,2001-09-20,0,3, [Reinaldo 81']
+171,Vasco da Gama,2,1,Goiás,13,2001,2001-09-22,3,0," [Paulo César 64', Juninho Paulista 80'; Milton do Ó 41']"
+172,Palmeiras,0,2,Ponte Preta,13,2001,2001-09-22,0,3," [Washington Cerqueira 32', 59']"
+173,Gama,1,1,Cruzeiro,13,2001,2001-09-22,1,1," [Anderson 21', Cris 48']"
+174,Atlético-PR,3,2,Corinthians,13,2001,2001-09-23,3,0," [Kléber 22'p, 62'p, Souza 57'; Luciano Ratinho 59', Leandro Azevedo 68']"
+175,Guarani,1,3,Flamengo,13,2001,2001-09-23,0,3," [Sinval 53'; Alessandro 17', Reinaldo Oliveira 74', Dejan Petkovic 86']"
+176,Fluminense,3,1,Coritiba,13,2001,2001-09-23,3,0," [Miodrag Andjelkovic 15', Paulo César 33', Magno Alves 88'; Messias 90+1']"
+177,São Paulo,4,1,América-MG,13,2001,2001-09-23,3,0," [Luís Fabiano 11', França 26', Kaká 71', 75'; Somália 5']"
+178,Atlético-MG,4,0,Paraná,13,2001,2001-09-23,3,0," [Djair 4', Kim 20', Gilberto Silva 28', Marcelo Djian 33']"
+179,Internacional,2,0,Sport,13,2001,2001-09-23,3,0," [Fabiano Souza 7', Silvinho 52']"
+180,Santa Cruz,0,0,Portuguesa,13,2001,2001-09-23,1,1,NA
+181,Vitória,3,1,Botafogo-RJ,13,2001,2001-09-23,3,0," [Allann Delon 29', 74', Fernando 42'; Tiago 13']"
+182,Botafogo-SP,1,2,Grêmio,13,2001,2001-09-23,0,3," [Augusto 25'; Zinho 60', Leandro 69']"
+183,Santos,5,1,Bahia,13,2001,2001-09-23,3,0," [Viola 3', 33', 42', Cléber 45', Russo 73'; Róbson 66'p]"
+184,Juventude,0,3,São Caetano,13,2001,2001-09-23,0,3," [Magrão 18'p, 49', Anaílson 72']"
+185,Botafogo-RJ,1,3,Atlético-PR,14,2001,2001-09-29,0,3," [Dodô 23'; Souza 36', Kléber 53', Adauto 85']"
+186,Paraná,1,0,Santos,14,2001,2001-09-29,3,0, [Maurílio 77']
+187,Portuguesa,1,0,Botafogo-SP,14,2001,2001-09-29,3,0, [Ricardo Oliveira 10']
+188,América-MG,0,2,Internacional,14,2001,2001-09-29,0,3," [Jackson 1', 62']"
+189,Flamengo,1,2,Gama,14,2001,2001-09-30,0,3," [Vampeta 63', Luís Fernando 17', Paulo Henrique 79']"
+190,Corinthians,0,3,Guarani,14,2001,2001-09-30,0,3," [Léo 75', 87', Sinval 83']"
+191,Cruzeiro,3,0,Juventude,14,2001,2001-09-30,3,0," [Freddy Rincón 45'p, Jorge Vágner 61', Ricardinho 70']"
+192,Coritiba,4,1,Palmeiras,14,2001,2001-09-30,3,0," [Enílton 40', Edmílson 47', Evair 60', 76'p; Pedrinho 81']"
+193,Bahia,1,1,Fluminense,14,2001,2001-09-30,1,1," [Nonato 22', Magno Alves 10']"
+194,Ponte Preta,2,2,Vasco da Gama,14,2001,2001-09-30,1,1," [Macedo 59', Piá 77'p; Fabiano Eller 15', 78']"
+195,Sport,1,0,São Paulo,14,2001,2001-09-30,3,0, [Fabinho 81']
+196,Goiás,1,2,Atlético-MG,14,2001,2001-09-30,0,3," [Bilu 34'; Marques 71', Cicinho 83']"
+197,São Caetano,0,2,Vitória,14,2001,2001-09-30,0,3," [Paulo Isidoro 65', Gustavo Sand 90']"
+198,Grêmio,1,0,Santa Cruz,14,2001,2001-10-18,3,0, [Rubens Cardoso 83']
+199,Portuguesa,3,0,Internacional,15,2001,2001-10-02,3,0," [Ricardo Oliveira 65', Lúcio 87', 89']"
+200,Paraná,1,2,América-MG,15,2001,2001-10-02,0,3," [Márcio 9'; Somália 74', Tucho 79']"
+201,Vasco da Gama,3,0,Cruzeiro,15,2001,2001-10-03,3,0," [Romário 28'p, 65', 83']"
+202,Corinthians,4,2,Palmeiras,15,2001,2001-10-03,3,0," [Ângelo 2', Luizão 13', Batata 27', Renato 80'; Javier Arce 31', Donizete 68']"
+203,Atlético-MG,4,0,Botafogo-RJ,15,2001,2001-10-03,3,0," [Marques 6', 70', 85', Ramon Menezes 25']"
+204,Coritiba,1,1,Juventude,15,2001,2001-10-03,1,1, [Enilton 76'; Dauri 44']
+205,Grêmio,1,1,Fluminense,15,2001,2001-10-03,1,1, [Tinga 56'; Miodrag Andjelkovic 2']
+206,Santa Cruz,1,5,Atlético-PR,15,2001,2001-10-03,0,3," [Rôni 72'; Alessandro 34', Fabiano 52', Alex Mineiro 66', 78', Ilan 66']"
+207,Vitória,1,0,Sport,15,2001,2001-10-03,3,0, [Fernando 80'p]
+208,Ponte Preta,1,1,Gama,15,2001,2001-10-03,1,1, [André Silva 31'; Reinaldo 21']
+209,Botafogo-SP,1,1,Guarani,15,2001,2001-10-03,1,1, [Bell 33'p; Marcinho 64']
+210,Goiás,3,0,Bahia,15,2001,2001-10-03,3,0," [Alexandre Lopes 18', 65', Da Silva 88']"
+211,Santos,1,0,São Paulo,15,2001,2001-10-03,3,0, [Viola 14'p]
+212,Vasco da Gama,5,1,Flamengo,16,2001,2001-10-06,3,0," [Gilberto 31', Romário 45', 59', 76', Euller 90'; Reinaldo Oliveira 90+2']"
+213,Corinthians,3,1,Portuguesa,16,2001,2001-10-06,3,0," [Luizão 21', 23', Leandro Azevedo 88'; Zezinho 58']"
+214,Botafogo-RJ,1,2,Fluminense,16,2001,2001-10-06,0,3," [Artur 90+1'; Miodrag Andjelkovic 7', Paulo César 58']"
+215,São Paulo,0,1,Palmeiras,16,2001,2001-10-06,0,3, [Tuta 73']
+216,Cruzeiro,2,2,Atlético-MG,16,2001,2001-10-06,1,1," [Alex 56', 79'p; Ramon Menezes 86', Marques 88']"
+217,América-MG,1,4,Ponte Preta,16,2001,2001-10-06,0,3," [Tucho 63'; Marquinhos 15', Macedo 28', 68', Washington Cerqueira 37'p]"
+218,Atlético-PR,1,1,Paraná,16,2001,2001-10-06,1,1, [Rogério Correa 15'; Lúcio Flávio 39']
+219,Grêmio,1,0,Internacional,16,2001,2001-10-06,3,0, [Luiz Mário 27']
+220,Sport,1,1,Coritiba,16,2001,2001-10-06,1,1, [Tinho 18'; Juliano 25'p]
+221,Guarani,1,0,Goiás,16,2001,2001-10-06,3,0, [Fernando Fumagalli 50']
+222,Gama,1,1,Vitória,16,2001,2001-10-06,1,1, [Romualdo 15'; Fernando 87']
+223,Santos,1,2,São Caetano,16,2001,2001-10-06,0,3," [Viola 45'p; Magrão 15'p, 18']"
+224,Juventude,0,2,Botafogo-SP,16,2001,2001-10-06,0,3," [Adiel 43', Marcos Dener 90+2']"
+225,Bahia,2,1,Santa Cruz,16,2001,2001-10-06,3,0," [Marcos Vinícius 4', Nonato 40'; Grafite 11']"
+226,América-MG,2,0,Gama,17,2001,2001-10-09,3,0," [Somália 22', Índio 90+1']"
+227,Botafogo-RJ,2,2,Flamengo,17,2001,2001-10-10,1,1," [Marko Ciurlizza 42', Rodrigo Almeida 88'p; André Bahia 18', Beto 68']"
+228,Cruzeiro,1,0,Corinthians,17,2001,2001-10-10,3,0, [João Carlos 22']
+229,Coritiba,0,0,Botafogo-SP,17,2001,2001-10-10,1,1,NA
+230,Internacional,2,0,Vasco da Gama,17,2001,2001-10-10,3,0," [Fabiano Souza 37', Luís Cláudio 42']"
+231,Santa Cruz,3,2,Paraná,17,2001,2001-10-10,3,0," [Everaldo 45+3', Grafite 61', Túlio 69'; Márcio 20', Ageu 49']"
+232,Vitória,4,1,Guarani,17,2001,2001-10-10,3,0," [Allann Delon 31', 38', Leandro 41', Adriano 90+1'; Fernando Fumagalli 89']"
+233,Ponte Preta,1,5,Atlético-PR,17,2001,2001-10-10,0,3," [Washington Cerqueira 4'p; Souza 11', 42', Alex Mineiro 15'p, 52', Adriano Vieira 83']"
+234,Goiás,2,3,Sport,17,2001,2001-10-10,0,3," [Araújo 35', Da Silva 55'; Ricardinho 25', 45', Júnior Amorim 46']"
+235,São Caetano,2,0,Portuguesa,17,2001,2001-10-10,3,0," [Mancini 90+1', Bechara 90+2']"
+236,Juventude,2,2,Bahia,17,2001,2001-10-10,1,1," [Didi 11', 25'; Róbson 6', Preto 34']"
+237,Palmeiras,2,1,Santos,17,2001,2001-10-10,3,0," [Taddei 43', Edmílson 82'; Cléber 90']"
+238,São Paulo,1,1,Grêmio,17,2001,2001-10-11,1,1, [Júlio Baptista 6'; Leandro 23']
+239,Fluminense,3,2,Atlético-MG,17,2001,2001-10-11,3,0," [Magno Alves 6', Caio Decossau 79', Régis 90'; Gilberto Silva 39', Ramón 57']"
+240,Vasco da Gama,3,1,Botafogo-RJ,18,2001,2001-10-13,3,0," [Romário 36', Tiago 60'og, Rafael 79'; Denis 15']"
+241,Portuguesa,2,0,Palmeiras,18,2001,2001-10-13,3,0," [Fabiano 13', Ricardo Oliveira 33']"
+242,Paraná,2,1,Vitória,18,2001,2001-10-13,3,0," [Cris 58', Márcio 64'; Gustavo Sand 56']"
+243,Gama,2,0,Santa Cruz,18,2001,2001-10-13,3,0," [Robston 24', Nem 75']"
+244,Fluminense,1,1,São Paulo,18,2001,2001-10-14,1,1, [André Luiz 62'; França 16']
+245,Corinthians,1,2,Flamengo,18,2001,2001-10-14,0,3," [Ricardinho 7'; Reinaldo Oliveira 49', Dejan Petkovic 55']"
+246,Atlético-MG,0,1,Santos,18,2001,2001-10-14,0,3, [Galván 62']
+247,Atlético-PR,3,2,América-MG,18,2001,2001-10-14,3,0," [Souza 6', Rodriguinho 68', Adauto 79'; Tucho 13', Fabrício 54']"
+248,Grêmio,2,0,Cruzeiro,18,2001,2001-10-14,3,0," [Luiz Mário 51', Rubens Cardoso 63']"
+249,Sport,1,1,Juventude,18,2001,2001-10-14,1,1, [Ricardinho 15'; Leonardo Manzi 90']
+250,Bahia,3,2,Ponte Preta,18,2001,2001-10-14,3,0," [Ramos 30', Preto 45', Róbson 80'; Humberto 78', 85']"
+251,Guarani,1,0,Coritiba,18,2001,2001-10-14,3,0, [Léo 53']
+252,Botafogo-SP,0,0,Goiás,18,2001,2001-10-14,1,1,NA
+253,São Caetano,3,1,Internacional,18,2001,2001-10-14,3,0," [Esquerdinha 12', Adãozinho 42', Anaílson 83'; Juca 18']"
+254,Vasco da Gama,1,2,São Caetano,19,2001,2001-10-20,0,3," [Juninho Paulista 12'; Magrão 47', Daniel 75']"
+255,América-MG,2,2,Botafogo-SP,19,2001,2001-10-20,1,1," [Fabrício 47', Alessandro 68'; Adiel 3', Marcos Denner 71']"
+256,São Paulo,1,0,Portuguesa,19,2001,2001-10-21,3,0, [França 4']
+257,Corinthians,1,2,Grêmio,19,2001,2001-10-21,0,3," [Luizão 22'; Luiz Mário 20', Cláudio 60']"
+258,Cruzeiro,1,0,Fluminense,19,2001,2001-10-21,3,0, [Juciê 13']
+259,Coritiba,0,0,Atlético-PR,19,2001,2001-10-21,1,1,NA
+260,Internacional,2,2,Botafogo-RJ,19,2001,2001-10-21,1,1," [Fábio Pinto 37', Leandrão 79'; Dênis 24', Taílson 90+1']"
+261,Sport,1,2,Santa Cruz,19,2001,2001-10-21,0,3," [Fabinho 23'; Luizinho Vieira 51'p, Grafite 74']"
+262,Vitória,1,1,Bahia,19,2001,2001-10-21,1,1, [Váldson 4'; Nonato 54']
+263,Ponte Preta,1,1,Guarani,19,2001,2001-10-21,1,1, [Macedo 27'; Sangaletti 29']
+264,Goiás,2,0,Gama,19,2001,2001-10-21,3,0," [Itamar 24', Edmílson 75']"
+265,Juventude,1,1,Paraná,19,2001,2001-10-21,1,1, [Ranielli 55'; Márcio 9']
+266,Flamengo,1,2,Atlético-MG,19,2001,2001-10-21,0,3," [Dejan Petkovic 89'; Guilherme 71', Edgar 90+2']"
+267,São Paulo,0,0,São Caetano,20,2001,2001-10-27,1,1,NA
+268,Paraná,0,1,Sport,20,2001,2001-10-27,0,3, [cléber 69']
+269,Grêmio,2,0,Flamengo,20,2001,2001-10-28,3,0," [Luiz Mário 20', Cláudio 44']"
+270,Santos,0,2,Corinthians,20,2001,2001-10-28,0,3," [Luizão 65'p, Galván 90+2'og]"
+271,Botafogo-RJ,3,0,Cruzeiro,20,2001,2001-10-28,3,0," [Artur 5', Andrei Frescarelli 22', Leonardo Inácio 37']"
+272,Vasco da Gama,2,2,Fluminense,20,2001,2001-10-28,1,1," [Romário 22', 51'; Magno Alves 1', Régis 43']"
+273,Palmeiras,1,2,Internacional,20,2001,2001-10-28,0,3," [Javier Arce 64'; Daniel Carvalho 15', Jackson 90+4']"
+274,Atlético-MG,1,0,Portuguesa,20,2001,2001-10-28,3,0, [Guilherme 90']
+275,Coritiba,1,0,Gama,20,2001,2001-10-28,3,0, [Messias 86']
+276,Santa Cruz,1,3,Ponte Preta,20,2001,2001-10-28,0,3," [Evandro 79'; Macedo 35', 67', Marquinhos 61']"
+277,Vitória,1,0,América-MG,20,2001,2001-10-28,3,0, [Fernando 90+5'p]
+278,Guarani,2,1,Bahia,20,2001,2001-10-28,3,0," [Henrique 69', Sinval 71'; Marcos Vinícius 75']"
+279,Botafogo-SP,0,2,Atlético-PR,20,2001,2001-10-28,0,3," [Ilan 49', Adauto 60']"
+280,Goiás,2,1,Juventude,20,2001,2001-10-28,3,0," [Danilo 15', Edmílson 57'p; Dauri 45'p]"
+281,Flamengo,0,1,Fluminense,21,2001,2001-11-02,0,3, [Roger Flores 50']
+282,São Paulo,1,1,Corinthians,21,2001,2001-11-02,1,1, [Kaká 60'; Deivid 86']
+283,América-MG,1,2,Coritiba,21,2001,2001-11-02,0,3," [Somália 70'; Juliano 44'p, Liedson 45']"
+284,Gama,3,2,Paraná,21,2001,2001-11-02,3,0," [Mauro 49', Lindomar 89'p, Romualdo 90'; Márcio 9', Lúcio Flávio 30']"
+285,Botafogo-RJ,3,1,Palmeiras,21,2001,2001-11-04,3,0," [Ronaldo 14', Dodô 44', Leonardo 90+3'; Galeano 62']"
+286,Portuguesa,5,4,Vasco da Gama,21,2001,2001-11-04,3,0," [Ricardo Oliveira 17', 22', 30', Elvis 55', Élson 90+1'; Romário 40', 72', "
+287,Cruzeiro,1,0,São Caetano,21,2001,2001-11-04,3,0, [Adriano Chuva 22']
+288,Atlético-PR,2,1,Goiás,21,2001,2001-11-04,3,0," [Kléber 6'p, Souza 90'; Zé Carlos 90+2']"
+289,Internacional,1,0,Atlético-MG,21,2001,2001-11-04,3,0, [Leonardo 90']
+290,Sport,0,1,Guarani,21,2001,2001-11-04,0,3, [Fernando Fumagalli 10']
+291,Bahia,1,0,Botafogo-SP,21,2001,2001-11-04,3,0, [Róbson 22']
+292,Ponte Preta,5,2,Vitória,21,2001,2001-11-04,3,0," [Washington Cerqueira 10', 39', 71', 90', Macedo 43'; Gustavo Sand 57', "
+293,Juventude,2,0,Santa Cruz,21,2001,2001-11-04,3,0," [Dauri 2', Leonardo Manzi 72']"
+294,Santos,4,2,Grêmio,21,2001,2001-11-04,3,0," [Marcelinho Carioca 9', 33', Viola 20', Canindé 33'; Luiz Mário 34', Fábio de "
+295,Botafogo-RJ,1,3,Grêmio,22,2001,2001-11-07,0,3," [Daniel 89'; Émerson 49', Luiz Mário 62', Zinho 69']"
+296,Palmeiras,2,6,Fluminense,22,2001,2001-11-07,0,3," [Darío Muñoz 2', Pedrinho 81'; Roger Flores 16', 45+3'p, Sidney 18', Magno "
+297,América-MG,3,1,Sport,22,2001,2001-11-07,3,0," [Thiago 32', Alessandro 71', Tucho 79'; Fabinho 51']"
+298,Atlético-PR,6,3,Bahia,22,2001,2001-11-07,3,0," [Kléber 27', 77', 85', Alex Mineiro 39', Adauto 83'; Jean 43', Ramos 60', "
+299,Internacional,1,4,São Paulo,22,2001,2001-11-07,0,3," [Silvinho 19'; França 17', 47', Luís Fabiano 55', Gustavo Nery 78']"
+300,Gama,5,0,Guarani,22,2001,2001-11-07,3,0," [Romualdo 6', Mauro 10', 21', 31', Lindomar 17']"
+301,Vitória,0,0,Juventude,22,2001,2001-11-07,1,1,NA
+302,Cruzeiro,0,1,Flamengo,22,2001,2001-11-08,0,3, [Roma 81']
+303,Vasco da Gama,1,0,Corinthians,22,2001,2001-11-08,3,0, [Jamir 79']
+304,Portuguesa,0,0,Santos,22,2001,2001-11-08,1,1,NA
+305,Paraná,1,1,Coritiba,22,2001,2001-11-08,1,1, [Márcio 14'; Piccoli 70']
+306,Santa Cruz,3,2,Goiás,22,2001,2001-11-08,3,0," [Luizinho Vieira 38', 49', 76'; Zé Carlos 27', Edmílson 75']"
+307,Ponte Preta,3,3,Botafogo-SP,22,2001,2001-11-08,1,1," [Washington Cerqueira 70', 75'p, 90'p; Marcos Denner 37', 39', Bell 88']"
+308,São Caetano,5,2,Atlético-MG,22,2001,2001-11-08,3,0," [Serginho 17', Márcio Griggio 30', Anaílson 56', Esquerdinha 81', 86'; "
+309,Fluminense,0,1,Internacional,23,2001,2001-11-10,0,3, [Luís Cláudio 33']
+310,São Paulo,3,1,Botafogo-RJ,23,2001,2001-11-10,3,0," [Luís Fabiano 36', 64', Reginaldo Araújo 45'; Dodô 90'p]"
+311,Juventude,2,0,Atlético-PR,23,2001,2001-11-10,3,0," [Juliano 37', Dauri 81']"
+312,Sport,1,2,Gama,23,2001,2001-11-10,0,3," [Ricardinho 45'; Nei 62', Lindomar 78'p]"
+313,Flamengo,0,2,Portuguesa,23,2001,2001-11-11,0,3," [Ricardo Oliveira 52', 90']"
+314,Corinthians,0,1,São Caetano,23,2001,2001-11-11,0,3, [Adãozinho 10']
+315,Coritiba,2,0,Vitória,23,2001,2001-11-11,3,0," [Liedson 32', Juliano 87']"
+316,Grêmio,3,0,Palmeiras,23,2001,2001-11-11,3,0," [Rodrigo Fabri 12', 20', Fábio de los Santos 81']"
+317,Bahia,3,0,Paraná,23,2001,2001-11-11,3,0," [Róbson 3', 44', 50'p]"
+318,Guarani,0,2,América-MG,23,2001,2001-11-11,0,3," [Wellington Paulo 21', 30']"
+319,Botafogo-SP,1,0,Santa Cruz,23,2001,2001-11-11,3,0, [Marcos Denner 78']
+320,Goiás,2,1,Ponte Preta,23,2001,2001-11-11,3,0," [Itamar 30', Danilo 90+2'p; Humberto 13']"
+321,Atlético-MG,2,1,Vasco da Gama,23,2001,2001-11-11,3,0," [Gulherme 13', 52'; Ely Thadeu 5']"
+322,Santos,4,2,Cruzeiro,23,2001,2001-11-11,3,0," [Viola 25', 60', Marcelinho Carioca 29', Elano 76'; Alex 24', Oséas 86']"
+323,Atlético-PR,2,1,Sport,24,2001,2001-11-13,3,0," [Kléber 29', 77'p; Marcelo Passos 16']"
+324,Vasco da Gama,2,0,Grêmio,24,2001,2001-11-15,3,0," [Romário 37', Léo Lima 50']"
+325,Portuguesa,1,3,Cruzeiro,24,2001,2001-11-15,0,3," [Ricardo Oliveira 20'; Jorge Wagner 5', 80', Oséas 15']"
+326,Botafogo-RJ,2,4,Corinthians,24,2001,2001-11-15,0,3," [Dodô 20', 72'; Vlad Petkovic 28'og, Rogério 37', Batata 50', Fabrício 86']"
+327,São Paulo,3,1,Flamengo,24,2001,2001-11-15,3,0," [França 10', Luís Fabiano 35', 73'; Anderson 34']"
+328,Atlético-MG,2,1,Palmeiras,24,2001,2001-11-15,3,0," [Marques 77', Alexandre 90+2'; Flávio 4']"
+329,Paraná,0,1,Fluminense,24,2001,2001-11-15,0,3, [Régis 58']
+330,Internacional,3,0,Santos,24,2001,2001-11-15,3,0," [Luís Cláudio 21', Carlinhos 79'p, Jackson 90+2']"
+331,Santa Cruz,2,1,América-MG,24,2001,2001-11-15,3,0," [Grafite 7', Paulão 84'; Fabrício 73']"
+332,Bahia,2,1,Gama,24,2001,2001-11-15,3,0," [Preto 25', Kena 75'; Lindomar 24'p]"
+333,Ponte Preta,1,0,Juventude,24,2001,2001-11-15,3,0, [Macedo 7']
+334,Botafogo-SP,2,0,Vitória,24,2001,2001-11-15,3,0," [Gustavo 14', Marcos Denner 56']"
+335,Goiás,2,1,Coritiba,24,2001,2001-11-15,3,0," [Da Silva 36', 81'; Liédson 63']"
+336,São Caetano,2,0,Guarani,24,2001,2001-11-15,3,0," [Anaílson 3', Adãozinho 50'p]"
+337,Fluminense,0,0,Portuguesa,25,2001,2001-11-18,1,1,NA
+338,Flamengo,1,0,Internacional,25,2001,2001-11-18,3,0, [Felipe Melo 68']
+339,Palmeiras,1,3,Vasco da Gama,25,2001,2001-11-18,0,3," [Javier Arce 40'; Romário 66', 90+5'p, Ely Thadeu 75']"
+340,Corinthians,2,2,Atlético-MG,25,2001,2001-11-18,1,1," [Fernando Baiano 62', 70'; Guilherme 57'p, 72']"
+341,Cruzeiro,1,4,São Paulo,25,2001,2001-11-18,0,3," [Cris 64'; Kaká 23', Adriano Gerlin 29', França 36', Luís Fabiano 70']"
+342,América-MG,1,2,Bahia,25,2001,2001-11-18,0,3," [Fabrício 38'; Róbson 28'p, 56']"
+343,Coritiba,1,0,Santa Cruz,25,2001,2001-11-18,3,0, [Liédson 42']
+344,Grêmio,1,2,São Caetano,25,2001,2001-11-18,0,3," [Cláudio 64'; Serginho 4', Anaílson 32']"
+345,Sport,1,2,Botafogo-SP,25,2001,2001-11-18,0,3," [Júnior Amorim 3'; Marcos Denner 44', Birinha 47']"
+346,Vitória,1,0,Goiás,25,2001,2001-11-18,3,0, [Gustavo Sand 52']
+347,Guarani,1,0,Paraná,25,2001,2001-11-18,3,0, [Sinval 75']
+348,Gama,4,1,Atlético-PR,25,2001,2001-11-18,3,0," [Gérson 33', Lindomar 54'p, 67', Reinaldo 78'; Daniel 22']"
+349,Santos,1,2,Ponte Preta,25,2001,2001-11-18,0,3," [Russo 17'; Washington Cerqueira 40'p, Adrianinho 85']"
+350,Juventude,1,3,Botafogo-RJ,25,2001,2001-11-18,0,3," [Márcio Pereira 19'; Artur 15', Dodô 29'p, Rodrigo Almeida 58']"
+351,Fluminense,2,1,Santos,26,2001,2001-11-24,3,0," [André Luiz 2', 74'; Cléber 71']"
+352,Portuguesa,2,1,Botafogo-RJ,26,2001,2001-11-24,3,0," [Thiago Silva 17', Ricardo Oliveira 45+1'; Almir 32']"
+353,Bahia,1,1,Coritiba,26,2001,2001-11-24,1,1, [Preto 30'; Liédson 20']
+354,Internacional,0,2,Corinthians,26,2001,2001-11-25,0,3," [Fernando Baiano 51', Renato 69']"
+355,São Caetano,2,0,Flamengo,26,2001,2001-11-25,3,0," [Anaílson 40', Müller 78']"
+356,Vasco da Gama,7,1,São Paulo,26,2001,2001-11-25,3,0," [Gilberto 19', Euller 37', Romário 48', 67', 71', Léo Lima 69', Dedé 79'; "
+357,Palmeiras,2,1,Cruzeiro,26,2001,2001-11-25,3,0," [Lopes 50', Alexandre 61'; Jorge Wagner 57'p]"
+358,Atlético-MG,2,0,Grêmio,26,2001,2001-11-25,3,0," [Ramón Menezes 48', Marques 90']"
+359,Atlético-PR,2,2,Guarani,26,2001,2001-11-25,1,1," [Kléber 60'p, Rogério Correa 90+2'; Léo 42', Wilson 85']"
+360,Santa Cruz,1,1,Vitória,26,2001,2001-11-25,1,1, [Luizinho Vieira 17'; Dejan Osmanovic 2']
+361,Ponte Preta,2,1,Sport,26,2001,2001-11-25,3,0," [Piá 26', Adrianinho 88'; Júnior Amorim 5']"
+362,Botafogo-SP,0,2,Paraná,26,2001,2001-11-25,0,3," [Xandão 63', Márcio 69']"
+363,Goiás,3,0,América-MG,26,2001,2001-11-25,3,0," [Araújo 25', Da Silva 64', Tiago 81']"
+364,Juventude,2,1,Gama,26,2001,2001-11-25,3,0," [Ranielli 81', Marcos Sena 90+1'; Lindomar 58']"
+365,Botafogo-RJ,2,4,São Caetano,27,2001,2001-12-01,0,3," [Júnior 19', Leonardo Inácio 82'p; Bechara 14', Magrão 44', 61', Vinícius 47']"
+366,Flamengo,2,0,Palmeiras,27,2001,2001-12-02,3,0," [Juan 33', Roma 48']"
+367,Corinthians,1,2,Fluminense,27,2001,2001-12-02,0,3," [Gil 28'; Fernando Diniz 60', Alex 90+1']"
+368,São Paulo,3,0,Atlético-MG,27,2001,2001-12-02,3,0," [Adriano Gerlin 17', Kaká 33', Júlio Baptista 82']"
+369,Cruzeiro,4,2,Internacional,27,2001,2001-12-02,3,0," [Adriano Chuva 9', Leonardo 14', 30', 35'; Wederson 26', Jackson 39']"
+370,América-MG,1,1,Juventude,27,2001,2001-12-02,1,1," [Somália 65', Ranielli 86']"
+371,Coritiba,1,2,Ponte Preta,27,2001,2001-12-02,0,3," [Ataliba 13'; Humberto 28', Marquinhos 90'p]"
+372,Paraná,3,1,Goiás,27,2001,2001-12-02,3,0," [Márcio 54', 55', 90+3'; Túlio 83']"
+373,Grêmio,3,1,Portuguesa,27,2001,2001-12-02,3,0," [Luiz Mário 9', Tinga 25', Fábio Baiano 44'; Ricardo Oliveira 79']"
+374,Sport,0,1,Bahia,27,2001,2001-12-02,0,3, [Nonato 32']
+375,Vitória,2,4,Atlético-PR,27,2001,2001-12-02,0,3," [Dejan Osmanovic 10', Vítor 90+1'; Marcos 1'og, Adriano Vieira 25', 48', Kléberson 72']"
+376,Guarani,1,2,Santa Cruz,27,2001,2001-12-02,0,3," [Sinval 72'p; Luizinho Vieira 11', Batata 58']"
+377,Gama,5,0,Botafogo-SP,27,2001,2001-12-02,3,0," [Anderson 2', 82', Lindomar 44', Mauro 45+2', Róbson 55']"
+378,Santos,2,2,Vasco da Gama,27,2001,2001-12-02,1,1," [Marcelo Silva 73', Válber 77'; Gilberto 32'p, Dedé 69']"
+379,Vasco da Gama,2,0,Figueirense,1,2002,2002-08-10,3,0," [Ramón Menezes 24', 26']"
+380,São Paulo,4,2,Paysandu,1,2002,2002-08-10,3,0," [Jean Narde 15', Jorginho Paulista 30', Luís Fabiano 60', 88'; Jóbson 27'p, 67']"
+381,Paraná,2,1,São Caetano,1,2002,2002-08-10,3,0," [Maurílio 45+1', 56'; Serginho 65']"
+382,Santos,2,1,Botafogo,1,2002,2002-08-10,3,0," [Elano 4', Diego Ribas 43'; Ademílson 85']"
+383,Goiás,3,1,Portuguesa,1,2002,2002-08-10,3,0," [Danilo 17', Araújo 66', Finazzi 79'; Ricardo Oliveira 16']"
+384,Fluminense,5,1,Cruzeiro,1,2002,2002-08-11,3,0," [Magno Alves 29', Fernando Diniz 32', Romário 43'p, 90+2', Beto 47'; Fábio Júnior 88']"
+385,Palmeiras,1,1,Grêmio,1,2002,2002-08-11,1,1, [Nenê 79'; Anderson Lima 84']
+386,Atlético-MG,1,2,Corinthians,1,2002,2002-08-11,0,3," [Renaldo 32'; Scheidt 23', Renato 54']"
+387,Internacional,1,3,Flamengo,1,2002,2002-08-11,0,3," [Fabiano Costa 16'; Liédson 11', 29', Felipe Mello 8']"
+388,Guarani,2,1,Atlético-PR,1,2002,2002-08-11,3,0," [Luís Fernando Martinez 63', 65'; Kléber 8']"
+389,Coritiba,1,0,Vitória,1,2002,2002-08-11,3,0, [Tcheco 48']
+390,Bahia,1,0,Gama,1,2002,2002-08-11,3,0, [Robgol 64']
+391,Juventude,1,0,Ponte Preta,1,2002,2002-08-11,3,0, [Marcelo Pereira 36'p]
+392,São Caetano,2,0,Fluminense,2,2002,2002-08-14,3,0," [Adhemar 16', Claudecir 22']"
+393,Botafogo,1,1,Atlético-MG,2,2002,2002-08-14,1,1, [Galeano 82'; Alexandre 63'] 
+394,Cruzeiro,1,1,Palmeiras,2,2002,2002-08-14,1,1, [Fábio Júnior 26'p; Itamar 87']
+395,Grêmio,3,2,Vasco da Gama,2,2002,2002-08-14,3,0," [Anderson Lima 1', 18'p, Rodrigo Fabri 81'; Ramón Menezes 68'p, 71']"
+396,Atlético-PR,4,0,Bahia,2,2002,2002-08-14,3,0," [Fabiano 45+1', 80', Dagoberto 55', Rodriguinho 90+3']"
+397,Figueirense,0,0,Guarani,2,2002,2002-08-14,1,1,
+398,Ponte Preta,2,0,Coritiba,2,2002,2002-08-14,3,0," [Elivélton 43', Alex Oliveira 72']"
+399,Vitória,4,1,Goiás,2,2002,2002-08-14,3,0," [André 20', 75', 78', Marcelo Heleno 22'; Neném 48']"
+400,Corinthians,3,2,Internacional,2,2002,2002-08-14,3,0," [Deivid 27', Guilherme 43', 87'; Fabiano Costa 21', 69']"
+401,Flamengo,0,0,Juventude,2,2002,2002-08-14,1,1,
+402,Portuguesa,1,0,Paraná,2,2002,2002-08-14,3,0, [Ricardo Oliveira 3']
+403,Gama,0,1,São Paulo,2,2002,2002-08-14,0,3, [Júlio Santos 81']
+404,Fluminense,3,1,Grêmio,3,2002,2002-08-17,3,0," [Magno Alves 10', Romário 62', 82'; Luiz Mário 77']"
+405,Internacional,1,0,Ponte Preta,3,2002,2002-08-17,3,0, [Leandrão 56']
+406,Atlético-PR,2,1,Vasco da Gama,3,2002,2002-08-17,3,0," [Kléber 45', 51'; Siston 48']"
+407,Juventude,2,1,Santos,3,2002,2002-08-18,3,0," [Cláudio Pitbull 61', Leonardo Manzi 71'; William 83']"
+408,Guarani,1,4,Atlético-MG,3,2002,2002-08-18,0,3," [Marquinhos 5'; Paulinho 26', Marques 35'p, 53'p, Hélcio 65']"
+409,Flamengo,1,1,Goiás,3,2002,2002-08-18,1,1, [Athirson 60'p; Neném 61']
+410,Paraná,2,3,São Paulo,3,2002,2002-08-18,0,3," [Maurílio 72'p, Emerson 88'; Kaká 17', Júlio Baptista 32', Reinaldo Oliveira 53']"
+411,Cruzeiro,0,0,Botafogo,3,2002,2002-08-18,1,1,
+412,Portuguesa,0,0,Figueirense,3,2002,2002-08-18,1,1,
+413,Bahia,1,2,Coritiba,3,2002,2002-08-18,0,3," [Robgol 74'; Lima 44', Alexandre Fávaro 86']"
+414,Gama,2,1,Vitória,3,2002,2002-08-18,3,0," [Dimba 57', 58'; Aristizábal 31']"
+415,São Caetano,3,0,Corinthians,3,2002,2002-08-18,3,0," [Claudecir 12', 18', Edu Sales 77']"
+416,Botafogo,2,2,Internacional,4,2002,2002-08-21,1,1," [Carlos Miguel 27', Cleiton 38'; Adenílson 82', 90+2']"
+417,São Paulo,0,1,Juventude,4,2002,2002-08-21,0,3, [Hélder 2']
+418,Atlético-MG,1,1,Fluminense,4,2002,2002-08-21,1,1, [Alexandre Lindo 24'; Magno Alves 51']
+419,Paysandu,1,2,Portuguesa,4,2002,2002-08-21,0,3," [Jóbson 9'; Alex Alves 21, Édson Araújo 76']"
+420,Coritiba,2,1,Flamengo,4,2002,2002-08-21,3,0," [Lima 56', Lúcio Flávio 81'; Andrezinho 55']"
+421,Vitória,1,1,Atlético-PR,4,2002,2002-08-21,1,1, [Fernando 44'; Kléber 45+1']
+422,Goiás,1,1,Bahia,4,2002,2002-08-21,1,1, [Kley 70'; Nonato 25']
+423,Santos,3,0,Figueirense,4,2002,2002-08-21,3,0," [Léo 42', Renato 48', Douglas 87']"
+424,Vasco da Gama,0,1,Gama,4,2002,2002-08-22,0,3, [Dimba 40']
+425,Palmeiras,3,2,São Caetano,4,2002,2002-08-22,3,0," [Javier Arce 11', 80', Dodô 68'; Adhemar 66', Marco Aurélio 90+1']"
+426,Grêmio,0,2,Guarani,4,2002,2002-08-22,0,3," [Brener 30', Sérgio Alves 60']"
+427,Ponte Preta,2,0,Cruzeiro,4,2002,2002-08-22,3,0," [Alex Oliveira 35', Rodrigo Costa 43']"
+428,Flamengo,1,2,Paysandu,5,2002,2002-08-24,0,3," [Zé Carlos 59'; Jóbson 61'p, Balão 76']"
+429,Internacional,2,2,São Paulo,5,2002,2002-08-24,1,1," [Fabiano Costa 46', Cleiton Xavier 45+4'; Reinaldo Oliveira 32', 63']"
+430,Figueirense,0,3,Botafogo,5,2002,2002-08-24,0,3," [Carlos Alberto 22', Ademílson 47', Galeano 67']"
+431,Palmeiras,0,4,Atlético-MG,5,2002,2002-08-25,0,3," [Mancini 20', 44', Leonardo Oliveira 70', Souza 84']"
+432,Fluminense,1,1,Santos,5,2002,2002-08-25,1,1, [Roni 90+2'; Diego Ribas 56']
+433,Coritiba,1,2,Corinthians,5,2002,2002-08-25,0,3," [Genílson 12'; Deivid 67', Leandro Azevedo 81']"
+434,Portuguesa,1,0,Gama,5,2002,2002-08-25,3,0, [Ricardo Oliveira 46']
+435,Cruzeiro,2,1,Bahia,5,2002,2002-08-25,3,0," [Cris 2', 44'; Valdomiro 25']"
+436,Vitória,2,1,Juventude,5,2002,2002-08-25,3,0," [Aristizábal 10', 85'; Edmílson 32']"
+437,Ponte Preta,1,1,Grêmio,5,2002,2002-08-25,1,1, [Valdir Lucas 66'; Rodrigo Fabri 31']
+438,Goiás,2,4,Vasco da Gama,5,2002,2002-08-25,0,3," [Géder 6'og, Finazzi 79'; Souza 15', Rodrigo Souto 34', Washington Silva 63', Cadu 73']"
+439,Guarani,1,1,Internacional,6,2002,2002-08-28,1,1, [Sangaletti 90+2'; Fernando Baiano 90+2'p]
+440,Juventude,2,0,Fluminense,6,2002,2002-08-28,3,0," [Cláudio Pitbull 39', 85']"
+441,Santos,2,1,Paraná,6,2002,2002-08-28,3,0," [Léo 63', Diego Ribas 77'p; Maurílio 46']"
+442,Gama,2,1,Flamengo,6,2002,2002-08-28,3,0," [Rafael 26', Paulo Nunes 72'; Zé Carlos 66']"
+443,Atlético-PR,1,0,Palmeiras,6,2002,2002-08-28,3,0, [Kléber 34']
+444,Corinthians,1,1,Cruzeiro,6,2002,2002-08-28,1,1, [Rogério Régis 24'; Fábio Júnior 15']
+445,Bahia,1,2,Figueirense,6,2002,2002-08-28,0,3," [Robgol 84'p; William 60', Pires 67']"
+446,São Paulo,2,0,Goiás,6,2002,2002-08-29,3,0," [Luís Fabiano 47', 89']"
+447,Grêmio,0,0,Portuguesa,6,2002,2002-08-29,1,1,
+448,Atlético-MG,2,1,Vitória,6,2002,2002-08-29,3,0," [Renaldo 12', Marques 53'; Fernando 45']"
+449,Coritiba,2,0,Fluminense,7,2002,2002-08-31,3,0," [Da Silva 16', Jabá 85']"
+450,Botafogo,1,0,Gama,7,2002,2002-08-31,3,0, [Galeano 77']
+451,Corinthians,0,3,Atlético-PR,7,2002,2002-08-31,0,3," [Kléber 23', Fabiano 30', Kléberson 83']"
+452,Internacional,3,0,Santos,7,2002,2002-08-31,3,0," [Fernando Baiano 13'p, Mahicon Librelatto 60', Carlos Miguel 90']"
+453,Flamengo,1,1,Cruzeiro,7,2002,2002-09-01,1,1, [Iranildo 32'; Fábio Júnior 16']
+454,São Paulo,2,0,Grêmio,7,2002,2002-09-01,3,0," [Fábio Simplício 31', Kaká 33']"
+455,Atlético-MG,0,0,Portuguesa,7,2002,2002-09-01,1,1,
+456,Paraná,5,1,Palmeiras,7,2002,2002-09-01,3,0," [Márcio 6'p, 34', 55', 66', Fabinho 90+1'; Dodô 1']"
+457,Vitória,5,1,Paysandu,7,2002,2002-09-01,3,0," [Samir 21', André 32', 56', 74', 84'; Jóbson 34'p]"
+458,Ponte Preta,0,1,São Caetano,7,2002,2002-09-01,0,3, [Marlon 63']
+459,Juventude,1,0,Vasco da Gama,7,2002,2002-09-01,3,0, [Marcelo Pereira 53'p]
+460,Goiás,1,2,Guarani,7,2002,2002-09-01,0,3," [Zé Carlos 46'; Bruno Quadros 10', Sérgio Alves 77']"
+461,Vasco da Gama,1,2,Atlético-MG,8,2002,2002-09-04,0,3," [Cadu 21'; Mancini 22', Kim 64']"
+462,Flamengo,5,2,Fluminense,8,2002,2002-09-04,3,0," [Athirson 12', Zé Carlos 18', Liédson 58', Iranildo 68', Fábio Baiano 78'; César 1', Roni 90+1']"
+463,Palmeiras,2,2,Coritiba,8,2002,2002-09-04,1,1," [Fabiano Eller 25', Darío Muñoz 68'; Lima 39', Da Silva 45']"
+464,Cruzeiro,3,1,São Paulo,8,2002,2002-09-04,3,0," [Marcelo Ramos 24', Luisão 48', Fábio Júnior 85'; Luís Fabiano 72']"
+465,Atlético-PR,2,0,Botafogo,8,2002,2002-09-04,3,0," [Alex Mineiro 62', Dagoberto 67']"
+466,Paysandu,0,1,Corinthians,8,2002,2002-09-04,0,3, [Fábio Luciano 11']
+467,Bahia,3,2,Paraná,8,2002,2002-09-04,3,0," [Nonato 50', Gil Baiano 55', Daniel 74'; Maurílio 58', Márcio 83']"
+468,Gama,0,0,Ponte Preta,8,2002,2002-09-04,1,1,
+469,São Caetano,2,1,Guarani,8,2002,2002-09-04,3,0," [Adãozinho 44', Somália 56'; Émerson Ávila 69']"
+470,Portuguesa,0,2,Internacional,8,2002,2002-09-05,0,3," [Mahicon Librelato 59', Fernando Baiano 90+1']"
+471,Santos,3,0,Vitória,8,2002,2002-09-05,3,0," [Alberto 8', 11', Robinho 42']"
+472,Vasco da Gama,1,0,Coritiba,9,2002,2002-09-07,3,0, [Dejan Petkovic 90+1']
+473,Palmeiras,2,2,Gama,9,2002,2002-09-07,1,1," [Zinho 5', Dodô 21'; Dimba 41', 85']"
+474,São Caetano,3,0,São Paulo,9,2002,2002-09-07,3,0," [Magrão 37', Marco Aurélio 54', Claudecir 90+3']"
+475,Atlético-MG,2,0,Ponte Preta,9,2002,2002-09-07,3,0," [Hélcio 21', Neguete 37']"
+476,Goiás,2,2,Botafogo,9,2002,2002-09-07,1,1," [Evair 22'p, 24'; Romeu 15', Ademílson 90+1']"
+477,Fluminense,4,3,Figueirense,9,2002,2002-09-08,3,0," [Magno Alves 2', 43', Yan 75', Romário 88'; Selmir 50', 79', Mendes 85']"
+478,Santos,2,2,Atlético-PR,9,2002,2002-09-08,1,1," [William 52', Alberto 70'; Canindé 6'og, Kléberson 69'p]"
+479,Grêmio,4,0,Corinthians,9,2002,2002-09-08,3,0," [Rodrigo Fabri 16', 22', 47', Rodrigo Mendes 69']"
+480,Paraná,3,0,Flamengo,9,2002,2002-09-08,3,0," [Márcio 40', Fabinho 66', Alexandre 77']"
+481,Vitória,0,0,Internacional,9,2002,2002-09-08,1,1,
+482,Juventude,2,1,Bahia,9,2002,2002-09-08,3,0," [Leonardo Manzi 14', 49'; Nonato 1']"
+483,Guarani,2,0,Paysandu,9,2002,2002-09-08,3,0," [Brenner 10', Marquinhos 65']"
+484,Flamengo,3,2,Atlético-PR,10,2002,2002-09-11,3,0," [Liédson 28', 39', Iranildo 69'p; Kléberson 10', Kléber 54']"
+485,Portuguesa,3,2,São Caetano,10,2002,2002-09-11,3,0," [Édson Araújo 15', 42', Alexandre Gaúcho 39'; Adhemar 52', 76']"
+486,Internacional,3,2,Palmeiras,10,2002,2002-09-11,3,0," [Luiz Alberto 22', Fernando Baiano 11', Cris 85'; Nenê 72', César 81']"
+487,Coritiba,4,2,Santos,10,2002,2002-09-11,3,0," [Lúcio Flávio 38'p, Edinho Baiano 40', Reginaldo Araújo 41', Da Silva 65'; Diego Ribas 24', 30']"
+488,Bahia,1,1,Grêmio,10,2002,2002-09-11,1,1, [Robgol 1'; Gilberto 66']
+489,Ponte Preta,1,0,Paraná,10,2002,2002-09-11,3,0, [Macedo 6']
+490,Figueirense,0,2,Vitória,10,2002,2002-09-11,0,3," [André 23', Samir 86']"
+491,Paysandu,2,0,Vasco da Gama,10,2002,2002-09-11,3,0," [Albertinho 41', Marcos Dobrada 61']"
+492,Botafogo,0,4,Juventude,10,2002,2002-09-12,0,3," [Marcelo Pereira 20', Leonardo Manzi 46', Michel 57', 63']"
+493,Corinthians,3,0,Goiás,10,2002,2002-09-12,3,0," [Deivid 36', 42', Rogério Régis 39']"
+494,Cruzeiro,0,2,Guarani,10,2002,2002-09-12,0,3," [Sérgio Alves 51', João Paulo 87']"
+495,Gama,1,2,Fluminense,10,2002,2002-09-12,0,3," [Dimba 9'; César 25', Magno Alves 63']"
+496,Internacional,2,4,Figueirense,11,2002,2002-09-14,0,3," [Márcio 86', Leandrão 90+1'; Thiago Gentil 28', Selmir 59', Marcelinho 85', "
+497,Santos,2,0,Grêmio,11,2002,2002-09-14,3,0," [Alberto 33', Léo 89']"
+498,Paraná,2,2,Atlético-PR,11,2002,2002-09-14,1,1," [Émerson 28', Fabinho 56'; Kléber 22', 33']"
+499,Palmeiras,1,2,Bahia,11,2002,2002-09-14,0,3," [Alexandre 71'; Gil Baiano 14', Geraldo 88']"
+500,São Paulo,6,0,Fluminense,11,2002,2002-09-15,3,0," [Júlio Baptista 6', Kaká 56', Régis 69', Leandro Amaral 81', Luís Fabiano 85', 89']"
+501,Coritiba,3,1,Goiás,11,2002,2002-09-15,3,0," [Reginaldo Nascimento 74', Danilo 79', Lúcio Flávio 85'; Neném 39']"
+502,Botafogo,1,1,Vasco da Gama,11,2002,2002-09-15,1,1, [Carlos Alberto 44'; Cadu 9']
+503,Guarani,0,0,Corinthians,11,2002,2002-09-15,1,1,
+504,São Caetano,4,0,Gama,11,2002,2002-09-15,3,0," [Wágner 4', Somália 15', 58', Lúcio 44']"
+505,Vitória,4,3,Portuguesa,11,2002,2002-09-15,3,0," [Fernando 18', André 56', Ramalho 61', Marcos 89'; Alexandre Gaúcho 41', 74', Júnior 57']"
+506,Juventude,1,0,Atlético-MG,11,2002,2002-09-15,3,0, [Índio 71']
+507,Cruzeiro,3,1,Paysandu,11,2002,2002-09-15,3,0," [Marcelo Ramos 51', 53', Alessandro 90'; Gino 2']"
+508,Vasco da Gama,1,2,Santos,12,2002,2002-09-18,0,3," [Rodrigo Souza 16'; Elano 5', Alex Rodrigo 62']"
+509,Portuguesa,2,0,Botafogo,12,2002,2002-09-18,3,0," [Édson Araújo 76', Ricardo Oliveira 77']"
+510,Goiás,3,0,São Caetano,12,2002,2002-09-18,3,0," [Neném 50', Jefferson Feijão 65', Tiago 82']"
+511,Figueirense,3,1,Cruzeiro,12,2002,2002-09-18,3,0," [Igor 21', Thiago Gentil 39', William 90+2'; Luisão 45']"
+512,Paysandu,1,1,Coritiba,12,2002,2002-09-18,1,1, [Jóbson 90+1'p; Lima 30']
+513,Atlético-PR,1,3,Gama,12,2002,2002-09-18,0,3," [Kléber 70'; Dimba 7', 75', Rafael 27']"
+514,Bahia,2,0,São Paulo,12,2002,2002-09-18,3,0," [Geraldo 75', Bebeto Campos 90+1']"
+515,Ponte Preta,2,0,Palmeiras,12,2002,2002-09-18,3,0," [Elivélton 57'p, 62'p]"
+516,Grêmio,2,0,Juventude,12,2002,2002-09-19,3,0," [Adriano Chuva 38', Tinga 76']"
+517,Corinthians,2,1,Vitória,12,2002,2002-09-19,3,0," [Deivid 25', Fábio Luciano 57'; Allann Delon 85']"
+518,Atlético-MG,4,1,Paraná,12,2002,2002-09-19,3,0," [Souza 9', Mancini 56', 63, 72'; Rodrigão 71']"
+519,Botafogo,0,2,Coritiba,13,2002,2002-09-21,0,3, [Jabá 24' 86']
+520,Portuguesa,0,1,Cruzeiro,13,2002,2002-09-21,0,3, [Alessandro 75']
+521,Figueirense,1,0,Palmeiras,13,2002,2002-09-21,3,0, [Selmir 38']
+522,Santos,1,1,Goiás,13,2002,2002-09-21,1,1, [Elano 39'; Araújo 34']
+523,Vasco da Gama,1,1,Internacional,13,2002,2002-09-22,1,1, [Ely Thadeu 73'; Fernando Baiano 56']
+524,Corinthians,2,1,Paraná,13,2002,2002-09-22,3,0," [Guilherme 83', 86'; Márcio 21']"
+525,Atlético-MG,0,3,Flamengo,13,2002,2002-09-22,0,3," [Liédson 48', 62'; Zé Carlos 58']"
+526,Atlético-PR,1,1,São Paulo,13,2002,2002-09-22,1,1, [Dagoberto 74'; Ricardinho 87']
+527,Paysandu,4,3,Ponte Preta,13,2002,2002-09-22,3,0," [Jóbson 21', 48', Rato 63', Wélber 76'; Humberto 41', 50', Fabrício Carvalho 43']"
+528,Guarani,0,0,Juventude,13,2002,2002-09-22,1,1,
+529,São Caetano,1,0,Bahia,13,2002,2002-09-22,3,0, [Daniel 18']
+530,Grêmio,4,0,Vitória,13,2002,2002-09-22,3,0," [Rodrigo Fabri 2', 61', 85', Emerson 83']"
+531,São Paulo,1,2,Atlético-MG,14,2002,2002-09-25,0,3," [Júlio Baptista 87'; Mancini 11', Paulinho 84']"
+532,Cruzeiro,4,0,Vasco da Gama,14,2002,2002-09-25,3,0," [Marcelo Ramos 32', Paulo Miranda 45', Fábio Júnior 53', Alessandro 68']"
+533,Internacional,1,0,Bahia,14,2002,2002-09-25,3,0, [Mahicon Librelato 40']
+534,Fluminense,0,1,Atlético-PR,14,2002,2002-09-25,0,3, [Adriano Vieira 46']
+535,Paraná,1,2,Guarani,14,2002,2002-09-25,0,3," [Márcio 41'; Sérgio Alves 35', 58']"
+536,Vitória,2,2,São Caetano,14,2002,2002-09-25,1,1," [Alessandro 66', Nadson 90+2'; Adhemar 45+1', Wágner 60']"
+537,Ponte Preta,3,2,Figueirense,14,2002,2002-09-25,3,0," [Humberto 20', Hernâni 50', Farício Carvalho 54'; André Luís 25', Thiago Gentil 61']"
+538,Juventude,0,1,Corinthians,14,2002,2002-09-25,0,3, [Renato 64'og]
+539,Gama,0,0,Santos,14,2002,2002-09-26,1,1,
+540,Coritiba,2,0,Portuguesa,14,2002,2002-09-26,3,0," [Lima 10', 43']"
+541,Palmeiras,1,0,Paysandu,14,2002,2002-09-26,3,0, [Itamar 70']
+542,Flamengo,2,3,Grêmio,14,2002,2002-09-26,0,3," [Fábio Baiano 64', Hugo 81'; Gilberto 45+1', Tinga 53', Rodrigo Fabri 55']"
+543,Internacional,1,2,Paraná,15,2002,2002-09-28,0,3," [Cleitão 4'; Maurílio 6', 16']"
+544,Fluminense,2,1,Guarani,15,2002,2002-09-28,3,0," [Magno Alves 3', Marcão 8'; Sérgio Alves 86'p]"
+545,Bahia,1,2,Botafogo,15,2002,2002-09-28,0,3," [Geraldo 36'; Lúcio 85', 88']"
+546,Cruzeiro,2,1,Juventude,15,2002,2002-09-28,3,0," [Alex 34', Alessandro 63'; Valdo 45']"
+547,Atlético-PR,0,1,São Caetano,15,2002,2002-09-28,0,3, [Claudecir 22']
+548,Vasco da Gama,4,0,Portuguesa,15,2002,2002-09-29,3,0," [Geder 26', Valdir Bigode 45+1', 48', Léo Lima 90+1']"
+549,São Paulo,2,2,Corinthians,15,2002,2002-09-29,1,1," [Reinaldo Oliveira 70', 80'; Gil 57', 90']"
+550,Paysandu,5,2,Atlético-MG,15,2002,2002-09-29,3,0," [Jóbson 21'p, Luís Fernando 29', Magno 61, Zé Augusto 63', Sandro 71'; Mancini 16', 80']"
+551,Ponte Preta,3,1,Flamengo,15,2002,2002-09-29,3,0," [Fabrício Carvalho 45+1', 52', Caíco 51; Fábio Baiano 85'p]"
+552,Figueirense,2,1,Gama,15,2002,2002-09-29,3,0," [Igor 55', 60'; Dimba 70']"
+553,Goiás,4,1,Grêmio,15,2002,2002-09-29,3,0," [Araújo 41', 72', Neném 47'p, 49'; Rodrigo Fabri 45'p]"
+554,Santos,1,1,Palmeiras,15,2002,2002-09-29,1,1, [Robinho 21'; Javier Arce 87']
+555,Grêmio,3,0,Paysandu,16,2002,2002-10-02,3,0," [Rodrigo Fabri 70', 81', 83']"
+556,Botafogo,2,1,Ponte Preta,16,2002,2002-10-02,3,0," [Ademílson 63', Galeano 78'p; Elivélton 83'p]"
+557,Gama,1,1,Internacional,16,2002,2002-10-02,1,1, [Dimba 51'; Cleiton Xavier 52']
+558,São Caetano,1,0,Coritiba,16,2002,2002-10-02,3,0, [Robert 73']
+559,Palmeiras,1,1,São Paulo,16,2002,2002-10-02,1,1, [Darío Muñoz 37'; Luís Fabiano 40']
+560,Vitória,2,1,Fluminense,16,2002,2002-10-02,3,0," [Aristizábal 49', Paulo Rodrigues 62'; Beto 56']"
+561,Juventude,2,1,Goiás,16,2002,2002-10-02,3,0," [Índio 23', Leonardo Manzi 27'; Jefferson Feijão 46']"
+562,Flamengo,1,1,Bahia,16,2002,2002-10-02,1,1, [Iranildo 1'p; Nei Fabiano 82']
+563,Paraná,1,1,Cruzeiro,16,2002,2002-10-03,1,1, [Emerson 20'; Paulo Miranda 75']
+564,Corinthians,2,4,Santos,16,2002,2002-10-03,0,3," [Fabinho 56', Leandro Azevedo 80'; Alberto 18', 31', Elano 47', 53']"
+565,Atlético-MG,0,2,Figueirense,16,2002,2002-10-03,0,3," [Lino 15', 90'p]"
+566,Botafogo,1,1,São Caetano,17,2002,2002-10-05,1,1, [Ademílson 32'; Robert 71']
+567,Flamengo,2,3,São Paulo,17,2002,2002-10-05,0,3," [Liédson 59', 89'; Reinaldo Oliveira 25', 57', Kaká 81']"
+568,Gama,2,0,Paysandu,17,2002,2002-10-05,3,0," [Rafael 8', Dimba 64']"
+569,Palmeiras,2,1,Portuguesa,17,2002,2002-10-05,3,0," [Juninho 11', Alexandre 67'; Alex Alves 20']"
+570,Goiás,0,0,Atlético-PR,17,2002,2002-10-05,1,1,
+571,Guarani,1,2,Vasco da Gama,17,2002,2002-10-05,0,3," [Léo 33'; Rodrigo Souto 22', Ramón Menezes 35']"
+572,Fluminense,3,2,Paraná,18,2002,2002-10-08,3,0," [Romário 9', 21', Magno Alves 81'; Márcio 45', Alexandre 73']"
+573,São Paulo,3,1,Coritiba,18,2002,2002-10-08,3,0," [Reinaldo Oliveira 7', 68', Jorginho Paulista 83'; Willians 89']"
+574,Guarani,3,1,Gama,18,2002,2002-10-08,3,0," [Sérgio Alves 3', 66', Léo 87'; Dimba 41']"
+575,Grêmio,1,1,Botafogo,18,2002,2002-10-09,1,1, [Roberto 59'; Odvan 77']
+576,Flamengo,2,0,São Caetano,18,2002,2002-10-09,3,0," [Liédson 3', 75']"
+577,Corinthians,2,2,Figueirense,18,2002,2002-10-09,1,1," [Rogério Régis 7', Guilherme 81'; Mendes 60', Lino 82'p]"
+578,Santos,3,2,Atlético-MG,18,2002,2002-10-09,3,0," [Alberto 27', Alex Rodrigo 84', Robinho 88'; Souza 55', Paulinho 90+2']"
+579,Atlético-PR,0,1,Ponte Preta,18,2002,2002-10-09,0,3, [Macedo 81']
+580,Paysandu,3,2,Bahia,18,2002,2002-10-09,3,0," [Souza 4', 76', Jóbson 29'; Nonato 14', Jair 18']"
+581,Vitória,4,2,Cruzeiro,18,2002,2002-10-09,3,0," [Aristizábal 42'p, 76', 85', Élson 50'; Maicon 16', Fábio Júnior 30']"
+582,Juventude,1,1,Portuguesa,18,2002,2002-10-09,1,1, [Edmílson 83'; Alex Alves 54']
+583,Goiás,4,2,Palmeiras,18,2002,2002-10-09,3,0," [Fabão 23', Araújo 30', 57', Evair 34'; Javier Arce 50'p, 73'p]"
+584,Palmeiras,2,2,Juventude,19,2002,2002-10-12,1,1," [Javier Arce 54'p, Rubens Cardoso 90+1'; Leonardo Manzi 83', 85']"
+585,Figueirense,0,3,São Paulo,19,2002,2002-10-12,0,3," [Kaká 34', 77', Luís Fabiano 86']"
+586,São Caetano,2,0,Vasco da Gama,19,2002,2002-10-12,3,0," [Marco Aurélio 27', Adhemar 48']"
+587,Paraná,1,0,Vitória,19,2002,2002-10-12,3,0, [Márcio 65']
+588,Botafogo,1,0,Paysandu,19,2002,2002-10-13,3,0, [Rodrigão 19']
+589,Portuguesa,1,1,Atlético-PR,19,2002,2002-10-13,1,1, [Édson Araújo 90'p; Dagoberto 60']
+590,Ponte Preta,3,2,Goiás,19,2002,2002-10-13,3,0," [Caíco 14', Alex Oliveira 31', Fabrício Carvalho 39'; Araújo 22', André Cruz 28']"
+591,Cruzeiro,1,4,Santos,19,2002,2002-10-13,0,3," [Elano 4', 53', André Luiz 18', Robinho 62'; Joãozinho 86']"
+592,Internacional,2,2,Fluminense,19,2002,2002-10-13,1,1," [Daniel Carvalho 53', Mahicon Librelato 86'; Magno Alves 32', Romário 78']"
+593,Coritiba,0,1,Guarani,19,2002,2002-10-13,0,3, [Luís Fernando Martinez 51']
+594,Gama,1,3,Corinthians,19,2002,2002-10-13,0,3," [Lindomar 5'p; Deivid 32', Renato 54', Gil 64']"
+595,Bahia,5,3,Atlético-MG,19,2002,2002-10-13,3,0," [Nonato 11', Gutiérrez 14'og, Valdomiro 55', Robgol 79', Geraldo 89'; Marques 9', Mancini 19', Michel 45+1']"
+596,Paysandu,3,1,Paraná,20,2002,2002-10-16,3,0," [Balão 65', 69', 84'; Waldir 90']"
+597,Vasco da Gama,2,1,Flamengo,20,2002,2002-10-16,3,0," [Ramón Menezes 31', 84'; Iranildo 40'p]"
+598,Coritiba,0,0,Grêmio,20,2002,2002-10-16,1,1,
+599,Internacional,1,2,Goiás,20,2002,2002-10-16,0,3," [Mahicon Librelato 83'; Márcio 31'og, Evair 47']"
+600,Figueirense,3,2,Atlético-PR,20,2002,2002-10-16,3,0," [Thiago Gentil 23', 64', Paulo Sérgio 50'; Adriano Vieira 31', Kléberson 55']"
+601,Gama,1,0,Juventude,20,2002,2002-10-16,3,0, [Dimba 71']
+602,São Paulo,3,2,Santos,20,2002,2002-10-16,3,0," [Luís Fabiano 56'p, Reinaldo Oliveira 58', Ricardinho 89'p; Robert 70', Diego Ribas 83'p]"
+603,Bahia,2,1,Ponte Preta,20,2002,2002-10-16,3,0," [Robgol 40'p, Nonato 65'; Valdir Lucas 63']"
+604,Palmeiras,4,2,Guarani,20,2002,2002-10-17,3,0," [Juninho 4', Javier Arce 28'p, Itamar 38', César 41'; Sérgio Alves 50'p, Adriano 53']"
+605,Botafogo,1,4,Vitória,20,2002,2002-10-17,0,3," [Lúcio 51'; Allann Delon 4', 40', Aristizábal 13', 67']"
+606,Atlético-MG,2,1,São Caetano,20,2002,2002-10-17,3,0," [Paulinho 27', Michel 40'; Magrão 81'p]"
+607,Santos,1,2,Portuguesa,21,2002,2002-10-19,0,3," [Diego Ribas 10'; César 32', Danilo 67']"
+608,Vasco da Gama,1,0,Paraná,21,2002,2002-10-19,3,0, [Ramón Menezes 43']
+609,Grêmio,3,1,Gama,21,2002,2002-10-19,3,0," [Rodrigo Fabri 73', Anderson Lima 76'p, 90'p; Dimba 13']"
+610,Corinthians,1,0,Ponte Preta,21,2002,2002-10-20,3,0, [Marcinho 74']
+611,Fluminense,1,0,Bahia,21,2002,2002-10-20,3,0, [Romário 60']
+612,Cruzeiro,1,2,Atlético-MG,21,2002,2002-10-20,0,3," [Luisão 81'; Souza 56', Paulinho 65']"
+613,Guarani,1,2,São Paulo,21,2002,2002-10-20,0,3," [Luís Fernando Martinez 40'; Ricardinho 24', Luís Fabiano 38'p]"
+614,Vitória,1,2,Flamengo,21,2002,2002-10-20,0,3," [Allann Delon 79'; Zé Carlos 14', Liédson 58']"
+615,São Caetano,2,1,Paysandu,21,2002,2002-10-20,3,0," [Magrão 74'p, Adhemar 85'; Balão 79']"
+616,Goiás,1,0,Figueirense,21,2002,2002-10-20,3,0, [Josué 80']
+617,Atlético-PR,2,3,Internacional,21,2002,2002-10-20,0,3," [Alex Mineiro 23', Fabiano 85'; Mahicon Librelato 22', Luís Alberto 47', 73']"
+618,Juventude,5,3,Coritiba,21,2002,2002-10-20,3,0," [Índio 6', Edmílson 19', Cláudio Pitbull 38', 49', Itaqui 66'; Da Silva 21', Lúcio Flávio 62'p, 64'p]"
+619,Corinthians,2,2,Palmeiras,22,2002,2002-10-23,1,1," [Gil 6', Rogério Régis 70'p; Itamar 18', Javier Arce 61'p]"
+620,Portuguesa,2,0,Guarani,22,2002,2002-10-23,3,0," [Ricardo Oliveira 30', Édson Araújo 45']"
+621,São Caetano,1,1,Cruzeiro,22,2002,2002-10-23,1,1, [Adhemar 73'; Luisão 32']
+622,Figueirense,2,1,Flamengo,22,2002,2002-10-23,3,0," [Lino 59'p, Thiago Gentil 82'; Felipe Mello 46']"
+623,Fluminense,2,2,Goiás,22,2002,2002-10-23,1,1," [Romário 26', 72'; Araújo 43', Danilo 89']"
+624,Paraná,2,1,Gama,22,2002,2002-10-23,3,0," [Maurílio 31'p, 58'; Jackson 17']"
+625,Paysandu,2,1,Santos,22,2002,2002-10-23,3,0," [Zé Augusto 11', Vandick 86'; Elano 13']"
+626,Ponte Preta,1,1,Vitória,22,2002,2002-10-23,1,1, [Hernâni 80'; Allann Delon 12']
+627,Bahia,4,2,Vasco da Gama,22,2002,2002-10-23,3,0," [Nonato 30', Jair 33', Calisto 58', Robgol 62'; Ramón Menezes 61', 69']"
+628,Botafogo,2,3,Fluminense,23,2002,2002-10-26,0,3," [Galeano 32'p, Leonardo Inácio 62'; César 39', Magno Alves 70', Romário 81'p]"
+629,Portuguesa,1,3,São Paulo,23,2002,2002-10-26,0,3," [Rogério Ceni 30', Luís Fabiano 63', 73'; Luiz Henrique 42']"
+630,Internacional,0,1,Grêmio,23,2002,2002-10-26,0,3, [Rodrigo Mendes 80']
+631,Santos,3,0,Flamengo,23,2002,2002-10-26,3,0," [William 26', Robert 32', Robinho 40']"
+632,Atlético-PR,1,0,Coritiba,23,2002,2002-10-26,3,0, [Kléber 13']
+633,Gama,0,1,Goiás,23,2002,2002-10-26,0,3, [Tiago 8']
+634,Juventude,3,2,Figueirense,23,2002,2002-10-26,3,0," [Leonardo Manzi 52', 79', Gaúcho 90+2'; Selmir 6', Igor 50']"
+635,Guarani,2,4,Ponte Preta,23,2002,2002-10-28,0,3," [Sérgio Alves 15', João Paulo 36'; Marinho 39', Valdir Lucas 40', Basílio 75', Elivélton 89'p]"
+636,Flamengo,0,1,Corinthians,24,2002,2002-10-30,0,3, [Guilherme 19']
+637,Palmeiras,2,1,Botafogo,24,2002,2002-10-30,3,0," [Darío Muñoz 3', Nenê 4'; Carlos Alberto 19']"
+638,Atlético-MG,3,2,Internacional,24,2002,2002-10-30,3,0," [Marques 33', 74'p, Kim 69'; Fabiano Costa 20', Cássio 90+1']"
+639,Grêmio,2,1,Atlético-PR,24,2002,2002-10-30,3,0," [Douglas Silva 27'og, Rodrigo Mendes 56'; Fabiano 64']"
+640,Coritiba,3,1,Cruzeiro,24,2002,2002-10-30,3,0," [Alexandre Fávaro 21', Lima 86', Reginaldo Araújo 90+3'; Fábio Júnior 7']"
+641,Paysandu,1,2,Goiás,24,2002,2002-10-30,0,3," [Souza 52'; Araújo 48', 77']"
+642,Bahia,1,1,Santos,24,2002,2002-10-30,1,1, [Robgol 56'p; Léo 90+2']
+643,Figueirense,1,2,São Caetano,24,2002,2002-10-30,0,3," [Selmir 14'; Claudecir 24', Robert 42']"
+644,Fluminense,2,1,Vasco da Gama,24,2002,2002-10-31,3,0," [César 66', Beto 84'; Valdir Bigode 71']"
+645,São Paulo,5,2,Ponte Preta,24,2002,2002-10-31,3,0," [Ameli 11', Luís Fabiano 18', 35'p, Reinaldo Oliveira 43', Kaká 88'p; Caíco 6', Alex Oliveira 81'p]"
+646,Paraná,3,1,Juventude,24,2002,2002-10-31,3,0," [Maurílio 62'p, 85', Márcio 78'; Michel 20']"
+647,Flamengo,2,0,Botafogo,25,2002,2002-11-02,3,0," [Zé Carlos 21', Iranildo 67']"
+648,Guarani,0,2,Santos,25,2002,2002-11-02,0,3," [Diego Ribas 31', Robinho 43']"
+649,Internacional,0,1,Coritiba,25,2002,2002-11-02,0,3, [Lima 89']
+650,Vasco da Gama,1,0,Palmeiras,25,2002,2002-11-03,3,0, [Léo Lima 64']
+651,Corinthians,0,2,Fluminense,25,2002,2002-11-03,0,3," [Andrei 29', Roni 41']"
+652,Cruzeiro,3,2,Grêmio,25,2002,2002-11-03,3,0," [Alex 3', Fábio Júnior 38', 57'p; Rodrigo Fabri 15', 88']"
+653,Ponte Preta,0,0,Portuguesa,25,2002,2002-11-03,1,1,
+654,Atlético-PR,2,2,Atlético-MG,25,2002,2002-11-03,1,1," [David 5', Dagoberto 28'; Hélcio 65', Alexandre 84']"
+655,Paysandu,2,1,Figueirense,25,2002,2002-11-03,3,0," [Vandick 73', Wélber 82'; Lino 6'p]"
+656,Goiás,4,0,Paraná,25,2002,2002-11-03,3,0," [Neném 13', Evair 39'p, 83', Bismarck 81']"
+657,São Caetano,2,1,Juventude,25,2002,2002-11-03,3,0," [Adhemar 21', Magrão 71'; Valdo 85']"
+658,Vitória,1,0,Bahia,25,2002,2002-11-03,3,0, [Fernando 38'p]
+659,Fluminense,0,3,Palmeiras,26,2002,2002-11-06,0,3," [Zinho 22', Flávio Luís 58', Juninho 85']"
+660,São Paulo,5,3,Vasco da Gama,26,2002,2002-11-06,3,0," [Luís Fabiano 45+1'p, 69', 73', Jean Narde 62', Júlio Santos 75'; Ramón Menezes 36', 39', Zé Carlos 68']"
+661,Atlético-PR,2,1,Paysandu,26,2002,2002-11-06,3,0," [Douglas Silva 31', Adriano Vieira 35'; Vandick 71']"
+662,Vitória,3,1,Guarani,26,2002,2002-11-06,3,0," [Alexsandro 75', 90+1', Fernando 85'; Júnior 49']"
+663,Figueirense,0,2,Grêmio,26,2002,2002-11-06,0,3," [Rodrigo Mendes 31, Rodrigo Fabri 80']"
+664,Gama,2,3,Cruzeiro,26,2002,2002-11-06,0,3," [Romualdo 12', Anderson 16'; Fábio Júnior 57', Leandro Wanderley 74', Cris 82']"
+665,São Caetano,1,1,Internacional,26,2002,2002-11-06,1,1, [Luís Carlos Capixaba 45'; Fernando Baiano 83']
+666,Atlético-MG,3,1,Coritiba,26,2002,2002-11-07,3,0," [Kim 13', Marques 40'p, 90'; Da Silva 25']"
+667,Paraná,2,0,Botafogo,26,2002,2002-11-07,3,0," [Fábio Luís 33', Márcio 72']"
+668,Corinthians,5,2,Portuguesa,26,2002,2002-11-07,3,0," [Deivid 28', 75', Guilherme 35', 52', 78'; Éder 41', Alex Alves 57'p]"
+669,Vasco da Gama,4,1,Vitória,27,2002,2002-11-09,3,0," [Russo 39', Ramón Menezes 48'p, Dejan Petkovic 67', Valdir Bigode 88'; Zé Roberto 37']"
+670,Cruzeiro,4,1,Atlético-PR,27,2002,2002-11-09,3,0," [Igor 15'og, Fábio Júnior 25', Luisão 44', Marcelo Batatais 58'; Igor 24']"
+671,Santos,1,3,Ponte Preta,27,2002,2002-11-09,0,3," [Robinho 49'p; Basílio 15', 29', Caíco 32']"
+672,Grêmio,2,2,São Caetano,27,2002,2002-11-09,1,1," [Rodrigo Fabri 1', Gilberto 76'; Luís Carlos Capixaba 41', Marlon 83']"
+673,Paysandu,3,2,Fluminense,27,2002,2002-11-09,3,0," [Souza 43'p, Rato 70', Marcos Dobrada 83'; Andrei 6', Fábio Bala 89']"
+674,Botafogo,2,1,Corinthians,27,2002,2002-11-10,3,0," [Lúcio 10', Fábio 89'; Rogério Régis 19'p]"
+675,Portuguesa,1,2,Flamengo,27,2002,2002-11-10,0,3," [Ricardo Oliveira 55'; Alessandro 41', Athirson 79'p]"
+676,Coritiba,2,0,Paraná,27,2002,2002-11-10,3,0," [Tcheco 84', Jabá 89']"
+677,Guarani,1,1,Bahia,27,2002,2002-11-10,1,1, [Sérgio Alves 58'p; Bebeto Campos 64']
+678,Juventude,3,2,Internacional,27,2002,2002-11-10,3,0," [Marcelo Pereira 5', Cláudio Pitbull 36', Michel 58'; Fabiano Costa 33', Chris 70']"
+679,Goiás,3,1,Atlético-MG,27,2002,2002-11-10,3,0," [Evair 24'p, 28'p, Araújo 60'; Mancini 17']"
+680,Vasco da Gama,2,0,Ponte Preta,28,2002,2002-11-13,3,0," [Valdir Bigode 33', Ramón Menezes 79']"
+681,Palmeiras,1,1,Flamengo,28,2002,2002-11-13,1,1, [Nenê 60'; Liédson 33']
+682,Atlético-MG,6,4,Gama,28,2002,2002-11-13,3,0," [Renaldo 14', 52', 90+3'p, Mancini 43', Kim 79', Marques 82'; Anderson 50', Nen 57', Rodriguinho 74', Dimba 86'p]"
+683,Internacional,0,1,Cruzeiro,28,2002,2002-11-13,0,3, [Luisão 24']
+684,Coritiba,1,2,Figueirense,28,2002,2002-11-13,0,3," [Lúcio Flávio 16'; Thiago Gentil 1', 56']"
+685,Bahia,0,0,Corinthians,28,2002,2002-11-13,1,1,
+686,Juventude,0,0,Paysandu,28,2002,2002-11-13,1,1,
+687,Fluminense,2,0,Portuguesa,28,2002,2002-11-14,3,0," [Romário 41'´p, 57'p]"
+688,São Paulo,3,2,Vitória,28,2002,2002-11-14,3,0," [Kaká 25', Leandro Amaral 30', Reinaldo Oliveira 55'p; Zé Roberto 9', Leílton 14']"
+689,Paraná,1,1,Grêmio,28,2002,2002-11-14,1,1, [William 82'; Ânderson Polga 43']
+690,Guarani,2,0,Botafogo,28,2002,2002-11-14,3,0," [Marquinhos 7', Luís Fernando Martinez 51']"
+691,Flamengo,2,2,Guarani,29,2002,2002-11-17,1,1," [Zé Carlos 7', Liédson 63'; Creedence 19', Sérgio Alves 23']"
+692,Botafogo,0,1,São Paulo,29,2002,2002-11-17,0,3, [Dill 55']
+693,Corinthians,1,1,Vasco da Gama,29,2002,2002-11-17,1,1, [Guilherme 65'; Ramón Menezes 86'p]
+694,Portuguesa,2,4,Bahia,29,2002,2002-11-17,0,3," [Ricardo Oliveira 64', 85'; Nonato 36', 48', 74', Bebeto Campos 79']"
+695,Cruzeiro,2,0,Goiás,29,2002,2002-11-17,3,0," [Marcelo Ramos 55', 82']"
+696,Grêmio,1,0,Atlético-MG,29,2002,2002-11-17,3,0, [Anderson Lima 29']
+697,Atlético-PR,4,0,Juventude,29,2002,2002-11-17,3,0," [Jadílson 65', 75', 85', Alex Mineiro 71']"
+698,Paysandu,0,2,Internacional,29,2002,2002-11-17,0,3," [Mahicon Librelato 58', Fernando Baiano 61']"
+699,Vitória,4,3,Palmeiras,29,2002,2002-11-17,3,0," [Allann Delon 3', Aristizábal 26'p, Zé Roberto 76', André 85'; Flávio Luís 4', Nenê 48', Javier Arce 88'p]"
+700,Ponte Preta,2,3,Fluminense,29,2002,2002-11-17,0,3," [Caíco 52', Fabrício Carvalho 64'; Roni 68', 72', Romário 80']"
+701,Figueirense,2,2,Paraná,29,2002,2002-11-17,1,1," [Lino 9', Thiago Gentil 32'; Maurílio 78', 83']"
+702,Gama,4,0,Coritiba,29,2002,2002-11-17,3,0," [Dimba 45+2', 85', Dario Larrosa 80', Rodriguinho 83']"
+703,São Caetano,3,2,Santos,29,2002,2002-11-17,3,0," [Claudecir 41', 63', Luís Carlos Capixaba 53'; Alex Rodrigo 58', Alberto 87'p]"

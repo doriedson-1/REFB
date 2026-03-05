@@ -103,6 +103,7 @@ class Bases:
     
     def codigo_clube(self, nome_clube, local = 'tm'):
         """
+        Converte o nome do clube para o código correspondente ou vice-versa.
         """
 
         if local == 'tm':  # Transfermarkt
@@ -156,7 +157,8 @@ class Bases:
                 'Vasco da Gama':'978.png?lm=1651168164',
                 
                 # times (1971-2002)
-                'Gama':''
+                'Botafogo-SP':'9030.png?lm=1423676900',
+                'Gama':'7014.png?lm=1670078076'
             }
             return codigos.get(nome_clube)        
 
@@ -261,10 +263,11 @@ class Bases:
         coluna = coluna.replace("Paysandu", "Paysandu SC")
         
         # Outros
-        coluna = coluna.replace("Botafogo RJ", "Botafogo")
+        coluna = coluna.replace(["Botafogo RJ", "Botafogo-RJ"], "Botafogo")
         coluna = coluna.replace("Cuiabá-MT", "Cuiabá")
         coluna = coluna.replace("Gremio", "Grêmio")
         coluna = coluna.replace("Sao Paulo", "São Paulo")
+        coluna = coluna.replace("Sport", "Sport Recife")
         coluna = coluna.replace("Red Bull Bragantino", "RB Bragantino")
 
         return coluna

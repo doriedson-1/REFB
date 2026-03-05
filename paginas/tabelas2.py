@@ -1,4 +1,4 @@
-# Tabelas brasileirão 1971-2002
+# Tabelas brasileirão pré 2003
 import streamlit as st
 from pathlib import Path
 import streamlit.components.v1 as components
@@ -65,7 +65,12 @@ def render_html_css(html_path, css_path, height=600, scrolling=True):
 # # # # # # # # # # # # # # # # # # # #
 st.divider()
 
-dados = bases.ler('2002fi.csv', 'br')
+st.write('Ainda não há tabelas do século passado!')
+st.write('Em atualização...')
+
+dados = bases.ler('mm_fase_inicial.csv', 'br')
+dados['time_mandante'] = bases.grafia(dados['time_mandante'])
+dados['time_visitante'] = bases.grafia(dados['time_visitante'])
 
 # Ordena as temporadas
 temporadas = sorted(dados['campeonato'].unique(), reverse=True)
@@ -114,8 +119,15 @@ st.divider()
 
 st.subheader('Fase final (mata-mata)')
 
+df = bases.ler('mm_fase_final.csv', 'br')
+df['time_mandante'] = bases.grafia(df['time_mandante'])
+df['time_visitante'] = bases.grafia(df['time_visitante'])
+df = df[df['campeonato'] == selecao_temp].copy()
+df = df[['time_mandante', 'time_visitante', 'gols_mandante', 'gols_visitante',
+         'data', 'fase', 'jogo', 'campeonato']]
+
 st.dataframe(
-    bases.ler('2002ff.csv', 'br'),
+    df,
     width='stretch',
     column_config={
         "time_mandante": st.column_config.TextColumn("Time mandante", width="small"),
@@ -125,7 +137,7 @@ st.dataframe(
         "data": st.column_config.TextColumn("Data", width="small"),
         "fase": st.column_config.TextColumn("Fase", width="small"),
         "jogo": st.column_config.TextColumn("Partida", width="small"),
-        "ano": st.column_config.TextColumn("Ano", width="small"),
+        "campeonato": st.column_config.TextColumn("Campeonato", width="small"),
         },
     hide_index=True,
     )
@@ -133,6 +145,6 @@ st.dataframe(
 st.markdown("#### Chaves")
 
 render_html_css(
-    html_path = bases.caminhos['mata-mata'] + "2002CB.html",
+    html_path = bases.caminhos['mata-mata'] + str(selecao_temp) + "CB.html",
     css_path= bases.caminhos['mata-mata'] + "definicoes.css",
     height=700)
