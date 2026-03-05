@@ -31,7 +31,7 @@ st.header("Repositório Estatístico do Futebol Brasileiro")
 # Listagem das páginas do site
 geral_br_pag = st.Page(
     page = 'paginas/geral_br.py',
-    title = 'Visão geral do campeonato')
+    title = 'Métricas gerais do campeonato')
 
 estat_av_pag = st.Page(
     page = 'paginas/estat_avan.py',

@@ -16,6 +16,7 @@ st.markdown(_('No REFB, é possível explorar informações de vários campeonat
 st.markdown('##### Links')
 
 with st.expander('Campeonato brasileiro'):
+    st.page_link('paginas/geral_br.py', label = 'Métricas gerais do campeonato')
     st.page_link('paginas/tabelas2.py', label = 'Tabelas (1971-2002) [Incompleto]')
     st.page_link('paginas/tabelas.py', label = 'Tabelas (2003-2025)')
     st.page_link('paginas/ranking.py', label = 'Tabela acumulada pontos corridos')

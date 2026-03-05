@@ -26,7 +26,7 @@ temporadas = df['CAMPEONATO'].unique()
 data_por_temporada = [df[df['CAMPEONATO'] == temp]['PONTOS'] for temp in temporadas]
 
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "História",
+    "Resumo",
     "Indice de Gini",
     "Vantagem do campeão",
     "Desvio padrão",
@@ -41,10 +41,10 @@ with tab1:
     longo dos anos, utilizando diversas estatísticas.
 
     As análises incluem:
-    - **Boxplot de Pontos por Temporada**: Visualização da distribuição de pontos dos times em cada temporada.
-    - **Gap do Campeão**: Diferença de pontos entre o campeão e o vice-campeão em cada temporada.
-    - **Desvio Padrão e Coeficiente de Variação**: Medidas de dispersão dos pontos para avaliar a competitividade.
     - **Índice de Gini**: Medida de desigualdade na distribuição de pontos entre os times.
+    - **Vantagem do campeão**: Diferença de pontos entre o campeão e o vice-campeão em cada temporada.
+    - **Desvio padrão dos pontos**: Medidas de dispersão dos pontos para avaliar a competitividade.
+    - **Boxplot de Pontos por Temporada**: Visualização da distribuição de pontos dos times em cada temporada.
     - **Índice Combinado de Competitividade**: Uma métrica composta que integra várias medidas para avaliar a competitividade geral do campeonato.
 
     Explore as abas acima para visualizar cada análise detalhadamente.
