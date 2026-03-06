@@ -80,7 +80,7 @@ def _renderizar_tabela_colorida(df, time_ref):
     df = df.copy()
     
     # Converter para Datetime real (para ordenar corretamente e permitir formatação)
-    df['data'] = pd.to_datetime(df['data'], errors='coerce')
+    df['data'] = pd.to_datetime(df['data'], errors='coerce').dt.date
     
     # Converter Gols para Inteiro (remove o .0)
     # O fillna(0) garante que se houver vazio, vira 0 antes de virar int
@@ -162,21 +162,27 @@ def _mostrar_resumo_estatistico(df: pd.DataFrame, time_a: str, time_b: str):
         st.metric(f"Vitórias {time_b}", int(derrotas), delta_color="inverse")
 
 df0 = bases.ler('mm_fase_inicial.csv', 'br')
-df1 = bases.ler('pontos_corridos.xlsx', 'br')
-df0['campeonato'] = 'Brasileiro'
-df1['campeonato'] = 'Brasileiro'
+df0['data'] = pd.to_datetime(df0['data'], errors='coerce')
 
-df2 = bases.ler('lib.xls', 'lib')
-df2['campeonato'] = 'Libertadores'
+df1 = bases.ler('mm_fase_final.csv', 'br')
+df1['data'] = pd.to_datetime(df1['data'], errors='coerce')
 
-df = pd.concat([df1, df2])  # concatenar df0
+df2 = bases.ler('pontos_corridos.xlsx', 'br')
+
+aux = 'Brasileiro'
+df0['campeonato'], df1['campeonato'], df2['campeonato'] = aux, aux, aux
+
+df3 = bases.ler('lib.xls', 'lib')
+df3['campeonato'] = 'Libertadores'
+
+df = pd.concat([df0, df1, df2, df3])
 
 # Correções ortográficas
 df['time_mandante']= bases.grafia(df['time_mandante'])
 df['time_visitante'] = bases.grafia(df['time_visitante'])
 
 st.write('No momento, as bases de dados  só possuem os duelos do campeonato \
-         brasileiro a partir de 2003.')
+         brasileiro a partir de 2001.')
 
 render_confrontos_detalhados(df)
 
