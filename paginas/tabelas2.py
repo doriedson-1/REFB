@@ -73,14 +73,14 @@ dados['time_mandante'] = bases.grafia(dados['time_mandante'])
 dados['time_visitante'] = bases.grafia(dados['time_visitante'])
 
 # Ordena as temporadas
-temporadas = sorted(dados['campeonato'].unique(), reverse=True)
+temporadas = sorted(dados['temporada'].unique(), reverse=True)
     
 col_filtro, _ = st.columns([1, 3])
 with col_filtro:
     selecao_temp = st.selectbox("Selecione a temporada:", temporadas)
     
     # Filtra o DataFrame
-    df_show = dados[dados['campeonato'] == selecao_temp].copy()
+    df_show = dados[dados['temporada'] == selecao_temp].copy()
 
 st.subheader('Primeira fase (classificatória)')
 
@@ -122,9 +122,9 @@ st.subheader('Fase final (mata-mata)')
 df = bases.ler('mm_fase_final.csv', 'br')
 df['time_mandante'] = bases.grafia(df['time_mandante'])
 df['time_visitante'] = bases.grafia(df['time_visitante'])
-df = df[df['campeonato'] == selecao_temp].copy()
+df = df[df['temporada'] == selecao_temp].copy()
 df = df[['time_mandante', 'time_visitante', 'gols_mandante', 'gols_visitante',
-         'data', 'fase', 'jogo', 'campeonato']]
+         'data', 'fase', 'jogo', 'temporada']]
 
 st.dataframe(
     df,
@@ -137,7 +137,7 @@ st.dataframe(
         "data": st.column_config.TextColumn("Data", width="small"),
         "fase": st.column_config.TextColumn("Fase", width="small"),
         "jogo": st.column_config.TextColumn("Partida", width="small"),
-        "campeonato": st.column_config.TextColumn("Campeonato", width="small"),
+        "temporada": st.column_config.TextColumn("Temporada", width="small"),
         },
     hide_index=True,
     )

@@ -1,4 +1,4 @@
-id,time_mandante,gols_mandante,gols_visitante,time_visitante,rodada,campeonato,data,pontos_mandante,pontos_visitante,detalhes
+id,time_mandante,gols_mandante,gols_visitante,time_visitante,rodada,temporada,data,pontos_mandante,pontos_visitante,detalhes
 1,Guarani,1,3,Palmeiras,1,2001,2001-08-01,0,3," [Fernando Fumagalli 85'; Javier Arce 14', Tuta 53', Lopes 73']"
 2,Botafogo-RJ,1,1,América-MG,1,2001,2001-08-01,1,1, [Rodrigo Almeida 60'; Michael 43']
 3,Portuguesa,0,1,Goiás,1,2001,2001-08-01,0,3, [Gauchinho 22']

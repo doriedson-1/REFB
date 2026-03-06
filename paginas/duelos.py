@@ -70,9 +70,6 @@ def render_confrontos_detalhados(df: pd.DataFrame):
             st.markdown(f"### Histórico: {time_a} x {time_b}")
             _renderizar_tabela_colorida(df_filtered, time_a)
             
-            st.write('- GolsM = Gols mandante')            
-            st.write('- GolsV = Gols visitante')
-            
             # Renderiza estatísticas
             _mostrar_resumo_estatistico(df_filtered, time_a, time_b)
 
@@ -120,11 +117,11 @@ def _renderizar_tabela_colorida(df, time_ref):
             "time_mandante": st.column_config.TextColumn("Mandante"),
             "time_visitante": st.column_config.TextColumn("Visitante"),
             "gols_mandante": st.column_config.NumberColumn(
-                "GolsM", 
+                "Gols mandante", 
                 format="%d"         # %d força mostrar como inteiro sem vírgula
             ),
             "gols_visitante": st.column_config.NumberColumn(
-                "GolsV", 
+                "Gols visitante", 
                 format="%d"
             )
         }
@@ -164,14 +161,15 @@ def _mostrar_resumo_estatistico(df: pd.DataFrame, time_a: str, time_b: str):
     with col4:
         st.metric(f"Vitórias {time_b}", int(derrotas), delta_color="inverse")
 
-
+df0 = bases.ler('mm_fase_inicial.csv', 'br')
 df1 = bases.ler('pontos_corridos.xlsx', 'br')
+df0['campeonato'] = 'Brasileiro'
 df1['campeonato'] = 'Brasileiro'
 
 df2 = bases.ler('lib.xls', 'lib')
 df2['campeonato'] = 'Libertadores'
 
-df = pd.concat([df1, df2])
+df = pd.concat([df1, df2])  # concatenar df0
 
 # Correções ortográficas
 df['time_mandante']= bases.grafia(df['time_mandante'])
@@ -181,3 +179,6 @@ st.write('No momento, as bases de dados  só possuem os duelos do campeonato \
          brasileiro a partir de 2003.')
 
 render_confrontos_detalhados(df)
+
+#st.dataframe(pd.concat([ df1, df2, df0]))
+

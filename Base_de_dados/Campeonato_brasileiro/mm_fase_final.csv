@@ -1,4 +1,4 @@
-time_mandante,time_visitante,gols_mandante,gols_visitante,data,fase,jogo,campeonato,detalhes
+time_mandante,time_visitante,gols_mandante,gols_visitante,data,fase,jogo,temporada,detalhes
 São Caetano,Bahia,0,0,2001-12-05,Quartas de final,Jogo único,2001,Prorrogação (aet) 0-0
 Atlético-PR,São Paulo,2,1,2001-12-05,Quartas de final,Jogo único,2001,
 Fluminense,Ponte Preta,1,1,2001-12-05,Quartas de final,Jogo único,2001,Prorrogação (aet) 2-1; Kléber 28' Alex Mineiro 80'; Adriano Gerlin 67'p
