@@ -21,18 +21,18 @@ if not df.empty:
     # 3. Dicionário de Cores dos Times (Personalizado)
     # Cores aproximadas para garantir leitura com texto branco
     team_colors = {
-        'Palmeiras': '#006437',    # Verde Escuro
-        'Corinthians': '#111111',  # Preto
-        'São Paulo': '#FE0000',    # Vermelho
-        'Santos': '#000000',       # Preto
-        'Flamengo': '#C3281E',     # Vermelho Rubro-Negro
-        'Vasco': '#333333',        # Cinza Chumbo/Preto
-        'Fluminense': '#9F022F',   # Grená
-        'Botafogo': '#222222',     # Preto
-        'Grêmio': '#0D80BF',       # Azul Grêmio
-        'Internacional': '#E20E0E',# Vermelho Inter
-        'Cruzeiro': '#0055A4',     # Azul Cruzeiro
-        'Atlético': '#000000',     # Preto
+        'Palmeiras': "#006437CC",    # Verde Escuro
+        'Corinthians': '#111111CC',  # Preto
+        'São Paulo': '#FE0000CC',    # Vermelho
+        'Santos': '#000000CC',       # Preto
+        'Flamengo': '#C3281ECC',     # Vermelho Rubro-Negro
+        'Vasco': '#333333CC',        # Cinza Chumbo/Preto
+        'Fluminense': '#9F022FCC',   # Grená
+        'Botafogo': '#222222CC',     # Preto
+        'Grêmio': '#0D80BFCC',       # Azul Grêmio
+        'Internacional': '#E20E0ECC',# Vermelho Inter
+        'Cruzeiro': '#0055A4CC',     # Azul Cruzeiro
+        'Atlético': '#000000CC',     # Preto
     }
 
 NEUTRAL_COLOR = "#AAAAAA"

@@ -85,7 +85,8 @@ with tab2:
     fig.add_hline(y=np.mean(gini_temporadas), line_dash="dash", line_color="red",
                   annotation_text=f"Média: {np.mean(gini_temporadas):.2f}",
                   annotation_position="top right")
-    st.plotly_chart(fig, theme=None, width='stretch')
+    fig.update_yaxes(visible=True, showticklabels=False)
+    st.plotly_chart(fig, theme='streamlit', width='stretch')
 
 with tab3:
     #st.write("#### Distância entre campeão e o vice")
@@ -95,14 +96,15 @@ with tab3:
         gap_campeao.append(pontos[0] - pontos[1])
 
     fig = px.bar(
-        x=temporadas, y=gap_campeao, title="Distância do campeão",
+        x=temporadas, y=gap_campeao, title="Vantagem do campeão para o vice",
         color_discrete_sequence=["#09EDF5"],
-        labels={"x": "Temporada", "y": "Pontos de diferença entre campeão e vice"})
+        labels={"x": "Temporada", "y": "Pontos de diferença"})
+    fig.update_yaxes(visible=False, showticklabels=False)
     
     fig.add_hline(y=np.mean(gap_campeao), line_dash="dash", line_color="red",
                   annotation_text=f"Média: {np.mean(gap_campeao):.2f}",
                   annotation_position="top right")
-    st.plotly_chart(fig, theme=None, width='stretch')
+    st.plotly_chart(fig, theme='streamlit', width='stretch')
 
 with tab4:
     #st.write("#### Desvio padrão dos pontos")
@@ -111,20 +113,23 @@ with tab4:
     coef_var = [d/m for d,m in zip(desvios, media)]
 
     fig = px.line(x=temporadas, y=desvios,
-                  title="Desvio Padrão por Temporada", markers=True,
+                  title="Desvio padrão dos pontos", markers=True,
                   labels={"x": "Temporada", "y": "Desvio Padrão"})
+    fig.update_yaxes(visible=False, showticklabels=False)
     #fig.add_scatter(x=temporadas, y=coef_var, mode='lines+markers', name="Coeficiente de variação")
-    st.plotly_chart(fig, theme=None, width='stretch')
+    st.plotly_chart(fig, theme='streamlit', width='stretch')
 
 with tab5:
     #st.write("#### Boxplot de Pontos por Temporada")
     fig = px.box(df, x = "CAMPEONATO", y = "PONTOS", color = "CAMPEONATO",
-              title = "Desempenho por temporada",
-              labels = {"CAMPEONATO": "Temporada",
-                        "PONTOS": "Pontos"})
+                 title = "Desempenho por temporada",
+                 labels = {"CAMPEONATO": "Temporada",
+                           "PONTOS": "Pontos"})
+    fig.update_layout(showlegend=False)
+    fig.update_yaxes(visible=True, showticklabels=False)
 
     fig.update_traces(line = {'width':.7})
-    st.plotly_chart(fig, theme = None, width = 'stretch')
+    st.plotly_chart(fig, theme='streamlit', width = 'stretch')
 
 with tab6:
     #st.write("#### Índice combinado de competitividade")
@@ -143,7 +148,8 @@ with tab6:
     competitividade = 1 - np.mean(metrics_scaled, axis=1)
 
     fig = px.line(x=temporadas, y=competitividade, markers=True,
-                  title="Índice Combinado de Competitividade",
+                  title="Índice combinado de competitividade",
                   labels={"x": "Temporada", "y": "Valor"})
+    fig.update_yaxes(visible=False, showticklabels=False)
     fig['data'][0]['line']['color'] = "#F5AA09"
-    st.plotly_chart(fig, theme=None, width='stretch')
+    st.plotly_chart(fig, theme='streamlit', width='stretch')

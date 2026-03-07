@@ -181,7 +181,7 @@ fig = px.line(pontos_time, x = "CAMPEONATO", y = "PONTOS", color = "TIME",
 
 fig.update_traces(line = {'width':.7})
 
-st.plotly_chart(fig, theme = None, width = 'stretch')
+st.plotly_chart(fig, theme = 'streamlit', width = 'stretch')
 
 st.markdown("- Nas temporadas de 2003 e 2004 o campeonato foi disputado com 24 clubes;")
 st.markdown("- Na temporada de 2005 o campeonato foi disputado com 22 clubes;")
