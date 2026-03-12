@@ -92,6 +92,6 @@ with st.sidebar:
         """,
         unsafe_allow_html=True,
 )
-    st.sidebar.text(_('Versão beta'))
+    st.sidebar.text(_('Versão 1.0 - Março de 2026'))
 
 pg.run()
