@@ -29,6 +29,10 @@ st.set_page_config(page_title = "Repositório Estatístico do Futebol Brasileiro
 st.header("Repositório Estatístico do Futebol Brasileiro")
 
 # Listagem das páginas do site
+baixar_pag = st.Page(
+    page = 'paginas/baixar.py',
+    title = 'Baixar dados (NOVO)')
+
 geral_br_pag = st.Page(
     page = 'paginas/geral_br.py',
     title = 'Métricas gerais do campeonato')
@@ -76,7 +80,7 @@ pg = st.navigation({_('Início'):[home_pag],
                                               tab_pag, ranking_pag],
                     'Times':[jogos_pag, confrontos_pag, estat_placar_pag],
                     'Jogadores':[estat_av_pag],
-                    'Para você':[com_pag]
+                    'Para você':[baixar_pag, com_pag]
                     })
 
 with st.sidebar:
