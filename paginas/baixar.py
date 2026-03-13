@@ -4,8 +4,8 @@ import pandas as pd
 from sqlalchemy import create_engine
 import pymysql
 
-def ler_sql(tabela, user = st.secrets.connections.sql.username,
-            password = st.secrets.connections.sql.password,
+def ler_sql(tabela, user = st.secrets.connections.mysql.username,
+            password = st.secrets.connections.mysql.password,
             host = '100.102.149.26', port = 3306, database = 'REFB'):
     """Lê uma tabela do banco de dados e retorna um DataFrame."""
 
@@ -15,6 +15,7 @@ def ler_sql(tabela, user = st.secrets.connections.sql.username,
     df = pd.read_sql(sql_query, con=engine)
     
     return df
+
 
 st.divider()
 
@@ -30,12 +31,18 @@ st.markdown('Caso seja necessário, é possível fazer uma seleção manual da t
 lista = {'Campeonato brasileiro fase inicial (2001-2002)':'mm_fase_inicial',
          'Campeonato brasileiro fase final (2001-2002)':'mm_fase_final',
          'Campeonato brasileiro pontos corridos (2003-2025) ':'pontoscorridos'}
+
 opcao =  st.selectbox('Selecione a tabela', lista.keys(),
-                      #index=None, placeholder = "Selecione uma tabela",
+                      #placeholder = "Selecione uma tabela",
                       label_visibility = 'collapsed')
-df = ler_sql(lista[opcao])
-    
-st.dataframe(df, hide_index=True,
+
+st.divider()
+
+conectar = st.connection('mysql', type='sql')
+
+dfquery = conectar.query('SELECT * FROM mm_fase_final;', ttl=600)
+
+st.dataframe(dfquery,
              column_config = {
                     'campeonato': st.column_config.TextColumn("Campeonato"),
                     'fase': st.column_config.TextColumn("Fase"),

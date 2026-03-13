@@ -5,6 +5,7 @@ streamlit == 1.54.0
 
 # Banco de dados
 pymysql == 1.1.2
+mysqlclient == 2.2.8
 sqlalchemy == 2.0.48
 
 # Gráficos e visualizações
