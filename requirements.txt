@@ -4,7 +4,8 @@ numpy
 streamlit == 1.54.0
 
 # Banco de dados
-mysqlclient == 2.2.7
+#mysqlclient == 2.2.7
+pymysql
 sqlalchemy == 2.0.48
 
 # Gráficos e visualizações
