@@ -3,10 +3,9 @@ pandas
 numpy
 streamlit == 1.54.0
 
-# Banco de dados
-#mysqlclient == 2.2.7
-pymysql
-sqlalchemy == 2.0.48
+# Banco de dados (caso queira subir os dados para um servidor mysql, instale as seguintes bibliotecas)
+#pymysql
+#sqlalchemy == 2.0.48
 
 # Gráficos e visualizações
 altair < 5

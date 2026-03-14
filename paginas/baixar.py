@@ -1,21 +1,45 @@
 # Baixar dados
 import streamlit as st
 import pandas as pd
-from sqlalchemy import create_engine
-import pymysql
+import os
+from recursos import Bases
 
-def ler_sql(tabela, user = st.secrets.connections.mysql.username,
-            password = st.secrets.connections.mysql.password,
-            host = '100.102.149.26', port = 3306, database = 'REFB'):
-    """Lê uma tabela do banco de dados e retorna um DataFrame."""
+# A commit '3277917' possui a versão da página com conexão MySQL.
+# https://github.com/doriedson-1/REFB/commit/3277917edc01f88c52c3482a677baa1cae313f5b
 
-    connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}'
-    engine = create_engine(connection_string)
-    sql_query = f'SELECT * FROM {tabela}'
-    df = pd.read_sql(sql_query, con=engine)
+def procurar_arq(nome):
+    """
+    Procura arquivos dentro da pasta principal 'Base_de_dados'.
+    """
+    root_dir = st.secrets.caminho_base_dados
+
+    for root, dirs, files in os.walk(root_dir):
+        if nome in files:
+            return (os.path.join(root, nome))
+        
+
+def ler_outra(caminho):
+    if caminho.split('.')[-1] == 'csv':
+        try:
+            # Tenta ler o arquivo CSV
+            df = pd.read_csv(caminho)
+            return df
+        
+        except FileNotFoundError:
+            print("Arquivo não encontrado. Por favor, certifique-se que\
+                        o arquivo está na pasta.")
+            return pd.DataFrame()
     
-    return df
+    elif (caminho.split('.')[-1] == 'xlsx') or (caminho.split('.')[-1] == 'xls'):
+        #print(caminho_cheio)
+        try:
+            # Tenta ler o arquivo excel
+            df = pd.read_excel(caminho)
+            return df
+        except FileNotFoundError:
+            print("Não encontrado!")
 
+bases = Bases()
 
 st.divider()
 
@@ -28,25 +52,23 @@ st.markdown('Os dados utilizados para a construção do REFB podem ser baixados 
 
 st.markdown('Caso seja necessário, é possível fazer uma seleção manual da tabela.')
 
-lista = {'Campeonato brasileiro fase inicial (2001-2002)':'mm_fase_inicial',
-         'Campeonato brasileiro fase final (2001-2002)':'mm_fase_final',
-         'Campeonato brasileiro pontos corridos (2003-2025) ':'pontoscorridos'}
+lista = {'Campeonato brasileiro: fase inicial (2001-2002)':'mm_fase_inicial.csv',
+         'Campeonato brasileiro: fase final (2001-2002)':'mm_fase_final.csv',
+         'Campeonato brasileiro: pontos corridos (2003-2025)':'pontos_corridos.xlsx',
+         'Campeonato brasileiro: tabelas finais (2003-2025)':'TabelaFinal.xlsx',
+         'Libertadores: confrontos entre brasileiros':'lib.xls'}
 
-opcao =  st.selectbox('Selecione a tabela', lista.keys(),
-                      #placeholder = "Selecione uma tabela",
-                      label_visibility = 'collapsed')
+opcao =  st.selectbox('Selecione a tabela', lista.keys())
 
 st.divider()
 
-conectar = st.connection('mysql', type='sql')
+df = ler_outra(procurar_arq(lista[opcao]))
 
-dfquery = conectar.query('SELECT * FROM mm_fase_final;', ttl=600)
-
-st.dataframe(dfquery,
+st.dataframe(df,
              column_config = {
                     'campeonato': st.column_config.TextColumn("Campeonato"),
                     'fase': st.column_config.TextColumn("Fase"),
-                    'data': st.column_config.TextColumn("Data"),
+                    'data': st.column_config.DateColumn("Data"),
                     'temporada': st.column_config.NumberColumn("Temporada"),
                     'rodada': st.column_config.NumberColumn("Rodada"),
                     'jogo': st.column_config.TextColumn("Jogo"),
@@ -57,5 +79,14 @@ st.dataframe(dfquery,
 
                     'pontos_mandante': st.column_config.NumberColumn("Pontos mandante"),
                     'pontos_visitante': st.column_config.NumberColumn("Pontos visitante"),
-                    'detalhes': st.column_config.TextColumn("Detalhes")
-                })
+                    'detalhes': st.column_config.TextColumn("Detalhes"),
+
+                    'estadio': st.column_config.TextColumn("Estádio"),
+                    'arbitro': st.column_config.TextColumn("Árbitro"),
+                    'publico': st.column_config.TextColumn("Público"),
+                    'publico_max': st.column_config.TextColumn("Público máx."),
+                    'tecnico_mandante': st.column_config.TextColumn("Técnico mandante"),
+                    'tecnico_visitante': st.column_config.TextColumn("Técnico visitante")
+                },
+                hide_index=True)
+
